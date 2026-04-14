@@ -1,0 +1,4 @@
+lunar-python==1.6.12
+sqlite3
+passlib[bcrypt]
+python-jose[cryptography]

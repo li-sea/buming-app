@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不认命 App - 八字算命与寺庙匹配</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .tab.active {
+            border-bottom-color: #667eea;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .row .form-group {
+            flex: 1;
+        }
+        
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .result.show {
+            display: block;
+        }
+        
+        .result h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .bazi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .bazi-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #667eea;
+        }
+        
+        .bazi-item .label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .bazi-item .value {
+            font-size: 24px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .wuxing {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .wuxing-item {
+            flex: 1;
+            min-width: 60px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .wuxing-item .count {
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .wuxing-item .label {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .temple-list {
+            margin-top: 20px;
+        }
+        
+        .temple-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .temple-item .name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .temple-item .score {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .temple-item .type {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .lunar-info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .lunar-info .item {
+            margin-bottom: 10px;
+        }
+        
+        .lunar-info .label {
+            color: #666;
+            margin-right: 10px;
+        }
+        
+        .lunar-info .value {
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+            display: none;
+        }
+        
+        .loading.show {
+            display: block;
+        }
+        
+        .api-status {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 14px;
+        }
+        
+        .api-status.online {
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .api-status.offline {
+            border-left: 4px solid #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="api-status online" id="apiStatus">
+        🟢 API 在线
+    </div>
+    
+    <div class="container">
+        <h1>🔮 不认命</h1>
+        <p class="subtitle">八字算命 · 寺庙匹配 · 万年历</p>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('bazi')">八字算命</div>
+            <div class="tab" onclick="switchTab('calendar')">万年历</div>
+            <div class="tab" onclick="switchTab('about')">关于</div>
+        </div>
+        
+        <!-- 八字算命 -->
+        <div class="tab-content active" id="bazi-tab">
+            <div class="form-group">
+                <label>姓名</label>
+                <input type="text" id="name" placeholder="请输入姓名">
+            </div>
+            
+            <div class="row">
+                <div class="form-group">
+                    <label>输入方式</label>
+                    <select id="inputType" onchange="toggleInputType()">
+                        <option value="solar">阳历</option>
+                        <option value="lunar">农历</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="form-group">
+                    <label>年</label>
+                    <input type="number" id="year" placeholder="1990" min="1900" max="2100">
+                </div>
+                <div class="form-group">
+                    <label>月</label>
+                    <input type="number" id="month" placeholder="5" min="1" max="12">
+                </div>
+                <div class="form-group">
+                    <label>日</label>
+                    <input type="number" id="day" placeholder="15" min="1" max="31">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="form-group">
+                    <label>时辰</label>
+                    <select id="hour">
+                        <option value="0">子时 (23:00-01:00)</option>
+                        <option value="1">丑时 (01:00-03:00)</option>
+                        <option value="3">寅时 (03:00-05:00)</option>
+                        <option value="5">卯时 (05:00-07:00)</option>
+                        <option value="7">辰时 (07:00-09:00)</option>
+                        <option value="9">巳时 (09:00-11:00)</option>
+                        <option value="11">午时 (11:00-13:00)</option>
+                        <option value="13">未时 (13:00-15:00)</option>
+                        <option value="15">申时 (15:00-17:00)</option>
+                        <option value="17">酉时 (17:00-19:00)</option>
+                        <option value="19">戌时 (19:00-21:00)</option>
+                        <option value="21">亥时 (21:00-23:00)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button onclick="calculateBazi()">🔮 开始算命</button>
+            
+            <div class="loading" id="loading">
+                正在计算中...
+            </div>
+            
+            <div class="result" id="result">
+                <h3>🔮 八字结果</h3>
+                <div class="bazi-grid" id="baziGrid"></div>
+                
+                <h3>☯️ 五行统计</h3>
+                <div class="wuxing" id="wuxing"></div>
+                
+                <h3>🎯 喜用神</h3>
+                <div class="lunar-info" id="xishen"></div>
+                
+                <h3>🏆 推荐寺庙</h3>
+                <div class="temple-list" id="temples"></div>
+            </div>
+        </div>
+        
+        <!-- 万年历 -->
+        <div class="tab-content" id="calendar-tab">
+            <div class="row">
+                <div class="form-group">
+                    <label>年</label>
+                    <input type="number" id="calYear" placeholder="2026" min="1900" max="2100">
+                </div>
+                <div class="form-group">
+                    <label>月</label>
+                    <input type="number" id="calMonth" placeholder="4" min="1" max="12">
+                </div>
+                <div class="form-group">
+                    <label>日</label>
+                    <input type="number" id="calDay" placeholder="14" min="1" max="31">
+                </div>
+            </div>
+            
+            <button onclick="convertCalendar()" style="margin-top: 20px;">📅 阴阳历转换</button>
+            
+            <div class="result show" style="margin-top: 30px;" id="todayInfo"></div>
+        </div>
+        
+        <!-- 关于 -->
+        <div class="tab-content" id="about-tab">
+            <h3>关于不认命 App</h3>
+            <p style="margin-top: 15px; line-height: 1.8;">
+                不认命 App 是一款基于传统八字命理学的寺庙匹配与祈福指南应用。
+                通过分析您的生辰八字，为您推荐最适合的寺庙和祈福方向。
+            </p>
+            
+            <h3 style="margin-top: 30px;">功能特色</h3>
+            <ul style="margin-top: 15px; margin-left: 20px; line-height: 2;">
+                <li>✅ 八字计算 - 精准计算生辰八字</li>
+                <li>✅ 五行分析 - 分析五行强弱</li>
+                <li>✅ 喜用神推算 - 找出最弱的五行</li>
+                <li>✅ 寺庙匹配 - 推荐最适合的寺庙</li>
+                <li>✅ 万年历 - 阳历农历转换</li>
+                <li>✅ 10,857 座寺庙数据库</li>
+            </ul>
+            
+            <h3 style="margin-top: 30px;">技术栈</h3>
+            <p style="margin-top: 10px;">
+                后端：FastAPI + Python<br>
+                算法：八字计算 + 寺庙匹配<br>
+                数据：10,857 座寺庙（47.6% 有历史介绍）
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = 'http://localhost:8000/api';
+        
+        // 切换标签页
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabName + '-tab').classList.add('active');
+            
+            if (tabName === 'calendar') {
+                loadTodayInfo();
+            }
+        }
+        
+        // 切换输入类型
+        function toggleInputType() {
+            const type = document.getElementById('inputType').value;
+            // 这里可以添加农历输入的特殊处理
+        }
+        
+        // 计算八字
+        async function calculateBazi() {
+            const year = parseInt(document.getElementById('year').value);
+            const month = parseInt(document.getElementById('month').value);
+            const day = parseInt(document.getElementById('day').value);
+            const hour = parseInt(document.getElementById('hour').value);
+            
+            if (!year || !month || !day) {
+                alert('请填写完整的出生日期');
+                return;
+            }
+            
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('result').classList.remove('show');
+            
+            try {
+                // 计算八字
+                const baziRes = await fetch(`${API_BASE}/bazi/${year}/${month}/${day}/${hour}`);
+                const baziData = await baziRes.json();
+                
+                if (!baziData.success) {
+                    throw new Error(baziData.message);
+                }
+                
+                // 匹配寺庙
+                const matchRes = await fetch(`${API_BASE}/temples/match?year=${year}&month=${month}&day=${day}&hour=${hour}&limit=10`);
+                const matchData = await matchRes.json();
+                
+                displayResult(baziData.data, matchData.data);
+            } catch (error) {
+                alert('计算失败：' + error.message);
+            } finally {
+                document.getElementById('loading').classList.remove('show');
+            }
+        }
+        
+        // 显示结果
+        function displayResult(bazi, temples) {
+            // 八字
+            const baziGrid = document.getElementById('baziGrid');
+            baziGrid.innerHTML = `
+                <div class="bazi-item">
+                    <div class="label">年柱</div>
+                    <div class="value">${bazi.bazi.year}</div>
+                </div>
+                <div class="bazi-item">
+                    <div class="label">月柱</div>
+                    <div class="value">${bazi.bazi.month}</div>
+                </div>
+                <div class="bazi-item">
+                    <div class="label">日柱</div>
+                    <div class="value">${bazi.bazi.day}</div>
+                </div>
+                <div class="bazi-item">
+                    <div class="label">时柱</div>
+                    <div class="value">${bazi.bazi.hour}</div>
+                </div>
+            `;
+            
+            // 五行
+            const wuxingDiv = document.getElementById('wuxing');
+            wuxingDiv.innerHTML = Object.entries(bazi.wuxing).map(([element, count]) => `
+                <div class="wuxing-item">
+                    <div class="count">${element}</div>
+                    <div class="label">${count}</div>
+                </div>
+            `).join('');
+            
+            // 喜用神
+            document.getElementById('xishen').innerHTML = `
+                <div class="item">
+                    <span class="label">日主:</span>
+                    <span class="value">${bazi.day_master}（${bazi.day_master_wuxing}）</span>
+                </div>
+                <div class="item">
+                    <span class="label">喜用神:</span>
+                    <span class="value">${bazi.xishen}</span>
+                </div>
+                <div class="item">
+                    <span class="label">分析:</span>
+                    <span class="value">五行中${bazi.xishen}较弱，宜补${bazi.xishen}</span>
+                </div>
+            `;
+            
+            // 寺庙
+            const templesDiv = document.getElementById('temples');
+            templesDiv.innerHTML = temples.slice(0, 5).map(temple => `
+                <div class="temple-item">
+                    <div class="name">${temple.name} <span class="score">${temple.match_score.toFixed(1)}分</span></div>
+                    <div class="type">${temple.temple_type} · ${temple.location}</div>
+                </div>
+            `).join('');
+            
+            document.getElementById('result').classList.add('show');
+        }
+        
+        // 阴阳历转换
+        async function convertCalendar() {
+            const year = parseInt(document.getElementById('calYear').value);
+            const month = parseInt(document.getElementById('calMonth').value);
+            const day = parseInt(document.getElementById('calDay').value);
+            
+            if (!year || !month || !day) {
+                alert('请填写完整的日期');
+                return;
+            }
+            
+            try {
+                const res = await fetch(`${API_BASE}/calendar/solar-to-lunar?year=${year}&month=${month}&day=${day}`);
+                const data = await res.json();
+                
+                if (data.success) {
+                    displayCalendarResult(data.data);
+                }
+            } catch (error) {
+                alert('转换失败：' + error.message);
+            }
+        }
+        
+        // 显示日历结果
+        function displayCalendarResult(data) {
+            const div = document.getElementById('todayInfo');
+            div.innerHTML = `
+                <h3>📅 转换结果</h3>
+                <div class="lunar-info">
+                    <div class="item">
+                        <span class="label">阳历:</span>
+                        <span class="value">${data.solar.date_str} ${data.solar.weekday}</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">农历:</span>
+                        <span class="value">${data.lunar.date_str}</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">八字:</span>
+                        <span class="value">${data.bazi.full}</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">生肖:</span>
+                        <span class="value">属${data.shengxiao}</span>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // 加载今日信息
+        async function loadTodayInfo() {
+            try {
+                const res = await fetch(`${API_BASE}/calendar/today`);
+                const data = await res.json();
+                
+                if (data.success) {
+                    displayCalendarResult(data.data);
+                }
+            } catch (error) {
+                console.error('加载失败:', error);
+            }
+        }
+        
+        // 检查 API 状态
+        async function checkApiStatus() {
+            try {
+                const res = await fetch(`${API_BASE.replace('/api', '')}/health`);
+                const data = await res.json();
+                
+                const statusDiv = document.getElementById('apiStatus');
+                if (data.status === 'healthy') {
+                    statusDiv.className = 'api-status online';
+                    statusDiv.textContent = '🟢 API 在线';
+                } else {
+                    throw new Error('API 异常');
+                }
+            } catch (error) {
+                const statusDiv = document.getElementById('apiStatus');
+                statusDiv.className = 'api-status offline';
+                statusDiv.textContent = '🔴 API 离线';
+            }
+        }
+        
+        // 初始化
+        window.onload = function() {
+            checkApiStatus();
+            loadTodayInfo();
+            
+            // 设置默认日期为今天
+            const today = new Date();
+            document.getElementById('calYear').value = today.getFullYear();
+            document.getElementById('calMonth').value = today.getMonth() + 1;
+            document.getElementById('calDay').value = today.getDate();
+        };
+    </script>
+</body>
+</html>
