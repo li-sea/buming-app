@@ -1,0 +1,419 @@
+{
+  "user": {
+    "name": "海哥",
+    "birth_year": 1990,
+    "birth_month": 5,
+    "birth_day": 15,
+    "birth_hour": 10
+  },
+  "bazi": {
+    "bazi": {
+      "year": "甲午",
+      "month": "庚未",
+      "day": "丙戌",
+      "hour": "甲巳",
+      "full": "甲午 庚未 丙戌 甲巳"
+    },
+    "wuxing": {
+      "木": 2,
+      "火": 3,
+      "土": 2,
+      "金": 1,
+      "水": 0
+    },
+    "day_master": "丙",
+    "day_master_wuxing": "火",
+    "strong_wuxing": "火",
+    "weak_wuxing": "水",
+    "xishen": "水"
+  },
+  "matched_temples": [
+    {
+      "name": "天后宫",
+      "location": "西三旗街道西三旗街道西三旗街道悦秀路95号通厦公元99A座",
+      "latitude": 40.047815,
+      "longitude": 116.336728,
+      "city": "北京",
+      "province": "北京市",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:47:57.564424",
+      "tags": [
+        "天后宫"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "天后宫",
+      "location": "三泰路36号",
+      "latitude": 31.241879,
+      "longitude": 121.479285,
+      "city": "上海",
+      "province": "上海市",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:48:15.139051",
+      "tags": [
+        "道观"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "天后宫",
+      "location": "细沥新村街8号",
+      "latitude": 22.828177,
+      "longitude": 113.456941,
+      "city": "广州",
+      "province": "",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:48:37.146301",
+      "tags": [
+        "寺庙"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "圆通寺",
+      "location": "七星西路与河东中路交叉口西100米",
+      "latitude": 23.540884,
+      "longitude": 113.595862,
+      "city": "广州",
+      "province": "",
+      "district": "",
+      "temple_type": "佛教",
+      "telephone": "13533019093",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:48:37.614865",
+      "tags": [
+        "寺庙"
+      ],
+      "data_level": "standard",
+      "history": "始建于唐代南诏年间（约 800 年），是云南最大佛教寺院。以圆通山樱花闻名。",
+      "main_deity": "观音菩萨",
+      "prayer_directions": [
+        "求平安",
+        "求健康",
+        "求智慧"
+      ],
+      "specialties": [
+        "云南最大佛寺",
+        "唐代古刹",
+        "圆通樱花",
+        "省级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "天后宫",
+      "location": "月亮湾棉山路香格名苑小区后面",
+      "latitude": 22.490058,
+      "longitude": 113.885545,
+      "city": "深圳",
+      "province": "",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:49:08.875869",
+      "tags": [
+        "道观"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "天后宫",
+      "location": "葛沽镇东大街48号",
+      "latitude": 38.995123,
+      "longitude": 117.514741,
+      "city": "天津",
+      "province": "天津市",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:49:33.707417",
+      "tags": [
+        "道观"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "天后宫",
+      "location": "大南街116号附近",
+      "latitude": 29.984766,
+      "longitude": 106.027742,
+      "city": "重庆",
+      "province": "重庆市",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "023-45363003",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:50:12.967595",
+      "tags": [
+        "天后宫"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "天后宫",
+      "location": "朝天宫街道升州路488号(近长青健身馆)",
+      "latitude": 32.029304,
+      "longitude": 118.772065,
+      "city": "南京",
+      "province": "江苏省",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "025-52339639;13813880699",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:50:29.132236",
+      "tags": [
+        "道观"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "天后宫",
+      "location": "泰山北路附近",
+      "latitude": 31.240706,
+      "longitude": 104.421814,
+      "city": "成都",
+      "province": "四川省",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "15883601910",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:51:35.526151",
+      "tags": [
+        "天后宫"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    },
+    {
+      "name": "天后宫",
+      "location": "湄洲镇湄洲北大道988号妈祖祖庙内",
+      "latitude": 25.091154,
+      "longitude": 119.148112,
+      "city": "武汉",
+      "province": "湖北省",
+      "district": "",
+      "temple_type": "道教",
+      "telephone": "0594-5094688",
+      "source": "高德地图",
+      "crawl_time": "2026-04-14T13:52:01.962837",
+      "tags": [
+        "妈祖庙"
+      ],
+      "data_level": "standard",
+      "history": "始建于元泰定三年（1326 年），是中国三大妈祖庙之一。是天津市区最古老的建筑群。",
+      "main_deity": "妈祖（林默娘）",
+      "prayer_directions": [
+        "求平安",
+        "求出海平安",
+        "求子",
+        "求姻缘"
+      ],
+      "specialties": [
+        "三大妈祖庙",
+        "元代古建",
+        "天津最古",
+        "国家级文保"
+      ],
+      "rating": 4.6,
+      "is_famous": true,
+      "match_score": 100.0
+    }
+  ],
+  "recommendation": {
+    "day_master": "日主：丙（火）",
+    "xishen": "喜用神：水",
+    "analysis": "五行中水较弱，宜补水",
+    "temples_recommendation": [
+      {
+        "rank": 1,
+        "name": "天后宫",
+        "score": 100.0,
+        "type": "道教",
+        "location": "西三旗街道西三旗街道西三旗街道悦秀路95号通厦公元99A座"
+      },
+      {
+        "rank": 2,
+        "name": "天后宫",
+        "score": 100.0,
+        "type": "道教",
+        "location": "三泰路36号"
+      },
+      {
+        "rank": 3,
+        "name": "天后宫",
+        "score": 100.0,
+        "type": "道教",
+        "location": "细沥新村街8号"
+      },
+      {
+        "rank": 4,
+        "name": "圆通寺",
+        "score": 100.0,
+        "type": "佛教",
+        "location": "七星西路与河东中路交叉口西100米"
+      },
+      {
+        "rank": 5,
+        "name": "天后宫",
+        "score": 100.0,
+        "type": "道教",
+        "location": "月亮湾棉山路香格名苑小区后面"
+      }
+    ],
+    "prayer_advice": [
+      "宜往北方方位参拜",
+      "宜穿黑色, 蓝色色衣物",
+      "宜拜观音菩萨, 妈祖, 龙王"
+    ]
+  },
+  "test_time": "2026-04-14T15:04:15.054976"
+}

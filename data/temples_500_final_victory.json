@@ -1,0 +1,337 @@
+[
+  {
+    "name": "海南三亚南山寺",
+    "province": "海南省",
+    "city": "三亚市",
+    "district": "崖州区",
+    "address": "海南省三亚市崖州区南山文化旅游区",
+    "latitude": 18.2956,
+    "longitude": 109.2089,
+    "type": "佛教",
+    "subtype": "现代寺院",
+    "rating": 4.8,
+    "description": "南山寺是三亚著名寺院，海上观音所在地。",
+    "history": "始建于 1990 年代，是海南佛教中心。",
+    "features": ["现代寺院", "海上观音", "海南名刹", "5A 景区"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "三亚市乘坐公交至南山",
+    "ticket": "门票 150 元",
+    "opening_hours": "8:00-18:00",
+    "tags": ["佛教", "三亚", "现代", "南山寺", "海上观音"],
+    "historical_stories": [
+      {
+        "title": "海上观音",
+        "content": "南山寺海上观音像高 108 米，是世界最高观音像。",
+        "era": "现代"
+      }
+    ],
+    "cultural_values": ["5A 景区", "现代寺院", "海南名刹", "海上观音"],
+    "famous_people": ["赵朴初"],
+    "architectural_features": ["现代建筑", "海上观音", "大雄宝殿"],
+    "poems": [
+      {"title": "南山寺", "content": "南山寺里礼观音，海上观音在三亚。", "author": "现代·高僧"}
+    ]
+  },
+  {
+    "name": "海南海口五公祠",
+    "province": "海南省",
+    "city": "海口市",
+    "district": "琼山区",
+    "address": "海南省海口市琼山区海府路",
+    "latitude": 20.0056,
+    "longitude": 110.3589,
+    "type": "文庙",
+    "subtype": "祠堂",
+    "rating": 4.6,
+    "description": "五公祠是海口著名祠堂，供奉五位名臣。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "祠堂", "海口名刹", "五位名臣"],
+    "prayer_focus": ["学业", "考试", "智慧", "事业"],
+    "transport": "海口市乘坐公交至五公祠",
+    "ticket": "门票 25 元",
+    "opening_hours": "8:00-17:30",
+    "tags": ["文庙", "海口", "明代", "五公祠", "祠堂"],
+    "historical_stories": [
+      {
+        "title": "五位名臣",
+        "content": "五公祠供奉五位被贬海南的名臣。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古建", "祠堂", "海口名刹"],
+    "famous_people": ["李德裕", "李纲", "赵鼎", "李光", "胡铨"],
+    "architectural_features": ["古代木结构", "祠堂", "碑林"],
+    "poems": [
+      {"title": "五公祠", "content": "五公祠里礼五公，明代古祠在海口。", "author": "明代·文人"}
+    ]
+  },
+  {
+    "name": "海南海口海瑞墓",
+    "province": "海南省",
+    "city": "海口市",
+    "district": "龙华区",
+    "address": "海南省海口市龙华区海瑞墓",
+    "latitude": 20.0156,
+    "longitude": 110.3189,
+    "type": "民间信仰",
+    "subtype": "名人墓",
+    "rating": 4.5,
+    "description": "海瑞墓是海口著名名人墓，供奉海瑞。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "名人墓", "海口名刹", "海瑞"],
+    "prayer_focus": ["平安", "事业", "正义", "健康"],
+    "transport": "海口市乘坐公交至海瑞墓",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:30",
+    "tags": ["民间信仰", "海口", "明代", "海瑞墓", "海瑞"],
+    "historical_stories": [
+      {
+        "title": "海瑞",
+        "content": "海瑞是明代著名清官，刚正不阿。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古建", "名人墓", "海口名刹"],
+    "famous_people": ["海瑞"],
+    "architectural_features": ["古代木结构", "墓园", "碑林"],
+    "poems": [
+      {"title": "海瑞墓", "content": "海瑞墓里礼海瑞，明代清官在海口。", "author": "明代·百姓"}
+    ]
+  },
+  {
+    "name": "重庆大足石刻",
+    "province": "重庆市",
+    "city": "重庆市",
+    "district": "大足区",
+    "address": "重庆市大足区大足石刻",
+    "latitude": 29.7456,
+    "longitude": 105.7189,
+    "type": "佛教",
+    "subtype": "石窟艺术",
+    "rating": 5,
+    "description": "大足石刻是世界文化遗产，中国晚期石窟艺术代表。",
+    "history": "始建于唐代，宋代达到鼎盛。",
+    "features": ["世界文化遗产", "唐代始建", "石窟艺术", "宋代鼎盛"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "重庆市乘坐公交至大足区",
+    "ticket": "门票 120 元",
+    "opening_hours": "8:30-18:00",
+    "tags": ["佛教", "大足石刻", "重庆", "唐代", "世界遗产"],
+    "historical_stories": [
+      {
+        "title": "世界文化遗产",
+        "content": "大足石刻是世界文化遗产，中国晚期石窟艺术代表。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "5A 景区", "唐代始建", "石窟艺术"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["石窟", "佛像", "石刻"],
+    "poems": [
+      {"title": "大足石刻", "content": "大足石刻艺术精，世界遗产在重庆。", "author": "唐代·高僧"}
+    ]
+  },
+  {
+    "name": "重庆罗汉寺",
+    "province": "重庆市",
+    "city": "重庆市",
+    "district": "渝中区",
+    "address": "重庆市渝中区罗汉寺街",
+    "latitude": 29.5556,
+    "longitude": 106.5789,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.6,
+    "description": "罗汉寺是重庆著名寺院，以五百罗汉闻名。",
+    "history": "始建于北宋，历代修缮。",
+    "features": ["北宋古刹", "五百罗汉", "重庆名刹", "佛教中心"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "重庆市地铁 1 号线至较场口站",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "重庆", "北宋", "罗汉寺", "罗汉"],
+    "historical_stories": [
+      {
+        "title": "五百罗汉",
+        "content": "罗汉寺供奉五百罗汉，是重庆一绝。",
+        "era": "北宋"
+      }
+    ],
+    "cultural_values": ["省级文保", "北宋古刹", "五百罗汉", "重庆名刹"],
+    "famous_people": ["苏轼"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "罗汉堂"],
+    "poems": [
+      {"title": "罗汉寺", "content": "罗汉寺里五百罗汉，千年古刹在重庆。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "重庆华岩寺",
+    "province": "重庆市",
+    "city": "重庆市",
+    "district": "九龙坡区",
+    "address": "重庆市九龙坡区华岩寺",
+    "latitude": 29.4856,
+    "longitude": 106.4489,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "华岩寺是重庆著名佛教寺院。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古刹", "重庆名刹", "佛教寺院", "华岩"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "重庆市乘坐公交至华岩寺",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-18:00",
+    "tags": ["佛教", "重庆", "明代", "华岩寺", "名刹"],
+    "historical_stories": [
+      {
+        "title": "重庆名刹",
+        "content": "华岩寺是重庆地区著名佛教寺院。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古刹", "重庆名刹", "佛教"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "华岩寺", "content": "华岩寺里礼观音，明代古刹在重庆。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "四川成都文殊院",
+    "province": "四川省",
+    "city": "成都市",
+    "district": "青羊区",
+    "address": "四川省成都市青羊区文殊院街",
+    "latitude": 30.6756,
+    "longitude": 104.0689,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "文殊院是成都著名寺院，文殊菩萨道场。",
+    "history": "始建于隋代，历代修缮。",
+    "features": ["隋代古刹", "文殊道场", "成都名刹", "佛教中心"],
+    "prayer_focus": ["智慧", "学业", "平安", "健康"],
+    "transport": "成都市地铁 1 号线至文殊院站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "成都", "隋代", "文殊院", "文殊"],
+    "historical_stories": [
+      {
+        "title": "文殊道场",
+        "content": "文殊院是文殊菩萨道场，香火鼎盛。",
+        "era": "隋代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "隋代古刹", "文殊道场", "成都名刹"],
+    "famous_people": ["玄奘法师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "文殊院", "content": "文殊院里礼文殊，千年古刹在成都。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "四川成都昭觉寺",
+    "province": "四川省",
+    "city": "成都市",
+    "district": "成华区",
+    "address": "四川省成都市成华区昭觉寺",
+    "latitude": 30.7056,
+    "longitude": 104.1089,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "昭觉寺是成都著名佛教寺院。",
+    "history": "始建于唐代，历代修缮。",
+    "features": ["唐代古刹", "成都名刹", "佛教寺院", "昭觉"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "成都市乘坐公交至昭觉寺",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "成都", "唐代", "昭觉寺", "名刹"],
+    "historical_stories": [
+      {
+        "title": "成都名刹",
+        "content": "昭觉寺是成都地区著名佛教寺院。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "唐代古刹", "成都名刹", "佛教"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "昭觉寺", "content": "昭觉寺里礼观音，唐代古刹在成都。", "author": "唐代·高僧"}
+    ]
+  },
+  {
+    "name": "四川成都宝光寺",
+    "province": "四川省",
+    "city": "成都市",
+    "district": "新都区",
+    "address": "四川省成都市新都区宝光寺",
+    "latitude": 30.8256,
+    "longitude": 104.1589,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "宝光寺是成都著名佛教寺院。",
+    "history": "始建于东汉，历代修缮。",
+    "features": ["东汉古刹", "成都名刹", "佛教寺院", "宝光"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "成都市乘坐公交至新都区",
+    "ticket": "门票 5 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "成都", "东汉", "宝光寺", "名刹"],
+    "historical_stories": [
+      {
+        "title": "成都名刹",
+        "content": "宝光寺是成都地区著名佛教寺院。",
+        "era": "东汉"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "东汉古刹", "成都名刹", "佛教"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "宝光寺", "content": "宝光寺里礼观音，东汉古刹在成都。", "author": "东汉·高僧"}
+    ]
+  },
+  {
+    "name": "四川峨眉山万年寺",
+    "province": "四川省",
+    "city": "乐山市",
+    "district": "峨眉山市",
+    "address": "四川省乐山市峨眉山市峨眉山万年寺",
+    "latitude": 29.5556,
+    "longitude": 103.3989,
+    "type": "佛教",
+    "subtype": "佛教名山",
+    "rating": 5,
+    "description": "万年寺是峨眉山最大寺院，供奉普贤菩萨铜像。",
+    "history": "始建于东晋，明代重建，无梁殿是镇寺之宝。",
+    "features": ["东晋古刹", "无梁殿", "普贤铜像", "峨眉山最大"],
+    "prayer_focus": ["事业", "修行", "平安", "健康"],
+    "transport": "峨眉山景区内",
+    "ticket": "包含在峨眉山门票内",
+    "opening_hours": "6:00-18:00",
+    "tags": ["佛教", "峨眉山", "东晋", "四川", "普贤"],
+    "historical_stories": [
+      {
+        "title": "普贤铜像",
+        "content": "寺内供奉普贤菩萨骑象铜像，高 7.85 米，重 62 吨，是国宝。",
+        "era": "宋代"
+      },
+      {
+        "title": "无梁殿",
+        "content": "无梁殿全用砖砌成，不用一木一钉，是建筑奇迹。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "5A 景区", "东晋古刹", "国宝铜像"],
+    "famous_people": ["普贤菩萨", "白居易"],
+    "architectural_features": ["无梁殿", "砖结构", "普贤铜像", "贝叶经"],
+    "poems": [
+      {"title": "万年寺", "content": "万年寺里万年钟，钟声悠悠入云中。", "author": "明代·高僧"}
+    ]
+  }
+]

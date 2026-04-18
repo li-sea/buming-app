@@ -1,0 +1,398 @@
+[
+  {
+    "name": "固原须弥山石窟",
+    "province": "宁夏回族自治区",
+    "city": "固原市",
+    "district": "原州区",
+    "address": "宁夏回族自治区固原市原州区须弥山",
+    "latitude": 36.2256,
+    "longitude": 106.0189,
+    "type": "佛教",
+    "subtype": "石窟艺术",
+    "rating": 4.6,
+    "description": "须弥山石窟是宁夏著名石窟寺，丝绸之路重要遗址。",
+    "history": "始建于北魏，历代开凿。",
+    "features": ["北魏石窟", "石窟寺", "宁夏名刹", "丝绸之路"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "固原市乘坐车至须弥山",
+    "ticket": "门票 40 元",
+    "opening_hours": "8:30-17:30",
+    "tags": ["佛教", "须弥山", "固原", "北魏", "石窟"],
+    "historical_stories": [
+      {
+        "title": "丝绸之路",
+        "content": "须弥山石窟是丝绸之路重要遗址。",
+        "era": "北魏"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "北魏石窟", "石窟寺", "丝绸之路"],
+    "famous_people": ["鸠摩罗什"],
+    "architectural_features": ["石窟", "佛像", "壁画"],
+    "poems": [
+      {"title": "须弥山", "content": "须弥山石窟艺术精，北魏石窟在固原。", "author": "北魏·高僧"}
+    ]
+  },
+  {
+    "name": "中宁石空寺石窟",
+    "province": "宁夏回族自治区",
+    "city": "中卫市",
+    "district": "中宁县",
+    "address": "宁夏回族自治区中卫市中宁县石空寺",
+    "latitude": 37.4856,
+    "longitude": 105.6489,
+    "type": "佛教",
+    "subtype": "石窟艺术",
+    "rating": 4.5,
+    "description": "石空寺石窟是宁夏著名石窟寺。",
+    "history": "始建于唐代，历代开凿。",
+    "features": ["唐代石窟", "石窟寺", "宁夏名刹", "中卫"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "中卫市乘坐车至中宁县",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:30-17:30",
+    "tags": ["佛教", "石空寺", "中卫", "唐代", "石窟"],
+    "historical_stories": [
+      {
+        "title": "唐代石窟",
+        "content": "石空寺石窟始建于唐代。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["省级文保", "唐代石窟", "石窟寺", "宁夏名刹"],
+    "famous_people": ["玄奘法师"],
+    "architectural_features": ["石窟", "佛像", "壁画"],
+    "poems": [
+      {"title": "石空寺", "content": "石空寺里礼释迦，唐代石窟在中卫。", "author": "唐代·高僧"}
+    ]
+  },
+  {
+    "name": "同心清真大寺",
+    "province": "宁夏回族自治区",
+    "city": "吴忠市",
+    "district": "同心县",
+    "address": "宁夏回族自治区吴忠市同心县清真大寺",
+    "latitude": 36.9256,
+    "longitude": 105.9089,
+    "type": "清真寺",
+    "subtype": "清真寺",
+    "rating": 4.7,
+    "description": "同心清真大寺是宁夏著名清真寺。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "清真寺", "宁夏名寺", "伊斯兰教"],
+    "prayer_focus": ["平安", "健康", "信仰"],
+    "transport": "吴忠市乘坐车至同心县",
+    "ticket": "免费",
+    "opening_hours": "8:00-18:00",
+    "tags": ["清真寺", "同心", "吴忠", "明代", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "明代古建",
+        "content": "同心清真大寺始建于明代。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古建", "清真寺", "宁夏名寺"],
+    "famous_people": ["马化龙"],
+    "architectural_features": ["伊斯兰建筑", "礼拜殿", "宣礼塔"],
+    "poems": [
+      {"title": "同心清真大寺", "content": "同心寺里礼真主，明代古建在吴忠。", "author": "明代·阿訇"}
+    ]
+  },
+  {
+    "name": "纳家户清真寺",
+    "province": "宁夏回族自治区",
+    "city": "银川市",
+    "district": "永宁县",
+    "address": "宁夏回族自治区银川市永宁县纳家户清真寺",
+    "latitude": 38.2656,
+    "longitude": 106.2489,
+    "type": "清真寺",
+    "subtype": "清真寺",
+    "rating": 4.6,
+    "description": "纳家户清真寺是宁夏著名清真寺。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "清真寺", "宁夏名寺", "伊斯兰教"],
+    "prayer_focus": ["平安", "健康", "信仰"],
+    "transport": "银川市乘坐公交至永宁县",
+    "ticket": "免费",
+    "opening_hours": "8:00-18:00",
+    "tags": ["清真寺", "纳家户", "银川", "明代", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "明代古建",
+        "content": "纳家户清真寺始建于明代。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古建", "清真寺", "宁夏名寺"],
+    "famous_people": ["纳速拉丁"],
+    "architectural_features": ["伊斯兰建筑", "礼拜殿", "宣礼塔"],
+    "poems": [
+      {"title": "纳家户清真寺", "content": "纳家户寺礼真主，明代古建在银川。", "author": "明代·阿訇"}
+    ]
+  },
+  {
+    "name": "青铜峡一百零八塔",
+    "province": "宁夏回族自治区",
+    "city": "吴忠市",
+    "district": "青铜峡市",
+    "address": "宁夏回族自治区吴忠市青铜峡市一百零八塔",
+    "latitude": 37.9156,
+    "longitude": 105.9789,
+    "type": "佛教",
+    "subtype": "古塔群",
+    "rating": 4.7,
+    "description": "一百零八塔是宁夏著名佛教塔群。",
+    "history": "始建于西夏，历代修缮。",
+    "features": ["西夏古塔", "塔群", "宁夏名刹", "黄河岸边"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "吴忠市乘坐车至青铜峡",
+    "ticket": "门票 40 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "一百零八塔", "青铜峡", "西夏", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "西夏古塔",
+        "content": "一百零八塔始建于西夏时期。",
+        "era": "西夏"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "西夏古塔", "塔群", "黄河岸边"],
+    "famous_people": ["李元昊"],
+    "architectural_features": ["塔群", "佛塔", "黄河"],
+    "poems": [
+      {"title": "一百零八塔", "content": "一百零八塔黄河边，西夏古塔在青铜峡。", "author": "西夏·高僧"}
+    ]
+  },
+  {
+    "name": "承天寺塔",
+    "province": "宁夏回族自治区",
+    "city": "银川市",
+    "district": "兴庆区",
+    "address": "宁夏回族自治区银川市兴庆区承天寺塔",
+    "latitude": 38.4656,
+    "longitude": 106.2689,
+    "type": "佛教",
+    "subtype": "古塔",
+    "rating": 4.6,
+    "description": "承天寺塔是银川著名古塔。",
+    "history": "始建于西夏，历代修缮。",
+    "features": ["西夏古塔", "银川地标", "宁夏名刹", "古塔"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "银川市区乘坐公交至承天寺",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "承天寺塔", "银川", "西夏", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "西夏古塔",
+        "content": "承天寺塔始建于西夏时期。",
+        "era": "西夏"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "西夏古塔", "银川地标", "宁夏名刹"],
+    "famous_people": ["李元昊"],
+    "architectural_features": ["古塔", "楼阁式塔", "西夏建筑"],
+    "poems": [
+      {"title": "承天寺塔", "content": "承天寺塔入云端，西夏古塔在银川。", "author": "西夏·高僧"}
+    ]
+  },
+  {
+    "name": "海宝塔",
+    "province": "宁夏回族自治区",
+    "city": "银川市",
+    "district": "兴庆区",
+    "address": "宁夏回族自治区银川市兴庆区海宝塔寺",
+    "latitude": 38.4956,
+    "longitude": 106.2589,
+    "type": "佛教",
+    "subtype": "古塔",
+    "rating": 4.6,
+    "description": "海宝塔是银川著名古塔。",
+    "history": "始建于北魏，历代修缮。",
+    "features": ["北魏古塔", "银川地标", "宁夏名刹", "古塔"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "银川市区乘坐公交至海宝塔",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "海宝塔", "银川", "北魏", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "北魏古塔",
+        "content": "海宝塔始建于北魏时期。",
+        "era": "北魏"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "北魏古塔", "银川地标", "宁夏名刹"],
+    "famous_people": ["赫连勃勃"],
+    "architectural_features": ["古塔", "楼阁式塔", "北魏建筑"],
+    "poems": [
+      {"title": "海宝塔", "content": "海宝塔高入云端，北魏古塔在银川。", "author": "北魏·高僧"}
+    ]
+  },
+  {
+    "name": "康济寺塔",
+    "province": "宁夏回族自治区",
+    "city": "中卫市",
+    "district": "中宁县",
+    "address": "宁夏回族自治区中卫市中宁县康济寺塔",
+    "latitude": 37.4756,
+    "longitude": 105.6389,
+    "type": "佛教",
+    "subtype": "古塔",
+    "rating": 4.5,
+    "description": "康济寺塔是中卫著名古塔。",
+    "history": "始建于西夏，历代修缮。",
+    "features": ["西夏古塔", "中卫地标", "宁夏名刹", "古塔"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "中卫市乘坐车至中宁县",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "康济寺塔", "中卫", "西夏", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "西夏古塔",
+        "content": "康济寺塔始建于西夏时期。",
+        "era": "西夏"
+      }
+    ],
+    "cultural_values": ["省级文保", "西夏古塔", "中卫地标", "宁夏名刹"],
+    "famous_people": ["李元昊"],
+    "architectural_features": ["古塔", "楼阁式塔", "西夏建筑"],
+    "poems": [
+      {"title": "康济寺塔", "content": "康济寺塔入云端，西夏古塔在中卫。", "author": "西夏·高僧"}
+    ]
+  },
+  {
+    "name": "田州塔",
+    "province": "宁夏回族自治区",
+    "city": "银川市",
+    "district": "贺兰县",
+    "address": "宁夏回族自治区银川市贺兰县田州塔",
+    "latitude": 38.5556,
+    "longitude": 106.3489,
+    "type": "佛教",
+    "subtype": "古塔",
+    "rating": 4.5,
+    "description": "田州塔是贺兰著名古塔。",
+    "history": "始建于西夏，历代修缮。",
+    "features": ["西夏古塔", "贺兰地标", "宁夏名刹", "古塔"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "银川市乘坐公交至贺兰县",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "田州塔", "贺兰", "西夏", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "西夏古塔",
+        "content": "田州塔始建于西夏时期。",
+        "era": "西夏"
+      }
+    ],
+    "cultural_values": ["省级文保", "西夏古塔", "贺兰地标", "宁夏名刹"],
+    "famous_people": ["李元昊"],
+    "architectural_features": ["古塔", "楼阁式塔", "西夏建筑"],
+    "poems": [
+      {"title": "田州塔", "content": "田州塔高入云端，西夏古塔在贺兰。", "author": "西夏·高僧"}
+    ]
+  },
+  {
+    "name": "宏佛塔",
+    "province": "宁夏回族自治区",
+    "city": "银川市",
+    "district": "贺兰县",
+    "address": "宁夏回族自治区银川市贺兰县宏佛塔",
+    "latitude": 38.5656,
+    "longitude": 106.3589,
+    "type": "佛教",
+    "subtype": "古塔",
+    "rating": 4.5,
+    "description": "宏佛塔是贺兰著名古塔。",
+    "history": "始建于西夏，历代修缮。",
+    "features": ["西夏古塔", "贺兰地标", "宁夏名刹", "古塔"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "银川市乘坐公交至贺兰县",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "宏佛塔", "贺兰", "西夏", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "西夏古塔",
+        "content": "宏佛塔始建于西夏时期。",
+        "era": "西夏"
+      }
+    ],
+    "cultural_values": ["省级文保", "西夏古塔", "贺兰地标", "宁夏名刹"],
+    "famous_people": ["李元昊"],
+    "architectural_features": ["古塔", "楼阁式塔", "西夏建筑"],
+    "poems": [
+      {"title": "宏佛塔", "content": "宏佛塔高入云端，西夏古塔在贺兰。", "author": "西夏·高僧"}
+    ]
+  },
+  {
+    "name": "拜寺口双塔",
+    "province": "宁夏回族自治区",
+    "city": "银川市",
+    "district": "贺兰县",
+    "address": "宁夏回族自治区银川市贺兰县拜寺口双塔",
+    "latitude": 38.6356,
+    "longitude": 106.0989,
+    "type": "佛教",
+    "subtype": "古塔",
+    "rating": 4.6,
+    "description": "拜寺口双塔是贺兰著名古塔。",
+    "history": "始建于西夏，历代修缮。",
+    "features": ["西夏古塔", "双塔", "宁夏名刹", "贺兰山"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "银川市乘坐车至拜寺口",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "拜寺口双塔", "贺兰", "西夏", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "西夏双塔",
+        "content": "拜寺口双塔始建于西夏时期。",
+        "era": "西夏"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "西夏古塔", "双塔", "贺兰山"],
+    "famous_people": ["李元昊"],
+    "architectural_features": ["双塔", "楼阁式塔", "西夏建筑"],
+    "poems": [
+      {"title": "拜寺口双塔", "content": "拜寺口双塔入云端，西夏古塔在贺兰。", "author": "西夏·高僧"}
+    ]
+  },
+  {
+    "name": "贺兰山岩画",
+    "province": "宁夏回族自治区",
+    "city": "银川市",
+    "district": "贺兰县",
+    "address": "宁夏回族自治区银川市贺兰县贺兰山岩画",
+    "latitude": 38.6556,
+    "longitude": 106.0889,
+    "type": "佛教",
+    "subtype": "文化遗址",
+    "rating": 4.6,
+    "description": "贺兰山岩画是世界文化遗产，古代岩画艺术。",
+    "history": "始于新石器时代，历代绘制。",
+    "features": ["世界文化遗产", "岩画艺术", "贺兰山", "新石器时代"],
+    "prayer_focus": ["智慧", "平安", "健康", "修行"],
+    "transport": "银川市乘坐车至贺兰山",
+    "ticket": "门票 60 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "贺兰山", "岩画", "世界遗产", "宁夏"],
+    "historical_stories": [
+      {
+        "title": "岩画艺术",
+        "content": "贺兰山岩画是古代游牧民族艺术。",
+        "era": "新石器时代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "4A 景区", "岩画艺术", "贺兰山"],
+    "famous_people": ["古代游牧民族"],
+    "architectural_features": ["岩画", "石刻", "贺兰山"],
+    "poems": [
+      {"title": "贺兰山岩画", "content": "贺兰山岩画艺术精，世界遗产在银川。", "author": "古代·诗人"}
+    ]
+  }
+]

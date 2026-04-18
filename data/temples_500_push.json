@@ -1,0 +1,332 @@
+[
+  {
+    "name": "北京大钟寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "海淀区",
+    "address": "北京市海淀区北三环西路",
+    "latitude": 39.9656,
+    "longitude": 116.3389,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.6,
+    "description": "大钟寺以永乐大钟闻名，明代皇家寺院。",
+    "history": "始建于明代，永乐大钟是镇寺之宝。",
+    "features": ["明代古刹", "永乐大钟", "皇家寺院", "北京名刹"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市地铁 13 号线至大钟寺站",
+    "ticket": "门票 30 元",
+    "opening_hours": "8:30-16:30",
+    "tags": ["佛教", "大钟寺", "北京", "明代", "永乐大钟"],
+    "historical_stories": [
+      {
+        "title": "永乐大钟",
+        "content": "大钟寺供奉永乐大钟，重 46.5 吨，是世界最大铜钟。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "永乐大钟", "皇家寺院"],
+    "famous_people": ["朱棣"],
+    "architectural_features": ["古代木结构", "大钟殿", "永乐大钟"],
+    "poems": [
+      {"title": "大钟寺", "content": "大钟寺里永乐钟，明代古刹在北京。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "北京五塔寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "海淀区",
+    "address": "北京市海淀区白石桥路",
+    "latitude": 39.9456,
+    "longitude": 116.3289,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.6,
+    "description": "五塔寺以金刚宝座塔闻名，明代皇家寺院。",
+    "history": "始建于明代，金刚宝座塔是镇寺之宝。",
+    "features": ["明代古刹", "金刚宝座塔", "皇家寺院", "北京名刹"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市地铁 4 号线至国家图书馆站",
+    "ticket": "门票 20 元",
+    "opening_hours": "9:00-16:00",
+    "tags": ["佛教", "五塔寺", "北京", "明代", "金刚宝座塔"],
+    "historical_stories": [
+      {
+        "title": "金刚宝座塔",
+        "content": "五塔寺金刚宝座塔是明代建筑艺术精品。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "金刚宝座塔", "皇家寺院"],
+    "famous_people": ["朱棣"],
+    "architectural_features": ["金刚宝座塔", "明代建筑", "石刻艺术"],
+    "poems": [
+      {"title": "五塔寺", "content": "五塔寺里五塔高，明代古刹在北京。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "北京万寿寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "海淀区",
+    "address": "北京市海淀区西三环北路",
+    "latitude": 39.9456,
+    "longitude": 116.3089,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.6,
+    "description": "万寿寺是明代皇家寺院，北京艺术博物馆所在地。",
+    "history": "始建于明代万历年间，历代皇家寺院。",
+    "features": ["明代古刹", "皇家寺院", "北京名刹", "艺术博物馆"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市地铁 10 号线至苏州街站",
+    "ticket": "门票 20 元",
+    "opening_hours": "9:00-16:00",
+    "tags": ["佛教", "万寿寺", "北京", "明代", "皇家寺院"],
+    "historical_stories": [
+      {
+        "title": "皇家寺院",
+        "content": "万寿寺是明代万历皇帝敕建皇家寺院。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "皇家寺院", "艺术博物馆"],
+    "famous_people": ["万历皇帝"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "万寿寺", "content": "万寿寺里礼观音，明代皇家在北京。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "北京智化寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "东城区",
+    "address": "北京市东城区禄米仓胡同",
+    "latitude": 39.9256,
+    "longitude": 116.4289,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.5,
+    "description": "智化寺是明代皇家寺院，北京音乐发源地。",
+    "history": "始建于明代正统年间，王振所建。",
+    "features": ["明代古刹", "皇家寺院", "北京音乐", "京音乐"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市地铁 2 号线至朝阳门站",
+    "ticket": "门票 20 元",
+    "opening_hours": "9:00-16:00",
+    "tags": ["佛教", "智化寺", "北京", "明代", "京音乐"],
+    "historical_stories": [
+      {
+        "title": "京音乐",
+        "content": "智化寺京音乐是国家级非物质文化遗产。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "皇家寺院", "非物质文化遗产"],
+    "famous_people": ["王振"],
+    "architectural_features": ["古代木结构", "如来殿", "藏殿"],
+    "poems": [
+      {"title": "智化寺", "content": "智化寺里京音乐，明代古刹在北京。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "北京长椿寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "西城区",
+    "address": "北京市西城区长椿街",
+    "latitude": 39.8956,
+    "longitude": 116.3589,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.5,
+    "description": "长椿寺是明代皇家寺院，北京宣南文化博物馆所在地。",
+    "history": "始建于明代万历年间，历代修缮。",
+    "features": ["明代古刹", "皇家寺院", "北京名刹", "宣南文化"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市地铁 2 号线至长椿街站",
+    "ticket": "免费",
+    "opening_hours": "9:00-16:00",
+    "tags": ["佛教", "长椿寺", "北京", "明代", "宣南文化"],
+    "historical_stories": [
+      {
+        "title": "宣南文化",
+        "content": "长椿寺是北京宣南文化博物馆所在地。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古刹", "皇家寺院", "宣南文化"],
+    "famous_people": ["万历皇帝"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "长椿寺", "content": "长椿寺里礼观音，明代古刹在北京。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "北京法海寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "石景山区",
+    "address": "北京市石景山区模式口",
+    "latitude": 39.9356,
+    "longitude": 116.1689,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.7,
+    "description": "法海寺以明代壁画闻名，全国重点文保。",
+    "history": "始建于明代正统年间，壁画是镇寺之宝。",
+    "features": ["明代古刹", "明代壁画", "皇家寺院", "北京名刹"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市地铁 6 号线至金安桥站",
+    "ticket": "门票 20 元",
+    "opening_hours": "9:00-16:00",
+    "tags": ["佛教", "法海寺", "北京", "明代", "壁画"],
+    "historical_stories": [
+      {
+        "title": "明代壁画",
+        "content": "法海寺明代壁画是中国古代壁画艺术精品。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "明代壁画", "皇家寺院"],
+    "famous_people": ["李童"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "明代壁画"],
+    "poems": [
+      {"title": "法海寺", "content": "法海寺里壁画精，明代古刹在北京。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "北京承恩寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "石景山区",
+    "address": "北京市石景山区模式口",
+    "latitude": 39.9356,
+    "longitude": 116.1589,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.5,
+    "description": "承恩寺是明代皇家寺院，燕京八景之一。",
+    "history": "始建于明代正德年间，历代修缮。",
+    "features": ["明代古刹", "皇家寺院", "燕京八景", "北京名刹"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市地铁 6 号线至金安桥站",
+    "ticket": "门票 10 元",
+    "opening_hours": "9:00-16:00",
+    "tags": ["佛教", "承恩寺", "北京", "明代", "燕京八景"],
+    "historical_stories": [
+      {
+        "title": "燕京八景",
+        "content": "承恩寺是燕京八景之一。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古刹", "皇家寺院", "燕京八景"],
+    "famous_people": ["正德皇帝"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "承恩寺", "content": "承恩寺里礼观音，明代皇家在北京。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "北京天宁寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "西城区",
+    "address": "北京市西城区天宁寺前街",
+    "latitude": 39.8956,
+    "longitude": 116.3489,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.6,
+    "description": "天宁寺以天宁寺塔闻名，北京著名古刹。",
+    "history": "始建于北魏，历代修缮，天宁寺塔是辽代遗物。",
+    "features": ["北魏始建", "辽代古塔", "皇家寺院", "北京名刹"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市地铁 7 号线至达官营站",
+    "ticket": "免费",
+    "opening_hours": "9:00-16:00",
+    "tags": ["佛教", "天宁寺", "北京", "北魏", "辽塔"],
+    "historical_stories": [
+      {
+        "title": "辽代古塔",
+        "content": "天宁寺塔是辽代建筑艺术精品。",
+        "era": "辽代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "北魏始建", "辽代古塔", "皇家寺院"],
+    "famous_people": ["辽代皇帝"],
+    "architectural_features": ["天宁寺塔", "辽代建筑", "密檐式塔"],
+    "poems": [
+      {"title": "天宁寺", "content": "天宁寺里礼观音，辽代古塔在北京。", "author": "辽代·高僧"}
+    ]
+  },
+  {
+    "name": "北京云居寺",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "房山区",
+    "address": "北京市房山区大石窝镇",
+    "latitude": 39.6456,
+    "longitude": 115.7789,
+    "type": "佛教",
+    "subtype": "皇家寺院",
+    "rating": 4.7,
+    "description": "云居寺以石经闻名，佛教文化宝库。",
+    "history": "始建于隋代，历代刻经。",
+    "features": ["隋代古刹", "石经", "佛教宝库", "房山石经"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "北京市乘坐公交至房山区",
+    "ticket": "门票 40 元",
+    "opening_hours": "8:30-17:00",
+    "tags": ["佛教", "云居寺", "北京", "隋代", "石经"],
+    "historical_stories": [
+      {
+        "title": "房山石经",
+        "content": "云居寺石经是佛教文化宝库。",
+        "era": "隋代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "4A 景区", "隋代古刹", "石经"],
+    "famous_people": ["静琬法师"],
+    "architectural_features": ["古代木结构", "石经山", "藏经洞"],
+    "poems": [
+      {"title": "云居寺", "content": "云居寺里石经多，隋代古刹在北京。", "author": "隋代·高僧"}
+    ]
+  },
+  {
+    "name": "北京银山塔林",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "昌平区",
+    "address": "北京市昌平区兴寿镇",
+    "latitude": 40.3156,
+    "longitude": 116.3289,
+    "type": "佛教",
+    "subtype": "古塔群",
+    "rating": 4.6,
+    "description": "银山塔林是金代古塔群，北京著名古迹。",
+    "history": "始建于金代，历代高僧塔林。",
+    "features": ["金代古塔", "塔林", "北京名刹", "银山"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "北京市乘坐公交至昌平区",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "银山塔林", "北京", "金代", "塔林"],
+    "historical_stories": [
+      {
+        "title": "金代塔林",
+        "content": "银山塔林是金代高僧塔林。",
+        "era": "金代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "金代古塔", "塔林", "北京名刹"],
+    "famous_people": ["金代高僧"],
+    "architectural_features": ["古塔群", "金代建筑", "塔林"],
+    "poems": [
+      {"title": "银山塔林", "content": "银山塔林古塔多，金代古刹在北京。", "author": "金代·高僧"}
+    ]
+  }
+]

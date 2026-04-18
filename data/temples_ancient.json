@@ -1,0 +1,755 @@
+[
+  {
+    "name": "西安大慈恩寺",
+    "province": "陕西省",
+    "city": "西安市",
+    "district": "雁塔区",
+    "address": "陕西省西安市雁塔区大慈恩寺",
+    "latitude": 34.2256,
+    "longitude": 108.9689,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 5,
+    "description": "大慈恩寺是唐代皇家寺院，玄奘法师译经处，大雁塔所在地。",
+    "history": "始建于唐代贞观二十二年（648 年），唐高宗李治为纪念母亲长孙皇后而建。玄奘法师在此译经 19 年。",
+    "features": ["唐代皇家寺院", "玄奘译经", "大雁塔", "世界遗产"],
+    "prayer_focus": ["智慧", "学业", "修行", "平安"],
+    "transport": "西安市地铁 3 号线至大雁塔站",
+    "ticket": "门票 40 元，大雁塔另计 25 元",
+    "opening_hours": "8:00-17:30",
+    "tags": ["佛教", "西安", "唐代", "陕西", "玄奘"],
+    "historical_stories": [
+      {
+        "title": "玄奘译经",
+        "content": "唐代玄奘法师西行取经归来，在此译经 19 年，译出佛经 1335 卷。",
+        "era": "唐代"
+      },
+      {
+        "title": "大雁塔",
+        "content": "玄奘法师为保存佛经而建大雁塔，现存 7 层，高 64 米。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "5A 景区", "唐代皇家寺院", "玄奘道场"],
+    "famous_people": ["玄奘法师", "唐高宗", "武则天"],
+    "architectural_features": ["大雁塔", "唐代建筑", "藏经楼", "钟鼓楼"],
+    "poems": [
+      {"title": "大雁塔", "content": "塔势如涌出，孤高耸天宫。", "author": "唐代·岑参"}
+    ]
+  },
+  {
+    "name": "西安大兴善寺",
+    "province": "陕西省",
+    "city": "西安市",
+    "district": "雁塔区",
+    "address": "陕西省西安市雁塔区兴善寺西街",
+    "latitude": 34.2356,
+    "longitude": 108.9489,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "大兴善寺是唐代皇家寺院，密宗祖庭。",
+    "history": "始建于西晋，唐代扩建为皇家寺院，密宗三大译经师在此译经。",
+    "features": ["西晋古刹", "密宗祖庭", "唐代皇家", "译经圣地"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "西安市地铁 2 号线至小寨站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "西安", "西晋", "陕西", "密宗"],
+    "historical_stories": [
+      {
+        "title": "密宗祖庭",
+        "content": "唐代密宗三大译经师善无畏、金刚智、不空在此译经，创立密宗。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["省级文保", "西晋古刹", "密宗祖庭", "唐代皇家"],
+    "famous_people": ["善无畏", "金刚智", "不空"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "大兴善寺", "content": "兴善寺中古木深，唐代遗风至今存。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "西安荐福寺",
+    "province": "陕西省",
+    "city": "西安市",
+    "district": "碑林区",
+    "address": "陕西省西安市碑林区友谊西路",
+    "latitude": 34.2456,
+    "longitude": 108.9389,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "荐福寺是唐代皇家寺院，小雁塔所在地。",
+    "history": "始建于唐代文明元年（684 年），唐睿宗为高宗荐福而建。",
+    "features": ["唐代皇家寺院", "小雁塔", "荐福圣地", "世界遗产"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "西安市地铁 2 号线至南稍门站",
+    "ticket": "免费，小雁塔另计 30 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "西安", "唐代", "陕西", "小雁塔"],
+    "historical_stories": [
+      {
+        "title": "小雁塔",
+        "content": "小雁塔建于唐代景龙年间，现存 13 层，高 43 米。",
+        "era": "唐代"
+      },
+      {
+        "title": "雁塔晨钟",
+        "content": "荐福寺钟声每日清晨敲响，是关中八景之一。",
+        "era": "历代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "5A 景区", "唐代皇家寺院", "关中八景"],
+    "famous_people": ["唐睿宗"],
+    "architectural_features": ["小雁塔", "唐代建筑", "钟鼓楼"],
+    "poems": [
+      {"title": "小雁塔", "content": "雁塔晨钟响，关中第一景。", "author": "清代·诗人"}
+    ]
+  },
+  {
+    "name": "西安香积寺",
+    "province": "陕西省",
+    "city": "西安市",
+    "district": "长安区",
+    "address": "陕西省西安市长安区郭杜镇",
+    "latitude": 34.1656,
+    "longitude": 108.8989,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "香积寺是唐代著名寺院，净土宗祖庭。",
+    "history": "始建于唐代神龙二年（706 年），为纪念善导大师而建。",
+    "features": ["唐代古刹", "净土宗祖庭", "善导大师", "佛教圣地"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "西安市乘坐公交至长安区",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "西安", "唐代", "陕西", "净土宗"],
+    "historical_stories": [
+      {
+        "title": "善导大师",
+        "content": "唐代善导大师在此弘法，创立净土宗，影响深远。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["省级文保", "唐代古刹", "净土宗祖庭", "善导道场"],
+    "famous_people": ["善导大师"],
+    "architectural_features": ["古代木结构", "善导塔", "大雄宝殿"],
+    "poems": [
+      {"title": "香积寺", "content": "不知香积寺，数里入云峰。", "author": "唐代·王维"}
+    ]
+  },
+  {
+    "name": "西安华严寺",
+    "province": "陕西省",
+    "city": "西安市",
+    "district": "长安区",
+    "address": "陕西省西安市长安区少陵塬",
+    "latitude": 34.1556,
+    "longitude": 108.9389,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.6,
+    "description": "华严寺是唐代著名寺院，华严宗祖庭。",
+    "history": "始建于唐代贞观年间，是华严宗发源地。",
+    "features": ["唐代古刹", "华严宗祖庭", "少陵塬", "佛教圣地"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "西安市乘坐公交至少陵塬",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "西安", "唐代", "陕西", "华严宗"],
+    "historical_stories": [
+      {
+        "title": "华严宗",
+        "content": "唐代华严宗在此创立，影响深远。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["省级文保", "唐代古刹", "华严宗祖庭"],
+    "famous_people": ["杜顺大师"],
+    "architectural_features": ["华严塔", "唐代建筑"],
+    "poems": [
+      {"title": "华严寺", "content": "华严寺高少陵塬，唐代遗风至今存。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "西安净业寺",
+    "province": "陕西省",
+    "city": "西安市",
+    "district": "长安区",
+    "address": "陕西省西安市长安区终南山",
+    "latitude": 34.0456,
+    "longitude": 108.7689,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "净业寺是终南山著名寺院，律宗祖庭。",
+    "history": "始建于隋代，唐代道宣律师在此创立律宗。",
+    "features": ["隋代古刹", "律宗祖庭", "道宣律师", "终南山"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "西安市乘坐公交至终南山",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "西安", "隋代", "陕西", "律宗"],
+    "historical_stories": [
+      {
+        "title": "道宣律师",
+        "content": "唐代道宣律师在此创立律宗，制定佛教戒律。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["省级文保", "隋代古刹", "律宗祖庭", "终南山"],
+    "famous_people": ["道宣律师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "终南山", "content": "终南阴岭秀，积雪浮云端。", "author": "唐代·祖咏"}
+    ]
+  },
+  {
+    "name": "洛阳白马寺",
+    "province": "河南省",
+    "city": "洛阳市",
+    "district": "洛龙区",
+    "address": "河南省洛阳市洛龙区白马寺",
+    "latitude": 34.7256,
+    "longitude": 112.6089,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 5,
+    "description": "白马寺是中国第一古刹，佛教传入中国后第一座官办寺院。",
+    "history": "始建于东汉永平十一年（68 年），距今 1900 多年历史。汉明帝遣使西域求法，佛法传入中国。",
+    "features": ["中国第一古刹", "东汉古刹", "1900 年历史", "佛教传入地"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "洛阳市乘坐公交至白马寺",
+    "ticket": "门票 35 元",
+    "opening_hours": "7:30-19:00",
+    "tags": ["佛教", "洛阳", "东汉", "河南", "第一古刹"],
+    "historical_stories": [
+      {
+        "title": "佛教传入",
+        "content": "东汉明帝遣使西域求法，佛法传入中国，在此建立第一座官办寺院。",
+        "era": "东汉"
+      },
+      {
+        "title": "白马驮经",
+        "content": "印度高僧摄摩腾、竺法兰用白马驮佛经来到中国，白马寺因此得名。",
+        "era": "东汉"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "4A 景区", "东汉古刹", "中国第一古刹"],
+    "famous_people": ["摄摩腾", "竺法兰", "汉明帝"],
+    "architectural_features": ["古代木结构", "天王殿", "大佛殿", "藏经阁"],
+    "poems": [
+      {"title": "白马寺", "content": "白马驮经来，佛法传中华。", "author": "唐代·高僧"}
+    ]
+  },
+  {
+    "name": "洛阳龙门石窟",
+    "province": "河南省",
+    "city": "洛阳市",
+    "district": "洛龙区",
+    "address": "河南省洛阳市洛龙区龙门石窟",
+    "latitude": 34.5556,
+    "longitude": 112.4689,
+    "type": "佛教",
+    "subtype": "石窟艺术",
+    "rating": 5,
+    "description": "龙门石窟是世界文化遗产，中国四大石窟之一。",
+    "history": "始建于北魏，历代开凿 400 多年，现存窟龛 2345 个，造像 10 万余尊。",
+    "features": ["世界文化遗产", "5A 景区", "北魏石窟", "四大石窟"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "洛阳市乘坐公交至龙门石窟",
+    "ticket": "门票 90 元",
+    "opening_hours": "7:30-18:00",
+    "tags": ["佛教", "洛阳", "北魏", "河南", "石窟"],
+    "historical_stories": [
+      {
+        "title": "卢舍那大佛",
+        "content": "奉先寺卢舍那大佛高 17.14 米，是龙门石窟最大佛像，相传按武则天容貌雕刻。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "5A 景区", "北魏石窟", "四大石窟"],
+    "famous_people": ["武则天", "孝文帝"],
+    "architectural_features": ["石窟", "卢舍那大佛", "古阳洞", "宾阳洞"],
+    "poems": [
+      {"title": "龙门石窟", "content": "龙门山色秀，石窟艺术精。", "author": "唐代·诗人"}
+    ]
+  },
+  {
+    "name": "开封大相国寺",
+    "province": "河南省",
+    "city": "开封市",
+    "district": "鼓楼区",
+    "address": "河南省开封市鼓楼区自由路",
+    "latitude": 34.7956,
+    "longitude": 114.3589,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "大相国寺是北宋皇家寺院，中国十大名寺之一。",
+    "history": "始建于北齐，北宋时期达到鼎盛，是当时全国佛教中心。",
+    "features": ["北齐古刹", "皇家寺院", "十大名寺", "开封地标"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "开封市区乘坐公交至相国寺",
+    "ticket": "门票 45 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "开封", "北齐", "河南", "皇家寺院"],
+    "historical_stories": [
+      {
+        "title": "鲁智深倒拔垂杨柳",
+        "content": "水浒传中鲁智深在大相国寺看管菜园，倒拔垂杨柳。",
+        "era": "宋代"
+      },
+      {
+        "title": "北宋佛教中心",
+        "content": "大相国寺是北宋全国佛教中心，皇帝常来此礼佛。",
+        "era": "北宋"
+      }
+    ],
+    "cultural_values": ["省级文保", "北齐古刹", "皇家寺院", "十大名寺"],
+    "famous_people": ["鲁智深", "宋徽宗"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼", "钟鼓楼"],
+    "poems": [
+      {"title": "相国寺", "content": "相国寺中古木深，北宋遗风至今存。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "登封少林寺",
+    "province": "河南省",
+    "city": "郑州市",
+    "district": "登封市",
+    "address": "河南省郑州市登封市嵩山少林寺",
+    "latitude": 34.5056,
+    "longitude": 112.9589,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 5,
+    "description": "少林寺是世界文化遗产，禅宗祖庭，武术圣地。",
+    "history": "始建于北魏太和十九年（495 年），距今 1500 多年历史。菩提达摩在此创立禅宗。",
+    "features": ["世界文化遗产", "5A 景区", "禅宗祖庭", "武术圣地"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "郑州市乘坐公交至登封市",
+    "ticket": "门票 80 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "少林寺", "河南", "北魏", "禅宗"],
+    "historical_stories": [
+      {
+        "title": "达摩面壁",
+        "content": "禅宗初祖菩提达摩在此面壁九年，悟得禅宗真谛。",
+        "era": "南北朝"
+      },
+      {
+        "title": "十三棍僧救唐王",
+        "content": "唐代少林寺十三棍僧救唐王李世民，被赐田千顷。",
+        "era": "唐代"
+      },
+      {
+        "title": "少林武术",
+        "content": "少林武术源远流长，是中国武术重要流派。",
+        "era": "历代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "5A 景区", "北魏古刹", "禅宗祖庭"],
+    "famous_people": ["菩提达摩", "李世民", "张三丰"],
+    "architectural_features": ["古代木结构", "天王殿", "大雄宝殿", "藏经阁", "塔林"],
+    "poems": [
+      {"title": "少林寺", "content": "少林古刹嵩山中，禅武合一传千年。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "登封中岳庙",
+    "province": "河南省",
+    "city": "郑州市",
+    "district": "登封市",
+    "address": "河南省郑州市登封市嵩山中岳庙",
+    "latitude": 34.4556,
+    "longitude": 113.0489,
+    "type": "道观",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "中岳庙是五岳庙中规模最大，世界文化遗产。",
+    "history": "始建于秦代，历代帝王祭祀中岳神的地方。",
+    "features": ["世界文化遗产", "5A 景区", "秦代古建", "五岳庙"],
+    "prayer_focus": ["事业", "平安", "健康", "财运"],
+    "transport": "郑州市乘坐公交至登封市",
+    "ticket": "包含在嵩山门票内",
+    "opening_hours": "8:00-18:00",
+    "tags": ["道教", "登封", "秦代", "河南", "五岳"],
+    "historical_stories": [
+      {
+        "title": "帝王祭祀",
+        "content": "历代帝王在此祭祀中岳神，祈求国泰民安。",
+        "era": "历代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "5A 景区", "秦代古建", "五岳庙"],
+    "famous_people": ["秦始皇", "汉武帝"],
+    "architectural_features": ["古代木结构", "中岳大殿", "藏经楼"],
+    "poems": [
+      {"title": "中岳庙", "content": "中岳庙高嵩山中，历代帝王来祭祀。", "author": "唐代·诗人"}
+    ]
+  },
+  {
+    "name": "南京栖霞寺",
+    "province": "江苏省",
+    "city": "南京市",
+    "district": "栖霞区",
+    "address": "江苏省南京市栖霞区栖霞山",
+    "latitude": 32.1556,
+    "longitude": 118.9589,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "栖霞寺是南京著名佛教寺院，南朝四百八十寺之首。",
+    "history": "始建于南朝齐永明七年（489 年），历代扩建，是江南佛教中心。",
+    "features": ["南朝古刹", "江南名刹", "千佛岩", "舍利塔"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "南京市乘坐公交至栖霞山",
+    "ticket": "门票 25 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "南京", "南朝", "江苏", "栖霞山"],
+    "historical_stories": [
+      {
+        "title": "南朝四百八十寺",
+        "content": "南朝时期佛教兴盛，栖霞寺为四百八十寺之首。",
+        "era": "南朝"
+      },
+      {
+        "title": "千佛岩",
+        "content": "栖霞山千佛岩有佛像数百尊，是佛教艺术宝库。",
+        "era": "南朝"
+      }
+    ],
+    "cultural_values": ["省级文保", "南朝古刹", "江南名刹", "千佛岩"],
+    "famous_people": ["僧朗法师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "舍利塔", "千佛岩"],
+    "poems": [
+      {"title": "栖霞寺", "content": "南朝四百八十寺，多少楼台烟雨中。", "author": "唐代·杜牧"}
+    ]
+  },
+  {
+    "name": "南京灵谷寺",
+    "province": "江苏省",
+    "city": "南京市",
+    "district": "玄武区",
+    "address": "江苏省南京市玄武区钟山灵谷寺",
+    "latitude": 32.0556,
+    "longitude": 118.8489,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "灵谷寺是钟山著名寺院，明代皇家寺院。",
+    "history": "始建于南朝梁代，明代朱元璋敕建为皇家寺院。",
+    "features": ["南朝古刹", "明代皇家", "钟山名胜", "无梁殿"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "南京市乘坐公交至钟山",
+    "ticket": "包含在钟山门票内",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "南京", "南朝", "江苏", "钟山"],
+    "historical_stories": [
+      {
+        "title": "明代皇家寺院",
+        "content": "明太祖朱元璋敕建灵谷寺，规模宏大。",
+        "era": "明代"
+      },
+      {
+        "title": "无梁殿",
+        "content": "灵谷寺无梁殿全用砖砌成，不用一木一钉。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["5A 景区", "南朝古刹", "明代皇家", "无梁殿"],
+    "famous_people": ["朱元璋"],
+    "architectural_features": ["无梁殿", "明代建筑", "藏经楼"],
+    "poems": [
+      {"title": "灵谷寺", "content": "钟山风雨起苍黄，灵谷寺里礼观音。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "南京鸡鸣寺",
+    "province": "江苏省",
+    "city": "南京市",
+    "district": "玄武区",
+    "address": "江苏省南京市玄武区鸡鸣寺",
+    "latitude": 32.0656,
+    "longitude": 118.7989,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "鸡鸣寺是南京最古寺院之一，南朝古刹。",
+    "history": "始建于西晋永康元年（300 年），距今 1700 多年历史。",
+    "features": ["西晋古刹", "1700 年历史", "南京最古", "求姻缘灵验"],
+    "prayer_focus": ["姻缘", "平安", "健康", "修行"],
+    "transport": "南京市地铁 3 号线至鸡鸣寺站",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "南京", "西晋", "江苏", "鸡鸣寺"],
+    "historical_stories": [
+      {
+        "title": "南京最古",
+        "content": "鸡鸣寺是南京最古老寺院之一，已有 1700 年历史。",
+        "era": "西晋"
+      },
+      {
+        "title": "求姻缘",
+        "content": "鸡鸣寺求姻缘灵验，香火鼎盛。",
+        "era": "历代"
+      }
+    ],
+    "cultural_values": ["省级文保", "西晋古刹", "1700 年历史", "南京最古"],
+    "famous_people": ["梁武帝"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "药师佛塔"],
+    "poems": [
+      {"title": "鸡鸣寺", "content": "鸡鸣寺高接云天，千年钟声入耳来。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "南京大报恩寺",
+    "province": "江苏省",
+    "city": "南京市",
+    "district": "秦淮区",
+    "address": "江苏省南京市秦淮区中华门外",
+    "latitude": 32.0056,
+    "longitude": 118.7789,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "大报恩寺是明代皇家寺院，琉璃塔闻名天下。",
+    "history": "始建于明代永乐年间，琉璃塔高 78 米，是中世纪世界七大奇迹之一。",
+    "features": ["明代皇家寺院", "琉璃塔", "世界奇迹", "报恩圣地"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "南京市地铁 1 号线至中华门站",
+    "ticket": "门票 90 元",
+    "opening_hours": "9:00-17:30",
+    "tags": ["佛教", "南京", "明代", "江苏", "琉璃塔"],
+    "historical_stories": [
+      {
+        "title": "琉璃塔",
+        "content": "大报恩寺琉璃塔高 78 米，是中世纪世界七大奇迹之一。",
+        "era": "明代"
+      },
+      {
+        "title": "朱棣报恩",
+        "content": "明成祖朱棣为报父母恩而建大报恩寺。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代皇家寺院", "世界奇迹", "琉璃塔"],
+    "famous_people": ["朱棣", "郑和"],
+    "architectural_features": ["琉璃塔", "明代建筑", "大雄宝殿"],
+    "poems": [
+      {"title": "大报恩寺", "content": "报恩寺里报恩情，琉璃塔高入云端。", "author": "明代·诗人"}
+    ]
+  },
+  {
+    "name": "苏州西园寺",
+    "province": "江苏省",
+    "city": "苏州市",
+    "district": "姑苏区",
+    "address": "江苏省苏州市姑苏区留园路",
+    "latitude": 31.3356,
+    "longitude": 120.5889,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "西园寺是苏州著名寺院，戒幢律寺。",
+    "history": "始建于元代，历代修缮，是江南著名律宗寺院。",
+    "features": ["元代古刹", "律宗寺院", "苏州名刹", "放生池"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "苏州市地铁 2 号线至石路站",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "苏州", "元代", "江苏", "律宗"],
+    "historical_stories": [
+      {
+        "title": "律宗寺院",
+        "content": "西园寺是江南著名律宗寺院，戒律严明。",
+        "era": "元代"
+      }
+    ],
+    "cultural_values": ["省级文保", "元代古刹", "律宗寺院", "苏州名刹"],
+    "famous_people": ["弘一法师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "放生池"],
+    "poems": [
+      {"title": "西园寺", "content": "西园寺里放生池，千年古刹在苏州。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "苏州寒山寺",
+    "province": "江苏省",
+    "city": "苏州市",
+    "district": "姑苏区",
+    "address": "江苏省苏州市姑苏区枫桥镇",
+    "latitude": 31.3156,
+    "longitude": 120.5689,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 5,
+    "description": "寒山寺因张继《枫桥夜泊》闻名天下。",
+    "history": "始建于南朝梁代，距今 1500 多年历史。唐代张继在此写下千古名句。",
+    "features": ["南朝古刹", "1500 年历史", "枫桥夜泊", "苏州名刹"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "苏州市地铁 1 号线至西环路站",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "苏州", "南朝", "江苏", "寒山寺"],
+    "historical_stories": [
+      {
+        "title": "枫桥夜泊",
+        "content": "唐代诗人张继在此写下'月落乌啼霜满天，江枫渔火对愁眠'的千古名句。",
+        "era": "唐代"
+      },
+      {
+        "title": "寒山拾得",
+        "content": "唐代高僧寒山、拾得曾在此住持，后人称'和合二仙'。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["省级文保", "南朝古刹", "1500 年历史", "诗词圣地"],
+    "famous_people": ["张继", "寒山", "拾得"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "钟楼", "枫桥"],
+    "poems": [
+      {"title": "枫桥夜泊", "content": "月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。", "author": "唐代·张继"}
+    ]
+  },
+  {
+    "name": "杭州灵隐寺",
+    "province": "浙江省",
+    "city": "杭州市",
+    "district": "西湖区",
+    "address": "浙江省杭州市西湖区灵隐路",
+    "latitude": 30.2456,
+    "longitude": 120.1089,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 5,
+    "description": "灵隐寺是江南著名古刹，济公活佛道场。",
+    "history": "始建于东晋咸和元年（326 年），距今 1700 年历史。",
+    "features": ["东晋古刹", "1700 年历史", "济公道场", "江南名刹"],
+    "prayer_focus": ["平安", "健康", "修行", "财运"],
+    "transport": "杭州市乘坐公交至灵隐",
+    "ticket": "门票 45 元",
+    "opening_hours": "7:00-18:00",
+    "tags": ["佛教", "杭州", "东晋", "浙江", "灵隐寺"],
+    "historical_stories": [
+      {
+        "title": "济公活佛",
+        "content": "南宋济公活佛在此出家，留下许多传奇故事。",
+        "era": "南宋"
+      },
+      {
+        "title": "飞来峰",
+        "content": "相传灵隐寺前飞来峰是从印度飞来，上有众多佛像。",
+        "era": "古代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "5A 景区", "东晋古刹", "1700 年历史"],
+    "famous_people": ["济公", "慧理法师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "飞来峰", "天王殿"],
+    "poems": [
+      {"title": "灵隐寺", "content": "灵隐寺高接云天，飞来峰上礼观音。", "author": "唐代·宋之问"}
+    ]
+  },
+  {
+    "name": "杭州净慈寺",
+    "province": "浙江省",
+    "city": "杭州市",
+    "district": "西湖区",
+    "address": "浙江省杭州市西湖区南山路",
+    "latitude": 30.2356,
+    "longitude": 120.1389,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "净慈寺是西湖著名寺院，济公活佛道场。",
+    "history": "始建于五代吴越，历代修缮，是西湖名胜。",
+    "features": ["五代古刹", "西湖名胜", "济公道场", "南屏晚钟"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "杭州市乘坐公交至净慈寺",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "杭州", "五代", "浙江", "净慈寺"],
+    "historical_stories": [
+      {
+        "title": "南屏晚钟",
+        "content": "净慈寺钟声每日傍晚敲响，是西湖十景之一。",
+        "era": "历代"
+      }
+    ],
+    "cultural_values": ["省级文保", "五代古刹", "西湖名胜", "西湖十景"],
+    "famous_people": ["济公", "延寿大师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "钟楼"],
+    "poems": [
+      {"title": "净慈寺", "content": "毕竟西湖六月中，风光不与四时同。", "author": "宋代·杨万里"}
+    ]
+  },
+  {
+    "name": "宁波天童寺",
+    "province": "浙江省",
+    "city": "宁波市",
+    "district": "鄞州区",
+    "address": "浙江省宁波市鄞州区天童乡",
+    "latitude": 29.8156,
+    "longitude": 121.7789,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "天童寺是禅宗名刹，日本曹洞宗祖庭。",
+    "history": "始建于西晋，历代扩建，是江南著名禅宗寺院。",
+    "features": ["西晋古刹", "禅宗名刹", "日本曹洞宗", "太白山"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "宁波市乘坐公交至天童寺",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "宁波", "西晋", "浙江", "禅宗"],
+    "historical_stories": [
+      {
+        "title": "日本曹洞宗祖庭",
+        "content": "日本僧人前来求法，曹洞宗传入日本。",
+        "era": "宋代"
+      }
+    ],
+    "cultural_values": ["省级文保", "西晋古刹", "禅宗名刹", "日本曹洞宗"],
+    "famous_people": ["道元禅师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "天童寺", "content": "天童寺高太白山，禅宗名刹在江南。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "宁波阿育王寺",
+    "province": "浙江省",
+    "city": "宁波市",
+    "district": "鄞州区",
+    "address": "浙江省宁波市鄞州区五乡镇",
+    "latitude": 29.8056,
+    "longitude": 121.7589,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "阿育王寺供奉释迦牟尼真身舍利，著名古刹。",
+    "history": "始建于西晋，历代修缮，供奉佛舍利。",
+    "features": ["西晋古刹", "佛舍利", "阿育王", "宁波名刹"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "宁波市乘坐公交至阿育王寺",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "宁波", "西晋", "浙江", "舍利"],
+    "historical_stories": [
+      {
+        "title": "佛舍利",
+        "content": "阿育王寺供奉释迦牟尼佛真身舍利，极为珍贵。",
+        "era": "西晋"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "西晋古刹", "佛舍利", "宁波名刹"],
+    "famous_people": ["阿育王"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "舍利殿"],
+    "poems": [
+      {"title": "阿育王寺", "content": "阿育王寺舍利光，千年古刹在宁波。", "author": "明代·高僧"}
+    ]
+  }
+]

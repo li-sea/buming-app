@@ -1,0 +1,332 @@
+[
+  {
+    "name": "广州光孝寺",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "越秀区",
+    "address": "广东省广州市越秀区光孝路",
+    "latitude": 23.1256,
+    "longitude": 113.2589,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.8,
+    "description": "光孝寺是广州最古寺院，禅宗祖庭。",
+    "history": "始建于三国吴，距今 1700 多年历史。六祖惠能在此出家。",
+    "features": ["三国古刹", "1700 年历史", "禅宗祖庭", "六祖出家"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "广州市地铁 1 号线至西门口站",
+    "ticket": "门票 5 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "广州", "三国", "光孝寺", "禅宗"],
+    "historical_stories": [
+      {
+        "title": "六祖出家",
+        "content": "唐代六祖惠能在此出家，留下'风动幡动'公案。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "三国古刹", "1700 年历史", "禅宗祖庭"],
+    "famous_people": ["六祖惠能"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "瘗发塔"],
+    "poems": [
+      {"title": "光孝寺", "content": "风动幡动仁者心动，光孝寺里礼六祖。", "author": "唐代·惠能"}
+    ]
+  },
+  {
+    "name": "广州六榕寺",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "越秀区",
+    "address": "广东省广州市越秀区六榕路",
+    "latitude": 23.1356,
+    "longitude": 113.2589,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "六榕寺是广州著名寺院，以六榕塔闻名。",
+    "history": "始建于南朝梁代，距今 1500 年历史。苏轼曾题字'六榕'。",
+    "features": ["南朝古刹", "1500 年历史", "六榕塔", "苏轼题字"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "广州市地铁 1 号线至公园前站",
+    "ticket": "门票 5 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "广州", "南朝", "六榕寺", "六榕塔"],
+    "historical_stories": [
+      {
+        "title": "苏轼题字",
+        "content": "宋代苏轼在此题字'六榕'，寺因此得名。",
+        "era": "宋代"
+      }
+    ],
+    "cultural_values": ["省级文保", "南朝古刹", "1500 年历史", "苏轼题字"],
+    "famous_people": ["苏轼"],
+    "architectural_features": ["古代木结构", "六榕塔", "大雄宝殿"],
+    "poems": [
+      {"title": "六榕寺", "content": "六榕寺里六榕塔，千年古刹在广州。", "author": "宋代·苏轼"}
+    ]
+  },
+  {
+    "name": "广州华林寺",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "荔湾区",
+    "address": "广东省广州市荔湾区下九路",
+    "latitude": 23.1156,
+    "longitude": 113.2489,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.6,
+    "description": "华林寺是广州著名佛教寺院。",
+    "history": "始建于南朝梁代，历代修缮。",
+    "features": ["南朝古刹", "广州名刹", "佛教寺院", "下九路"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "广州市地铁 1 号线至长寿路站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "广州", "南朝", "华林寺", "名刹"],
+    "historical_stories": [
+      {
+        "title": "广州名刹",
+        "content": "华林寺是广州地区著名佛教寺院。",
+        "era": "南朝"
+      }
+    ],
+    "cultural_values": ["省级文保", "南朝古刹", "广州名刹", "佛教"],
+    "famous_people": ["达摩祖师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "华林寺", "content": "华林寺里礼达摩，南朝古刹在广州。", "author": "南朝·高僧"}
+    ]
+  },
+  {
+    "name": "广州海幢寺",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "海珠区",
+    "address": "广东省广州市海珠区同福中路",
+    "latitude": 23.1056,
+    "longitude": 113.2689,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.6,
+    "description": "海幢寺是广州著名佛教寺院。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古刹", "广州名刹", "佛教寺院", "海珠区"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "广州市地铁 2 号线至市二宫站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "广州", "明代", "海幢寺", "名刹"],
+    "historical_stories": [
+      {
+        "title": "广州名刹",
+        "content": "海幢寺是广州地区著名佛教寺院。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古刹", "广州名刹", "佛教"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "海幢寺", "content": "海幢寺里礼观音，明代古刹在广州。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "广州三元宫",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "越秀区",
+    "address": "广东省广州市越秀区应元路",
+    "latitude": 23.1356,
+    "longitude": 113.2689,
+    "type": "道观",
+    "subtype": "道观",
+    "rating": 4.6,
+    "description": "三元宫是岭南著名道观，供奉三元大帝。",
+    "history": "始建于明代崇祯年间，清代扩建。",
+    "features": ["岭南名观", "明代古观", "三元大帝", "广州地标"],
+    "prayer_focus": ["事业", "财运", "平安", "健康"],
+    "transport": "广州市地铁 2 号线至纪念堂站",
+    "ticket": "门票 5 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "三元宫", "广州", "明代", "岭南"],
+    "historical_stories": [
+      {
+        "title": "岭南名观",
+        "content": "三元宫是岭南地区著名道观。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古观", "岭南名观", "广州地标"],
+    "famous_people": ["三元大帝"],
+    "architectural_features": ["古代木结构", "三元殿", "藏经楼"],
+    "poems": [
+      {"title": "三元宫", "content": "三元宫里礼三元，明代古观在广州。", "author": "明代·高道"}
+    ]
+  },
+  {
+    "name": "广州纯阳观",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "海珠区",
+    "address": "广东省广州市海珠区纯阳观",
+    "latitude": 23.0956,
+    "longitude": 113.2989,
+    "type": "道观",
+    "subtype": "祖师道场",
+    "rating": 4.5,
+    "description": "纯阳观供奉吕洞宾，岭南著名道观。",
+    "history": "始建于清代，吕洞宾道场。",
+    "features": ["清代古观", "吕洞宾道场", "岭南名观", "道教"],
+    "prayer_focus": ["事业", "财运", "修行", "健康"],
+    "transport": "广州市地铁至广州大道南站",
+    "ticket": "门票 5 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "广州", "清代", "吕洞宾", "纯阳观"],
+    "historical_stories": [
+      {
+        "title": "吕洞宾道场",
+        "content": "纯阳观是吕洞宾道场。",
+        "era": "清代"
+      }
+    ],
+    "cultural_values": ["省级文保", "清代古观", "吕洞宾道场", "岭南名观"],
+    "famous_people": ["吕洞宾"],
+    "architectural_features": ["古代木结构", "纯阳殿", "藏经楼"],
+    "poems": [
+      {"title": "纯阳观", "content": "纯阳观里礼吕仙，清代古观在广州。", "author": "清代·高道"}
+    ]
+  },
+  {
+    "name": "广州五仙观",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "越秀区",
+    "address": "广东省广州市越秀区惠福西路",
+    "latitude": 23.1256,
+    "longitude": 113.2589,
+    "type": "道观",
+    "subtype": "道观",
+    "rating": 4.5,
+    "description": "五仙观是广州著名道观，供奉五仙。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古观", "广州名刹", "五仙", "道教"],
+    "prayer_focus": ["平安", "健康", "财运", "事业"],
+    "transport": "广州市地铁 1 号线至西门口站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "广州", "明代", "五仙观", "五仙"],
+    "historical_stories": [
+      {
+        "title": "五仙传说",
+        "content": "五仙观供奉五仙，广州五羊传说相关。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古观", "广州名刹", "五仙"],
+    "famous_people": ["五仙"],
+    "architectural_features": ["古代木结构", "五仙殿", "戏楼"],
+    "poems": [
+      {"title": "五仙观", "content": "五仙观里礼五仙，明代古观在广州。", "author": "明代·高道"}
+    ]
+  },
+  {
+    "name": "广州南海神庙",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "黄埔区",
+    "address": "广东省广州市黄埔区庙头村",
+    "latitude": 23.0856,
+    "longitude": 113.4489,
+    "type": "民间信仰",
+    "subtype": "海神庙",
+    "rating": 4.7,
+    "description": "南海神庙是广州著名海神庙，供奉南海神。",
+    "history": "始建于隋代，历代皇帝祭祀。",
+    "features": ["隋代古建", "海神庙", "广州名刹", "皇帝祭祀"],
+    "prayer_focus": ["平安", "渔业", "事业", "健康"],
+    "transport": "广州市地铁 13 号线至南海神庙站",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["民间信仰", "广州", "隋代", "南海神庙", "海神"],
+    "historical_stories": [
+      {
+        "title": "皇帝祭祀",
+        "content": "南海神庙是历代皇帝祭祀南海神的地方。",
+        "era": "隋代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "隋代古建", "海神庙", "广州名刹"],
+    "famous_people": ["南海神"],
+    "architectural_features": ["古代木结构", "南海神殿", "戏楼"],
+    "poems": [
+      {"title": "南海神庙", "content": "南海神庙礼海神，隋代古庙在广州。", "author": "隋代·皇帝"}
+    ]
+  },
+  {
+    "name": "广州仁威庙",
+    "province": "广东省",
+    "city": "广州市",
+    "district": "荔湾区",
+    "address": "广东省广州市荔湾区龙津西路",
+    "latitude": 23.1256,
+    "longitude": 113.2389,
+    "type": "民间信仰",
+    "subtype": "财神庙",
+    "rating": 4.6,
+    "description": "仁威庙是广州著名的道教庙宇，供奉真武大帝和财神。",
+    "history": "始建于宋代，清代重修。",
+    "features": ["宋代古建", "真武大帝", "广州地标", "保存完整"],
+    "prayer_focus": ["财运", "事业", "平安", "健康"],
+    "transport": "广州市地铁 1 号线至长寿路站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["财神", "广州", "宋代", "真武大帝", "仁威庙"],
+    "historical_stories": [
+      {
+        "title": "广州地标",
+        "content": "仁威庙是广州地区著名道教庙宇。",
+        "era": "宋代"
+      }
+    ],
+    "cultural_values": ["省级文保", "宋代古建", "广州地标", "道教庙宇"],
+    "famous_people": ["真武大帝"],
+    "architectural_features": ["古代木结构", "真武殿", "戏楼"],
+    "poems": [
+      {"title": "仁威庙", "content": "仁威庙里礼真武，宋代古庙在广州。", "author": "宋代·高道"}
+    ]
+  },
+  {
+    "name": "佛山祖庙",
+    "province": "广东省",
+    "city": "佛山市",
+    "district": "禅城区",
+    "address": "广东省佛山市禅城区祖庙路",
+    "latitude": 23.0256,
+    "longitude": 113.1189,
+    "type": "民间信仰",
+    "subtype": "祖庙",
+    "rating": 4.8,
+    "description": "佛山祖庙是佛山著名祖庙，供奉北帝。",
+    "history": "始建于北宋，历代修缮。",
+    "features": ["北宋古建", "祖庙", "佛山地标", "北帝"],
+    "prayer_focus": ["平安", "事业", "财运", "健康"],
+    "transport": "佛山市地铁至祖庙站",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-18:00",
+    "tags": ["民间信仰", "佛山", "北宋", "祖庙", "北帝"],
+    "historical_stories": [
+      {
+        "title": "佛山地标",
+        "content": "佛山祖庙是佛山地区著名祖庙。",
+        "era": "北宋"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "北宋古建", "佛山地标", "祖庙"],
+    "famous_people": ["北帝"],
+    "architectural_features": ["古代木结构", "祖庙殿", "戏楼"],
+    "poems": [
+      {"title": "佛山祖庙", "content": "佛山祖庙礼北帝，北宋古庙在佛山。", "author": "北宋·百姓"}
+    ]
+  }
+]

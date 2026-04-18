@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>不认命 App - 手机版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 400px; margin: 0 auto; }
+        .card { background: white; border-radius: 20px; padding: 24px; margin-bottom: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); }
+        .header { text-align: center; padding: 20px 0; }
+        .logo { font-size: 64px; margin-bottom: 8px; }
+        h1 { color: #667eea; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .subtitle { color: #666; font-size: 14px; }
+        .status-badge { display: inline-block; padding: 6px 16px; background: linear-gradient(135deg, #10b981, #059669); color: white; border-radius: 20px; font-size: 12px; font-weight: 600; margin: 12px 0; }
+        .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0; }
+        .stat-item { background: #f8f9fa; padding: 16px; border-radius: 12px; text-align: center; }
+        .stat-value { font-size: 24px; font-weight: 700; color: #667eea; }
+        .stat-label { font-size: 12px; color: #666; margin-top: 4px; }
+        .action-btn { display: block; width: 100%; padding: 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; text-decoration: none; border-radius: 12px; font-weight: 600; margin: 12px 0; transition: transform 0.2s; }
+        .action-btn:active { transform: scale(0.98); }
+        .action-btn.secondary { background: white; color: #667eea; border: 2px solid #667eea; }
+        .progress-bar { background: #e9ecef; border-radius: 10px; height: 8px; margin: 12px 0; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 10px; transition: width 0.3s; }
+        .feature-list { list-style: none; }
+        .feature-item { padding: 12px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; }
+        .feature-item:last-child { border-bottom: none; }
+        .feature-icon { font-size: 20px; margin-right: 12px; }
+        .feature-text { flex: 1; font-size: 14px; }
+        .feature-status { font-size: 12px; padding: 4px 8px; border-radius: 8px; }
+        .status-done { background: #d1fae5; color: #065f46; }
+        .status-progress { background: #fef3c7; color: #92400e; }
+        .footer { text-align: center; color: white; font-size: 12px; margin-top: 24px; opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="logo">🦐</div>
+                <h1>不认命 App</h1>
+                <p class="subtitle">我的命运我做主</p>
+                <div class="status-badge">✅ 开发中</div>
+            </div>
+            
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-value">1200+</div>
+                    <div class="stat-label">寺庙数据</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">20K+</div>
+                    <div class="stat-label">祈福点</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">34/34</div>
+                    <div class="stat-label">省份覆盖</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">60%</div>
+                    <div class="stat-label">总体进度</div>
+                </div>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-bottom: 16px; color: #333;">📋 功能列表</h3>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <span class="feature-icon">✨</span>
+                    <span class="feature-text">八字算命</span>
+                    <span class="feature-status status-done">已完成</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">🏛️</span>
+                    <span class="feature-text">寺庙匹配</span>
+                    <span class="feature-status status-done">已完成</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">📍</span>
+                    <span class="feature-text">地图导航</span>
+                    <span class="feature-status status-progress">开发中</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">⭐</span>
+                    <span class="feature-text">收藏功能</span>
+                    <span class="feature-status status-progress">开发中</span>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <span class="feature-text">飞书数据同步</span>
+                    <span class="feature-status status-progress">开发中</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-bottom: 16px; color: #333;">🚀 快速操作</h3>
+            <a href="index.html" class="action-btn">🖥️ 打开 Web 测试版</a>
+            <a href="https://bytedance.feishu.cn" class="action-btn secondary">📱 打开飞书</a>
+        </div>
+
+        <div class="footer">
+            <p>程序虾 🦐 开发中</p>
+            <p>2026-04-17</p>
+        </div>
+    </div>
+
+    <script>
+        console.log('不认命 App - 手机版加载完成');
+    </script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+[
+  {
+    "name": "拉萨色拉寺",
+    "province": "西藏自治区",
+    "city": "拉萨市",
+    "district": "城关区",
+    "address": "西藏自治区拉萨市城关区色拉寺",
+    "latitude": 29.6956,
+    "longitude": 91.1389,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.8,
+    "description": "色拉寺是拉萨三大寺之一，藏传佛教格鲁派重要寺院。",
+    "history": "始建于明代 1419 年，宗喀巴弟子创建。",
+    "features": ["明代古刹", "拉萨三大寺", "格鲁派", "辩经场"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "拉萨市区乘坐公交至色拉寺",
+    "ticket": "门票 50 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "色拉寺", "拉萨", "明代", "藏传佛教"],
+    "historical_stories": [
+      {
+        "title": "辩经场",
+        "content": "色拉寺辩经场是藏传佛教著名辩经场所。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "拉萨三大寺", "格鲁派"],
+    "famous_people": ["宗喀巴大师"],
+    "architectural_features": ["藏式建筑", "大经堂", "辩经场"],
+    "poems": [
+      {"title": "色拉寺", "content": "色拉寺里礼宗喀，藏传佛教在拉萨。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "拉萨哲蚌寺",
+    "province": "西藏自治区",
+    "city": "拉萨市",
+    "district": "城关区",
+    "address": "西藏自治区拉萨市城关区哲蚌寺",
+    "latitude": 29.6756,
+    "longitude": 91.0389,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.9,
+    "description": "哲蚌寺是藏传佛教最大寺院，曾驻锡数万僧人。",
+    "history": "始建于明代，宗喀巴弟子创建。",
+    "features": ["最大藏传寺院", "明代古刹", "格鲁派", "雪顿节"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "拉萨市区乘坐公交至哲蚌寺",
+    "ticket": "门票 50 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "哲蚌寺", "拉萨", "明代", "藏传佛教"],
+    "historical_stories": [
+      {
+        "title": "最大寺院",
+        "content": "哲蚌寺是藏传佛教最大寺院，曾驻锡数万僧人。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "最大藏传寺院", "格鲁派"],
+    "famous_people": ["宗喀巴大师"],
+    "architectural_features": ["藏式建筑", "大经堂", "甘丹颇章"],
+    "poems": [
+      {"title": "哲蚌寺", "content": "哲蚌寺大接云天，藏传佛教在拉萨。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "日喀则萨迦寺",
+    "province": "西藏自治区",
+    "city": "日喀则市",
+    "district": "萨迦县",
+    "address": "西藏自治区日喀则市萨迦县萨迦寺",
+    "latitude": 28.9056,
+    "longitude": 88.0189,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.8,
+    "description": "萨迦寺是萨迦派主寺，藏有珍贵经卷。",
+    "history": "始建于宋代，萨迦派创始人创建。",
+    "features": ["萨迦派主寺", "宋代古刹", "珍贵经卷", "第二敦煌"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "日喀则市乘坐公交至萨迦县",
+    "ticket": "门票 45 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "萨迦寺", "日喀则", "宋代", "萨迦派"],
+    "historical_stories": [
+      {
+        "title": "第二敦煌",
+        "content": "萨迦寺藏有珍贵经卷，被誉为第二敦煌。",
+        "era": "宋代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "宋代古刹", "萨迦派主寺", "珍贵经卷"],
+    "famous_people": ["八思巴"],
+    "architectural_features": ["藏式建筑", "大经堂", "藏经阁"],
+    "poems": [
+      {"title": "萨迦寺", "content": "萨迦寺里藏经卷，宋代古刹在日喀则。", "author": "宋代·高僧"}
+    ]
+  },
+  {
+    "name": "山南昌珠寺",
+    "province": "西藏自治区",
+    "city": "山南市",
+    "district": "乃东区",
+    "address": "西藏自治区山南市乃东区昌珠寺",
+    "latitude": 29.2356,
+    "longitude": 91.7689,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.7,
+    "description": "昌珠寺是西藏第一座佛殿，松赞干布所建。",
+    "history": "始建于唐代 7 世纪，松赞干布为镇压罗刹女而建。",
+    "features": ["西藏第一寺", "唐代古刹", "松赞干布建", "镇魔寺"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "山南市乘坐公交至乃东区",
+    "ticket": "门票 40 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "昌珠寺", "山南", "唐代", "松赞干布"],
+    "historical_stories": [
+      {
+        "title": "西藏第一寺",
+        "content": "昌珠寺是西藏地区第一座佛殿。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "唐代古刹", "西藏第一寺", "松赞干布"],
+    "famous_people": ["松赞干布", "文成公主"],
+    "architectural_features": ["藏式建筑", "大雄宝殿", "珍珠唐卡"],
+    "poems": [
+      {"title": "昌珠寺", "content": "昌珠寺里礼释迦，唐代古刹在山南。", "author": "唐代·高僧"}
+    ]
+  },
+  {
+    "name": "山南桑耶寺",
+    "province": "西藏自治区",
+    "city": "山南市",
+    "district": "扎囊县",
+    "address": "西藏自治区山南市扎囊县桑耶寺",
+    "latitude": 29.3256,
+    "longitude": 91.5089,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.8,
+    "description": "桑耶寺是西藏第一座佛法僧俱全的寺院。",
+    "history": "始建于唐代 8 世纪，赤松德赞所建。",
+    "features": ["西藏第一寺", "唐代古刹", "赤松德赞建", "三样寺"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "山南市乘坐公交至扎囊县",
+    "ticket": "门票 40 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "桑耶寺", "山南", "唐代", "赤松德赞"],
+    "historical_stories": [
+      {
+        "title": "佛法僧俱全",
+        "content": "桑耶寺是西藏第一座佛法僧俱全的寺院。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "唐代古刹", "西藏第一寺", "赤松德赞"],
+    "famous_people": ["赤松德赞", "莲花生大师"],
+    "architectural_features": ["藏式建筑", "乌孜大殿", "四大洲"],
+    "poems": [
+      {"title": "桑耶寺", "content": "桑耶寺里礼释迦，唐代古刹在山南。", "author": "唐代·高僧"}
+    ]
+  },
+  {
+    "name": "日喀则白居寺",
+    "province": "西藏自治区",
+    "city": "日喀则市",
+    "district": "江孜县",
+    "address": "西藏自治区日喀则市江孜县白居寺",
+    "latitude": 28.9156,
+    "longitude": 89.6089,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.8,
+    "description": "白居寺以十万佛塔闻名，各教派共存。",
+    "history": "始建于明代，各教派和谐共存。",
+    "features": ["明代古刹", "十万佛塔", "各派共存", "江孜地标"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "日喀则市乘坐公交至江孜县",
+    "ticket": "门票 40 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "白居寺", "日喀则", "明代", "十万佛塔"],
+    "historical_stories": [
+      {
+        "title": "十万佛塔",
+        "content": "白居寺十万佛塔有十万尊佛像，是建筑奇迹。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "十万佛塔", "各派共存"],
+    "famous_people": ["宗喀巴大师"],
+    "architectural_features": ["藏式建筑", "十万佛塔", "大经堂"],
+    "poems": [
+      {"title": "白居寺", "content": "白居寺里十万佛，明代古刹在江孜。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "阿里托林寺",
+    "province": "西藏自治区",
+    "city": "阿里地区",
+    "district": "札达县",
+    "address": "西藏自治区阿里地区札达县托林寺",
+    "latitude": 31.4856,
+    "longitude": 79.8089,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.7,
+    "description": "托林寺是古格王朝皇家寺院，阿里重要寺庙。",
+    "history": "始建于宋代，古格王朝创建。",
+    "features": ["宋代古刹", "古格王朝", "皇家寺院", "阿里名刹"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "阿里地区乘坐车至札达县",
+    "ticket": "门票 35 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "托林寺", "阿里", "宋代", "古格王朝"],
+    "historical_stories": [
+      {
+        "title": "古格王朝",
+        "content": "托林寺是古格王朝皇家寺院。",
+        "era": "宋代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "宋代古刹", "古格王朝", "皇家寺院"],
+    "famous_people": ["仁钦桑布"],
+    "architectural_features": ["藏式建筑", "大经堂", "壁画"],
+    "poems": [
+      {"title": "托林寺", "content": "托林寺里礼释迦，宋代古刹在阿里。", "author": "宋代·高僧"}
+    ]
+  },
+  {
+    "name": "林芝喇嘛岭寺",
+    "province": "西藏自治区",
+    "city": "林芝市",
+    "district": "巴宜区",
+    "address": "西藏自治区林芝市巴宜区喇嘛岭寺",
+    "latitude": 29.6456,
+    "longitude": 94.3689,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.6,
+    "description": "喇嘛岭寺是林芝著名寺院，宁玛派道场。",
+    "history": "始建于清代，是林芝佛教中心。",
+    "features": ["清代古刹", "宁玛派", "林芝名刹", "佛教中心"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "林芝市乘坐公交至喇嘛岭",
+    "ticket": "门票 20 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "喇嘛岭寺", "林芝", "清代", "宁玛派"],
+    "historical_stories": [
+      {
+        "title": "宁玛派道场",
+        "content": "喇嘛岭寺是宁玛派重要道场。",
+        "era": "清代"
+      }
+    ],
+    "cultural_values": ["省级文保", "清代古刹", "宁玛派", "林芝名刹"],
+    "famous_people": ["莲花生大师"],
+    "architectural_features": ["藏式建筑", "大经堂", "佛塔"],
+    "poems": [
+      {"title": "喇嘛岭寺", "content": "喇嘛岭寺礼莲师，清代古刹在林芝。", "author": "清代·高僧"}
+    ]
+  },
+  {
+    "name": "那曲孝登寺",
+    "province": "西藏自治区",
+    "city": "那曲市",
+    "district": "色尼区",
+    "address": "西藏自治区那曲市色尼区孝登寺",
+    "latitude": 31.4756,
+    "longitude": 92.0589,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.5,
+    "description": "孝登寺是那曲著名寺院，藏传佛教道场。",
+    "history": "始建于清代，是那曲佛教中心。",
+    "features": ["清代古刹", "那曲名刹", "藏传佛教", "佛教中心"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "那曲市区步行可达",
+    "ticket": "门票 20 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "孝登寺", "那曲", "清代", "藏传佛教"],
+    "historical_stories": [
+      {
+        "title": "那曲佛教中心",
+        "content": "孝登寺是那曲地区佛教中心。",
+        "era": "清代"
+      }
+    ],
+    "cultural_values": ["省级文保", "清代古刹", "那曲名刹", "藏传佛教"],
+    "famous_people": ["宗喀巴大师"],
+    "architectural_features": ["藏式建筑", "大经堂", "佛塔"],
+    "poems": [
+      {"title": "孝登寺", "content": "孝登寺里礼宗喀，清代古刹在那曲。", "author": "清代·高僧"}
+    ]
+  },
+  {
+    "name": "昌都强巴林寺",
+    "province": "西藏自治区",
+    "city": "昌都市",
+    "district": "卡若区",
+    "address": "西藏自治区昌都市卡若区强巴林寺",
+    "latitude": 31.1456,
+    "longitude": 97.1789,
+    "type": "佛教",
+    "subtype": "藏传佛教",
+    "rating": 4.7,
+    "description": "强巴林寺是昌都著名寺院，格鲁派重要寺院。",
+    "history": "始建于明代，是康区佛教中心。",
+    "features": ["明代古刹", "格鲁派", "康区名刹", "佛教中心"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "昌都市区步行可达",
+    "ticket": "门票 30 元",
+    "opening_hours": "9:00-17:00",
+    "tags": ["佛教", "强巴林寺", "昌都", "明代", "格鲁派"],
+    "historical_stories": [
+      {
+        "title": "康区佛教中心",
+        "content": "强巴林寺是康区佛教中心。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "明代古刹", "格鲁派", "康区名刹"],
+    "famous_people": ["宗喀巴大师"],
+    "architectural_features": ["藏式建筑", "大经堂", "佛塔"],
+    "poems": [
+      {"title": "强巴林寺", "content": "强巴林寺礼宗喀，明代古刹在昌都。", "author": "明代·高僧"}
+    ]
+  }
+]

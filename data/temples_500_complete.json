@@ -1,0 +1,332 @@
+[
+  {
+    "name": "北京东岳庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "朝阳区",
+    "address": "北京市朝阳区朝阳门外",
+    "latitude": 39.9256,
+    "longitude": 116.4389,
+    "type": "道观",
+    "subtype": "东岳庙",
+    "rating": 4.7,
+    "description": "东岳庙是华北地区最大的道观，供奉东岳大帝。",
+    "history": "始建于元代，历代皇家祭祀。",
+    "features": ["元代古建", "东岳大帝", "华北最大", "道教圣地"],
+    "prayer_focus": ["事业", "平安", "财运", "健康"],
+    "transport": "地铁 2 号线至朝阳门站",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "东岳庙", "北京", "元代", "东岳大帝"],
+    "historical_stories": [
+      {
+        "title": "华北最大道观",
+        "content": "东岳庙是华北地区最大的道观。",
+        "era": "元代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "元代古建", "华北最大", "道教圣地"],
+    "famous_people": ["东岳大帝"],
+    "architectural_features": ["古代木结构", "东岳大殿", "碑林"],
+    "poems": [
+      {"title": "东岳庙", "content": "东岳庙里礼东岳，元代古观在北京。", "author": "元代·高道"}
+    ]
+  },
+  {
+    "name": "北京城隍庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "西城区",
+    "address": "北京市西城区成方街",
+    "latitude": 39.9056,
+    "longitude": 116.3589,
+    "type": "道观",
+    "subtype": "城隍庙",
+    "rating": 4.6,
+    "description": "城隍庙是北京著名城隍庙，供奉北京城隍。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "城隍庙", "北京名刹", "城隍信仰"],
+    "prayer_focus": ["平安", "事业", "财运", "健康"],
+    "transport": "地铁 2 号线至长椿街站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "城隍庙", "北京", "明代", "城隍"],
+    "historical_stories": [
+      {
+        "title": "北京城隍",
+        "content": "城隍庙供奉北京城隍，护佑北京城。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古建", "城隍庙", "北京名刹"],
+    "famous_people": ["北京城隍"],
+    "architectural_features": ["古代木结构", "城隍殿", "戏楼"],
+    "poems": [
+      {"title": "城隍庙", "content": "城隍庙里礼城隍，明代古观在北京。", "author": "明代·高道"}
+    ]
+  },
+  {
+    "name": "北京火神庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "西城区",
+    "address": "北京市西城区地安门外",
+    "latitude": 39.9356,
+    "longitude": 116.3889,
+    "type": "道观",
+    "subtype": "火神庙",
+    "rating": 4.5,
+    "description": "火神庙是北京著名火神庙，供奉火德真君。",
+    "history": "始建于唐代，历代修缮。",
+    "features": ["唐代古观", "火神庙", "北京名刹", "火德真君"],
+    "prayer_focus": ["平安", "防火", "事业", "健康"],
+    "transport": "地铁 8 号线至什刹海站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "火神庙", "北京", "唐代", "火德真君"],
+    "historical_stories": [
+      {
+        "title": "火德真君",
+        "content": "火神庙供奉火德真君，护佑防火。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["省级文保", "唐代古观", "火神庙", "北京名刹"],
+    "famous_people": ["火德真君"],
+    "architectural_features": ["古代木结构", "火神殿", "戏楼"],
+    "poems": [
+      {"title": "火神庙", "content": "火神庙里礼火神，唐代古观在北京。", "author": "唐代·高道"}
+    ]
+  },
+  {
+    "name": "北京财神庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "丰台区",
+    "address": "北京市丰台区六里桥",
+    "latitude": 39.8656,
+    "longitude": 116.3089,
+    "type": "民间信仰",
+    "subtype": "财神庙",
+    "rating": 4.7,
+    "description": "财神庙是北京最著名的财神庙，供奉五显财神。",
+    "history": "始建于明代，清代重修。",
+    "features": ["北京财神庙", "明代古建", "五显财神", "正月初二庙会"],
+    "prayer_focus": ["财运", "事业", "生意", "投资"],
+    "transport": "地铁 9 号线至六里桥站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["财神", "北京", "明代", "五显财神", "民间信仰"],
+    "historical_stories": [
+      {
+        "title": "五显财神",
+        "content": "财神庙供奉五显财神，正月初二庙会盛大。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古建", "五显财神", "北京财神庙"],
+    "famous_people": ["五显财神"],
+    "architectural_features": ["古代木结构", "财神殿", "戏楼"],
+    "poems": [
+      {"title": "财神庙", "content": "财神庙里礼财神，明代古庙在北京。", "author": "明代·商人"}
+    ]
+  },
+  {
+    "name": "北京月老庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "西城区",
+    "address": "北京市西城区白云观内",
+    "latitude": 39.9056,
+    "longitude": 116.3489,
+    "type": "民间信仰",
+    "subtype": "月老庙",
+    "rating": 4.6,
+    "description": "月老庙是北京著名月老庙，供奉月下老人。",
+    "history": "始建于清代，历代修缮。",
+    "features": ["清代古建", "月老庙", "北京名刹", "求姻缘"],
+    "prayer_focus": ["姻缘", "爱情", "婚姻", "家庭"],
+    "transport": "地铁 1 号线至南礼士路站",
+    "ticket": "包含在白云观门票内",
+    "opening_hours": "8:30-16:30",
+    "tags": ["月老", "北京", "清代", "姻缘", "民间信仰"],
+    "historical_stories": [
+      {
+        "title": "月下老人",
+        "content": "月老庙供奉月下老人，求姻缘灵验。",
+        "era": "清代"
+      }
+    ],
+    "cultural_values": ["省级文保", "清代古建", "月老庙", "北京名刹"],
+    "famous_people": ["月下老人"],
+    "architectural_features": ["古代木结构", "月老殿", "红绳"],
+    "poems": [
+      {"title": "月老庙", "content": "月老庙里求姻缘，清代古庙在北京。", "author": "清代·文人"}
+    ]
+  },
+  {
+    "name": "北京药王庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "东城区",
+    "address": "北京市东城区东四",
+    "latitude": 39.9256,
+    "longitude": 116.4189,
+    "type": "民间信仰",
+    "subtype": "药王庙",
+    "rating": 4.5,
+    "description": "药王庙是北京著名药王庙，供奉药王孙思邈。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "药王庙", "北京名刹", "孙思邈"],
+    "prayer_focus": ["健康", "疾病康复", "平安", "事业"],
+    "transport": "地铁 5 号线至东四站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["药王", "北京", "明代", "孙思邈", "民间信仰"],
+    "historical_stories": [
+      {
+        "title": "药王孙思邈",
+        "content": "药王庙供奉药王孙思邈，求健康灵验。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古建", "药王庙", "北京名刹"],
+    "famous_people": ["孙思邈"],
+    "architectural_features": ["古代木结构", "药王殿", "药王像"],
+    "poems": [
+      {"title": "药王庙", "content": "药王庙里礼药王，明代古庙在北京。", "author": "明代·医者"}
+    ]
+  },
+  {
+    "name": "北京龙王庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "海淀区",
+    "address": "北京市海淀区颐和园内",
+    "latitude": 39.9956,
+    "longitude": 116.2689,
+    "type": "民间信仰",
+    "subtype": "龙王庙",
+    "rating": 4.5,
+    "description": "龙王庙位于颐和园昆明湖畔，是清代皇家祈雨场所。",
+    "history": "始建于清代乾隆年间，是皇家园林组成部分。",
+    "features": ["皇家祈雨", "清代古建", "颐和园内", "昆明湖畔"],
+    "prayer_focus": ["平安", "风调雨顺", "事业", "健康"],
+    "transport": "地铁 4 号线至北宫门站",
+    "ticket": "包含在颐和园门票内",
+    "opening_hours": "8:00-17:00",
+    "tags": ["龙王", "北京", "清代", "颐和园", "皇家"],
+    "historical_stories": [
+      {
+        "title": "皇家祈雨",
+        "content": "龙王庙是清代皇家祈雨场所。",
+        "era": "清代"
+      }
+    ],
+    "cultural_values": ["世界文化遗产", "清代古建", "皇家祈雨", "颐和园"],
+    "famous_people": ["乾隆皇帝"],
+    "architectural_features": ["古代木结构", "龙王殿", "昆明湖"],
+    "poems": [
+      {"title": "龙王庙", "content": "龙王庙里礼龙王，清代皇家在颐和园。", "author": "清代·皇帝"}
+    ]
+  },
+  {
+    "name": "北京文昌阁",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "东城区",
+    "address": "北京市东城区国子监内",
+    "latitude": 39.9456,
+    "longitude": 116.4189,
+    "type": "民间信仰",
+    "subtype": "文昌阁",
+    "rating": 4.6,
+    "description": "文昌阁供奉文昌帝君，是求学圣地。",
+    "history": "始建于元代，历代修缮。",
+    "features": ["元代古建", "文昌帝君", "求学圣地", "国子监内"],
+    "prayer_focus": ["学业", "考试", "事业", "智慧"],
+    "transport": "地铁 2 号线至雍和宫站",
+    "ticket": "包含在国子监门票内",
+    "opening_hours": "8:30-17:00",
+    "tags": ["文昌", "北京", "元代", "求学", "民间信仰"],
+    "historical_stories": [
+      {
+        "title": "文昌帝君",
+        "content": "文昌阁供奉文昌帝君，求学考试者必拜。",
+        "era": "元代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "元代古建", "文昌帝君", "求学圣地"],
+    "famous_people": ["文昌帝君"],
+    "architectural_features": ["古代木结构", "文昌殿", "魁星楼"],
+    "poems": [
+      {"title": "文昌阁", "content": "文昌阁里礼文昌，元代古阁在北京。", "author": "元代·文人"}
+    ]
+  },
+  {
+    "name": "北京关帝庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "西城区",
+    "address": "北京市西城区地安门外",
+    "latitude": 39.9356,
+    "longitude": 116.3889,
+    "type": "民间信仰",
+    "subtype": "关帝庙",
+    "rating": 4.6,
+    "description": "关帝庙是北京著名关帝庙，供奉关公。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "关帝庙", "北京名刹", "关公"],
+    "prayer_focus": ["事业", "财运", "平安", "忠义"],
+    "transport": "地铁 8 号线至什刹海站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["关帝", "北京", "明代", "关公", "民间信仰"],
+    "historical_stories": [
+      {
+        "title": "关公",
+        "content": "关帝庙供奉关公，忠义化身。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古建", "关帝庙", "北京名刹"],
+    "famous_people": ["关羽"],
+    "architectural_features": ["古代木结构", "关帝殿", "关公像"],
+    "poems": [
+      {"title": "关帝庙", "content": "关帝庙里礼关公，明代古庙在北京。", "author": "明代·文人"}
+    ]
+  },
+  {
+    "name": "北京土地庙",
+    "province": "北京市",
+    "city": "北京市",
+    "district": "西城区",
+    "address": "北京市西城区宣武门外",
+    "latitude": 39.8956,
+    "longitude": 116.3689,
+    "type": "民间信仰",
+    "subtype": "土地庙",
+    "rating": 4.4,
+    "description": "土地庙是北京著名土地庙，供奉土地公。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "土地庙", "北京名刹", "土地公"],
+    "prayer_focus": ["平安", "健康", "财运", "家宅"],
+    "transport": "地铁 2 号线至宣武门站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["土地", "北京", "明代", "土地公", "民间信仰"],
+    "historical_stories": [
+      {
+        "title": "土地公",
+        "content": "土地庙供奉土地公，护佑一方平安。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古建", "土地庙", "北京名刹"],
+    "famous_people": ["土地公"],
+    "architectural_features": ["古代木结构", "土地殿", "土地公像"],
+    "poems": [
+      {"title": "土地庙", "content": "土地庙里礼土地，明代古庙在北京。", "author": "明代·百姓"}
+    ]
+  }
+]

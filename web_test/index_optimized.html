@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不认命 🔮 - 寺庙匹配系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .result-section {
+            display: none;
+        }
+        
+        .result-section.show {
+            display: block;
+        }
+        
+        .bazi-result {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .bazi-result h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .bazi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .bazi-pill {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #667eea;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .bazi-pill .label {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .bazi-pill .value {
+            font-size: 22px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .info-item {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        .info-item strong {
+            color: #667eea;
+        }
+        
+        .wuxing-display {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .wuxing-item {
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .wuxing-木 { background: #d4edda; color: #155724; }
+        .wuxing-火 { background: #f8d7da; color: #721c24; }
+        .wuxing-土 { background: #fff3cd; color: #856404; }
+        .wuxing-金 { background: #d1ecf1; color: #0c5460; }
+        .wuxing-水 { background: #d6d8db; color: #383d41; }
+        
+        .weakest {
+            border: 3px solid #dc3545;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        
+        .temple-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .temple-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        
+        .temple-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .temple-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .temple-info-item {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .temple-info-item strong {
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .match-score {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+        
+        .match-reason {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+            font-style: italic;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+        }
+        
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .tag {
+            background: #e9ecef;
+            color: #495057;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+        
+        .faqi-list {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .faqi-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .faqi-item h4 {
+            color: #28a745;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .disclaimer {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        
+        .nav-tab {
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: #e9ecef;
+            color: #495057;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .nav-tab.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .nav-tab:hover {
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .bazi-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>不认命 🔮</h1>
+            <p>寺庙匹配与法器推荐系统 - 专业版</p>
+            <div class="disclaimer">
+                ⚠️ 本系统仅供娱乐参考，结果请理性看待
+            </div>
+        </div>
+        
+        <!-- 输入表单 -->
+        <div class="card">
+            <h2>📝 输入您的信息</h2>
+            <form id="baziForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>出生年份</label>
+                        <input type="number" id="year" min="1900" max="2100" value="1990" required>
+                    </div>
+                    <div class="form-group">
+                        <label>出生月份</label>
+                        <input type="number" id="month" min="1" max="12" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>出生日期</label>
+                        <input type="number" id="day" min="1" max="31" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>出生时辰</label>
+                        <input type="number" id="hour" min="0" max="23" value="12" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>性别</label>
+                        <select id="gender">
+                            <option value="male">男</option>
+                            <option value="female">女</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>祈福方向</label>
+                        <select id="prayerFocus">
+                            <option value="">全部</option>
+                            <option value="事业">事业</option>
+                            <option value="财运">财运</option>
+                            <option value="姻缘">姻缘</option>
+                            <option value="健康">健康</option>
+                            <option value="平安">平安</option>
+                            <option value="学业">学业</option>
+                            <option value="修行">修行</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>所在地区（可选）</label>
+                        <input type="text" id="location" placeholder="例如：北京、广东">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn">🔮 开始匹配</button>
+            </form>
+        </div>
+        
+        <!-- 加载状态 -->
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <div>正在为您匹配寺庙...</div>
+        </div>
+        
+        <!-- 错误信息 -->
+        <div id="error" class="error" style="display: none;"></div>
+        
+        <!-- 结果展示 -->
+        <div id="result" class="result-section">
+            <!-- 八字结果 -->
+            <div class="card">
+                <h2>📊 您的八字</h2>
+                <div class="bazi-result">
+                    <div class="info-grid" style="margin-bottom: 15px;">
+                        <div class="info-item"><strong>公历:</strong> <span id="gregorian">-</span></div>
+                        <div class="info-item"><strong>农历:</strong> <span id="lunar">-</span></div>
+                        <div class="info-item"><strong>生肖:</strong> <span id="zodiac">-</span></div>
+                        <div class="info-item"><strong>星座:</strong> <span id="constellation">-</span></div>
+                    </div>
+                    
+                    <div class="bazi-grid">
+                        <div class="bazi-pill">
+                            <div class="label">年柱</div>
+                            <div class="value" id="yearPill">-</div>
+                        </div>
+                        <div class="bazi-pill">
+                            <div class="label">月柱</div>
+                            <div class="value" id="monthPill">-</div>
+                        </div>
+                        <div class="bazi-pill">
+                            <div class="label">日柱</div>
+                            <div class="value" id="dayPill">-</div>
+                        </div>
+                        <div class="bazi-pill">
+                            <div class="label">时柱</div>
+                            <div class="value" id="hourPill">-</div>
+                        </div>
+                    </div>
+                    <div class="wuxing-display" id="wuxingDisplay"></div>
+                </div>
+            </div>
+            
+            <!-- 推荐寺庙 -->
+            <div class="card">
+                <h2>🏯 推荐寺庙</h2>
+                <div id="templesList"></div>
+            </div>
+            
+            <!-- 推荐法器 -->
+            <div class="card">
+                <h2>📿 推荐法器</h2>
+                <div id="faqiList" class="faqi-list"></div>
+            </div>
+        </div>
+        
+        <!-- 统计信息 -->
+        <div class="card">
+            <h2>📈 数据库统计</h2>
+            <div class="stats-grid" id="statsGrid">
+                <div class="stat-item">
+                    <div class="stat-value" id="totalTemples">-</div>
+                    <div class="stat-label">寺庙总数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="rating5">-</div>
+                    <div class="stat-label">5 星寺庙</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="rating4">-</div>
+                    <div class="stat-label">4 星寺庙</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="provinces">-</div>
+                    <div class="stat-label">覆盖省份</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>仅供娱乐参考 · 数据仅供参考</p>
+            <p>Version 1.0.0 | Powered by lunar-python</p>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = window.location.origin;
+        
+        // 加载统计信息
+        async function loadStats() {
+            try {
+                const response = await fetch(`${API_BASE}/api/stats`);
+                const stats = await response.json();
+                
+                document.getElementById('totalTemples').textContent = stats.total_temples;
+                document.getElementById('rating5').textContent = stats.by_rating['5'];
+                document.getElementById('rating4').textContent = stats.by_rating['4'];
+                document.getElementById('provinces').textContent = Object.keys(stats.by_province).length;
+            } catch (error) {
+                console.error('加载统计失败:', error);
+            }
+        }
+        
+        // 提交表单
+        document.getElementById('baziForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const loading = document.getElementById('loading');
+            const error = document.getElementById('error');
+            const result = document.getElementById('result');
+            
+            loading.style.display = 'block';
+            error.style.display = 'none';
+            result.classList.remove('show');
+            
+            try {
+                const payload = {
+                    year: parseInt(document.getElementById('year').value),
+                    month: parseInt(document.getElementById('month').value),
+                    day: parseInt(document.getElementById('day').value),
+                    hour: parseInt(document.getElementById('hour').value),
+                    gender: document.getElementById('gender').value,
+                    prayer_focus: document.getElementById('prayerFocus').value || null,
+                    location: document.getElementById('location').value || null
+                };
+                
+                const response = await fetch(`${API_BASE}/api/match`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+                
+                if (!response.ok) {
+                    throw new Error('请求失败');
+                }
+                
+                const data = await response.json();
+                displayResult(data);
+                
+            } catch (err) {
+                error.textContent = '发生错误：' + err.message;
+                error.style.display = 'block';
+            } finally {
+                loading.style.display = 'none';
+            }
+        });
+        
+        // 显示结果
+        function displayResult(data) {
+            const result = document.getElementById('result');
+            
+            // 显示基本信息
+            if (data.bazi && data.bazi.基本信息) {
+                document.getElementById('gregorian').textContent = data.bazi.基本信息.公历;
+                document.getElementById('lunar').textContent = data.bazi.基本信息.农历;
+                document.getElementById('zodiac').textContent = data.bazi.基本信息.生肖;
+                document.getElementById('constellation').textContent = data.bazi.基本信息.星座;
+            }
+            
+            // 显示八字
+            if (data.bazi && data.bazi.八字) {
+                document.getElementById('yearPill').textContent = data.bazi.八字.年柱;
+                document.getElementById('monthPill').textContent = data.bazi.八字.月柱;
+                document.getElementById('dayPill').textContent = data.bazi.八字.日柱;
+                document.getElementById('hourPill').textContent = data.bazi.八字.时柱;
+            }
+            
+            // 显示五行
+            if (data.wuxing) {
+                const wuxingDisplay = document.getElementById('wuxingDisplay');
+                wuxingDisplay.innerHTML = '';
+                for (const [wuxing, count] of Object.entries(data.wuxing)) {
+                    const item = document.createElement('span');
+                    item.className = `wuxing-item wuxing-${wuxing}`;
+                    if (data.weakest && wuxing === data.weakest) {
+                        item.classList.add('weakest');
+                        item.textContent = `${wuxing}(${count}) ⚠️ 最弱`;
+                    } else {
+                        item.textContent = `${wuxing}(${count})`;
+                    }
+                    wuxingDisplay.appendChild(item);
+                }
+            }
+            
+            // 显示寺庙
+            if (data.temples && data.temples.length > 0) {
+                const templesList = document.getElementById('templesList');
+                templesList.innerHTML = '';
+                data.temples.forEach((temple, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'temple-card';
+                    card.innerHTML = `
+                        <h3>${index + 1}. ${temple.name} ${'⭐'.repeat(Math.floor(temple.rating || 0))}</h3>
+                        <div class="temple-info">
+                            <div class="temple-info-item"><strong>类型:</strong> ${temple.type} - ${temple.subtype}</div>
+                            <div class="temple-info-item"><strong>位置:</strong> ${temple.province}${temple.city}</div>
+                            <div class="temple-info-item"><strong>地址:</strong> ${temple.address}</div>
+                            <div class="temple-info-item"><strong>门票:</strong> ${temple.ticket || '免费'}</div>
+                        </div>
+                        <div class="match-score">匹配度：${temple.match_score || 0}分</div>
+                        <div class="match-reason">${temple.match_reason || ''}</div>
+                        ${temple.tags && temple.tags.length > 0 ? `
+                            <div class="tags">
+                                ${temple.tags.slice(0, 5).map(tag => `<span class="tag">${tag}</span>`).join('')}
+                            </div>
+                        ` : ''}
+                    `;
+                    templesList.appendChild(card);
+                });
+            }
+            
+            // 显示法器
+            if (data.faqi && data.faqi.length > 0) {
+                const faqiList = document.getElementById('faqiList');
+                faqiList.innerHTML = '';
+                data.faqi.forEach(faqi => {
+                    const item = document.createElement('div');
+                    item.className = 'faqi-item';
+                    item.innerHTML = `
+                        <h4>${faqi.name}</h4>
+                        <div>${faqi.description}</div>
+                        <div style="margin-top: 5px; color: #666; font-size: 14px;">💰 ${faqi.price_range}</div>
+                    `;
+                    faqiList.appendChild(item);
+                });
+            }
+            
+            result.classList.add('show');
+        }
+        
+        // 页面加载时获取统计
+        loadStats();
+    </script>
+</body>
+</html>

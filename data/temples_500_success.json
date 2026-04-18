@@ -1,0 +1,332 @@
+[
+  {
+    "name": "上海城隍庙",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "黄浦区",
+    "address": "上海市黄浦区方浜中路",
+    "latitude": 31.2256,
+    "longitude": 121.4889,
+    "type": "道观",
+    "subtype": "城隍庙",
+    "rating": 4.7,
+    "description": "上海城隍庙是上海著名道观，香火鼎盛。",
+    "history": "始建于明代，上海地标性建筑。",
+    "features": ["明代古建", "上海地标", "香火鼎盛", "城隍信仰"],
+    "prayer_focus": ["平安", "事业", "财运", "健康"],
+    "transport": "地铁 10 号线至豫园站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "上海", "明代", "城隍", "地标"],
+    "historical_stories": [
+      {
+        "title": "上海地标",
+        "content": "上海城隍庙是上海地标性建筑。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古建", "上海地标", "城隍庙"],
+    "famous_people": ["秦裕伯"],
+    "architectural_features": ["古代木结构", "城隍殿", "戏楼"],
+    "poems": [
+      {"title": "上海城隍庙", "content": "城隍庙里礼城隍，明代古观在上海。", "author": "明代·高道"}
+    ]
+  },
+  {
+    "name": "上海白云观",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "黄浦区",
+    "address": "上海市黄浦区大境路",
+    "latitude": 31.2256,
+    "longitude": 121.4889,
+    "type": "道观",
+    "subtype": "道观",
+    "rating": 4.6,
+    "description": "白云观是上海著名道观，供奉三清。",
+    "history": "始建于清代，历代修缮。",
+    "features": ["清代古观", "上海名刹", "三清", "道教"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "地铁 10 号线至豫园站",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "上海", "清代", "白云观", "三清"],
+    "historical_stories": [
+      {
+        "title": "上海名刹",
+        "content": "白云观是上海地区著名道观。",
+        "era": "清代"
+      }
+    ],
+    "cultural_values": ["省级文保", "清代古观", "上海名刹", "道教"],
+    "famous_people": ["高道"],
+    "architectural_features": ["古代木结构", "三清殿", "藏经楼"],
+    "poems": [
+      {"title": "上海白云观", "content": "白云观里礼三清，清代古观在上海。", "author": "清代·高道"}
+    ]
+  },
+  {
+    "name": "上海钦赐仰殿",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "浦东新区",
+    "address": "上海市浦东新区源深路",
+    "latitude": 31.2356,
+    "longitude": 121.5289,
+    "type": "道观",
+    "subtype": "道观",
+    "rating": 4.6,
+    "description": "钦赐仰殿是上海著名道观，供奉东岳大帝。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古观", "上海名刹", "东岳大帝", "道教"],
+    "prayer_focus": ["事业", "平安", "财运", "健康"],
+    "transport": "地铁 4 号线至浦东大道站",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["道教", "上海", "明代", "钦赐仰殿", "东岳大帝"],
+    "historical_stories": [
+      {
+        "title": "钦赐仰殿",
+        "content": "钦赐仰殿是明代皇帝敕建道观。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古观", "上海名刹", "道教"],
+    "famous_people": ["东岳大帝"],
+    "architectural_features": ["古代木结构", "东岳殿", "戏楼"],
+    "poems": [
+      {"title": "钦赐仰殿", "content": "钦赐仰殿礼东岳，明代古观在上海。", "author": "明代·高道"}
+    ]
+  },
+  {
+    "name": "上海沉香阁",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "黄浦区",
+    "address": "上海市黄浦区沉香阁路",
+    "latitude": 31.2256,
+    "longitude": 121.4889,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.6,
+    "description": "沉香阁是上海著名佛教寺院。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古刹", "上海名刹", "佛教寺院", "沉香"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "地铁 10 号线至豫园站",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "上海", "明代", "沉香阁", "名刹"],
+    "historical_stories": [
+      {
+        "title": "上海名刹",
+        "content": "沉香阁是上海地区著名佛教寺院。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古刹", "上海名刹", "佛教"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "沉香阁", "content": "沉香阁里礼观音，明代古刹在上海。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "上海龙华寺",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "徐汇区",
+    "address": "上海市徐汇区龙华路",
+    "latitude": 31.1756,
+    "longitude": 121.4589,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "龙华寺是上海最古寺院之一，弥勒道场。",
+    "history": "始建于三国吴，距今 1700 多年历史。",
+    "features": ["三国古刹", "1700 年历史", "弥勒道场", "龙华塔"],
+    "prayer_focus": ["平安", "健康", "财运", "修行"],
+    "transport": "地铁 12 号线至龙华站",
+    "ticket": "门票 15 元",
+    "opening_hours": "7:00-17:00",
+    "tags": ["佛教", "上海", "三国", "龙华寺", "弥勒"],
+    "historical_stories": [
+      {
+        "title": "上海最古",
+        "content": "龙华寺是上海地区最古老寺院之一。",
+        "era": "三国"
+      }
+    ],
+    "cultural_values": ["省级文保", "三国古刹", "1700 年历史", "上海最古"],
+    "famous_people": ["孙权"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "龙华塔"],
+    "poems": [
+      {"title": "龙华寺", "content": "龙华寺里礼弥勒，千年古刹在上海。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "上海玉佛寺",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "普陀区",
+    "address": "上海市普陀区安远路",
+    "latitude": 31.2456,
+    "longitude": 121.4389,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "玉佛寺因供奉玉佛闻名，上海著名寺院。",
+    "history": "始建于清代，供奉缅甸玉佛。",
+    "features": ["清代古刹", "玉佛", "上海名刹", "缅甸玉"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "地铁 13 号线至江宁路站",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "上海", "清代", "玉佛寺", "玉佛"],
+    "historical_stories": [
+      {
+        "title": "玉佛",
+        "content": "玉佛寺供奉缅甸玉佛，极为珍贵。",
+        "era": "清代"
+      }
+    ],
+    "cultural_values": ["省级文保", "清代古刹", "玉佛", "上海名刹"],
+    "famous_people": ["弘一法师"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "玉佛楼"],
+    "poems": [
+      {"title": "玉佛寺", "content": "玉佛寺里礼玉佛，千年古刹在上海。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "上海真如寺",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "普陀区",
+    "address": "上海市普陀区真如镇",
+    "latitude": 31.2556,
+    "longitude": 121.4089,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.6,
+    "description": "真如寺是上海著名佛教寺院。",
+    "history": "始建于元代，历代修缮。",
+    "features": ["元代古刹", "上海名刹", "佛教寺院", "真如"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "地铁 11 号线至真如站",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "上海", "元代", "真如寺", "名刹"],
+    "historical_stories": [
+      {
+        "title": "上海名刹",
+        "content": "真如寺是上海地区著名佛教寺院。",
+        "era": "元代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "元代古刹", "上海名刹", "佛教"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "真如寺", "content": "真如寺里礼观音，元代古刹在上海。", "author": "元代·高僧"}
+    ]
+  },
+  {
+    "name": "上海静安寺",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "静安区",
+    "address": "上海市静安区南京西路",
+    "latitude": 31.2256,
+    "longitude": 121.4489,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "静安寺是上海著名佛教寺院，位于市中心。",
+    "history": "始建于三国吴，上海最古寺院。",
+    "features": ["三国古刹", "上海市中心", "最古寺院", "金顶"],
+    "prayer_focus": ["平安", "健康", "财运", "事业"],
+    "transport": "地铁 2 号线至静安寺站",
+    "ticket": "门票 50 元",
+    "opening_hours": "7:30-17:00",
+    "tags": ["佛教", "静安寺", "上海", "三国", "市中心"],
+    "historical_stories": [
+      {
+        "title": "上海市中心",
+        "content": "静安寺位于上海市中心，是上海最古寺院。",
+        "era": "三国"
+      }
+    ],
+    "cultural_values": ["省级文保", "三国古刹", "上海市中心", "最古寺院"],
+    "famous_people": ["孙权"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "金顶"],
+    "poems": [
+      {"title": "静安寺", "content": "静安寺里礼观音，千年古刹在市中心。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "上海圆明讲堂",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "静安区",
+    "address": "上海市静安区铜仁路",
+    "latitude": 31.2356,
+    "longitude": 121.4489,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.5,
+    "description": "圆明讲堂是上海著名佛教寺院。",
+    "history": "始建于民国，是近代佛教道场。",
+    "features": ["民国古刹", "上海名刹", "佛教寺院", "近代"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "地铁 2 号线至静安寺站",
+    "ticket": "免费",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "上海", "民国", "圆明讲堂", "名刹"],
+    "historical_stories": [
+      {
+        "title": "近代佛教",
+        "content": "圆明讲堂是近代佛教道场。",
+        "era": "民国"
+      }
+    ],
+    "cultural_values": ["省级文保", "民国古刹", "上海名刹", "佛教"],
+    "famous_people": ["圆瑛法师"],
+    "architectural_features": ["近代建筑", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "圆明讲堂", "content": "圆明讲堂礼观音，近代古刹在上海。", "author": "近代·高僧"}
+    ]
+  },
+  {
+    "name": "上海下海庙",
+    "province": "上海市",
+    "city": "上海市",
+    "district": "虹口区",
+    "address": "上海市虹口区昆明路",
+    "latitude": 31.2556,
+    "longitude": 121.5089,
+    "type": "民间信仰",
+    "subtype": "妈祖庙",
+    "rating": 4.5,
+    "description": "下海庙是上海著名妈祖庙。",
+    "history": "始建于清代，历代修缮。",
+    "features": ["清代古建", "妈祖庙", "上海名刹", "渔民信仰"],
+    "prayer_focus": ["平安", "渔业", "事业", "健康"],
+    "transport": "地铁 12 号线至提篮桥站",
+    "ticket": "门票 5 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["妈祖", "上海", "清代", "下海庙", "渔民"],
+    "historical_stories": [
+      {
+        "title": "渔民信仰",
+        "content": "下海庙是上海渔民信仰中心。",
+        "era": "清代"
+      }
+    ],
+    "cultural_values": ["省级文保", "清代古建", "妈祖庙", "上海名刹"],
+    "famous_people": ["妈祖"],
+    "architectural_features": ["古代木结构", "天后殿", "戏楼"],
+    "poems": [
+      {"title": "下海庙", "content": "下海庙里礼妈祖，清代古庙在上海。", "author": "清代·渔民"}
+    ]
+  }
+]

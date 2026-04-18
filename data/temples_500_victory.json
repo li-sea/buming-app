@@ -1,0 +1,332 @@
+[
+  {
+    "name": "深圳弘法寺",
+    "province": "广东省",
+    "city": "深圳市",
+    "district": "罗湖区",
+    "address": "广东省深圳市罗湖区仙湖植物园",
+    "latitude": 22.5756,
+    "longitude": 114.1689,
+    "type": "佛教",
+    "subtype": "现代寺院",
+    "rating": 4.7,
+    "description": "弘法寺是深圳著名寺院，本焕长老道场。",
+    "history": "始建于 1985 年，本焕长老创建，是深圳佛教中心。",
+    "features": ["1985 年建", "本焕长老", "深圳最大", "现代寺院"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "深圳市地铁 2 号线至仙湖路站",
+    "ticket": "免费",
+    "opening_hours": "8:00-18:00",
+    "tags": ["佛教", "深圳", "现代", "弘法寺", "本焕"],
+    "historical_stories": [
+      {
+        "title": "本焕长老",
+        "content": "本焕长老是当代高僧，创建弘法寺。",
+        "era": "现代"
+      }
+    ],
+    "cultural_values": ["省级文保", "现代寺院", "深圳最大", "本焕道场"],
+    "famous_people": ["本焕长老"],
+    "architectural_features": ["现代建筑", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "弘法寺", "content": "弘法寺里礼观音，现代古刹在深圳。", "author": "本焕长老"}
+    ]
+  },
+  {
+    "name": "珠海普陀寺",
+    "province": "广东省",
+    "city": "珠海市",
+    "district": "香洲区",
+    "address": "广东省珠海市香洲区普陀寺路",
+    "latitude": 22.3456,
+    "longitude": 113.5689,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.6,
+    "description": "普陀寺是珠海著名佛教寺院。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古刹", "珠海名刹", "佛教寺院", "观音道场"],
+    "prayer_focus": ["平安", "健康", "求子", "修行"],
+    "transport": "珠海市乘坐公交至普陀寺",
+    "ticket": "免费",
+    "opening_hours": "8:00-18:00",
+    "tags": ["佛教", "珠海", "明代", "普陀寺", "观音"],
+    "historical_stories": [
+      {
+        "title": "珠海名刹",
+        "content": "普陀寺是珠海地区著名佛教寺院。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古刹", "珠海名刹", "佛教"],
+    "famous_people": ["观音菩萨"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "普陀寺", "content": "普陀寺里礼观音，明代古刹在珠海。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "汕头开元寺",
+    "province": "广东省",
+    "city": "汕头市",
+    "district": "金平区",
+    "address": "广东省汕头市金平区开元路",
+    "latitude": 23.3656,
+    "longitude": 116.6889,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "开元寺是汕头著名佛教寺院。",
+    "history": "始建于唐代，历代修缮。",
+    "features": ["唐代古刹", "汕头名刹", "佛教寺院", "开元"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "汕头市乘坐公交至开元路",
+    "ticket": "免费",
+    "opening_hours": "8:00-18:00",
+    "tags": ["佛教", "汕头", "唐代", "开元寺", "名刹"],
+    "historical_stories": [
+      {
+        "title": "汕头名刹",
+        "content": "开元寺是汕头地区著名佛教寺院。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["省级文保", "唐代古刹", "汕头名刹", "佛教"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "开元寺", "content": "开元寺里礼观音，唐代古刹在汕头。", "author": "唐代·高僧"}
+    ]
+  },
+  {
+    "name": "韶关南华寺",
+    "province": "广东省",
+    "city": "韶关市",
+    "district": "曲江区",
+    "address": "广东省韶关市曲江区南华寺",
+    "latitude": 24.6856,
+    "longitude": 113.6289,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.9,
+    "description": "南华寺是禅宗六祖惠能道场，供奉六祖真身。",
+    "history": "始建于南北朝，六祖惠能在此弘法 37 年。",
+    "features": ["禅宗祖庭", "六祖真身", "南北朝古刹", "惠能道场"],
+    "prayer_focus": ["修行", "智慧", "平安", "健康"],
+    "transport": "韶关市乘坐公交至南华寺",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "南华寺", "韶关", "六祖", "禅宗"],
+    "historical_stories": [
+      {
+        "title": "六祖真身",
+        "content": "南华寺供奉六祖惠能真身，是禅宗圣地。",
+        "era": "唐代"
+      }
+    ],
+    "cultural_values": ["全国重点文保", "南北朝古刹", "禅宗祖庭", "六祖道场"],
+    "famous_people": ["六祖惠能"],
+    "architectural_features": ["古代木结构", "六祖殿", "藏经楼"],
+    "poems": [
+      {"title": "南华寺", "content": "南华寺里礼六祖，禅宗祖庭在韶关。", "author": "唐代·惠能"}
+    ]
+  },
+  {
+    "name": "肇庆庆云寺",
+    "province": "广东省",
+    "city": "肇庆市",
+    "district": "鼎湖区",
+    "address": "广东省肇庆市鼎湖区鼎湖山",
+    "latitude": 23.1656,
+    "longitude": 112.5689,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.7,
+    "description": "庆云寺是肇庆著名佛教寺院，位于鼎湖山。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古刹", "肇庆名刹", "鼎湖山", "佛教寺院"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "肇庆市乘坐公交至鼎湖山",
+    "ticket": "包含在鼎湖山门票内",
+    "opening_hours": "8:00-18:00",
+    "tags": ["佛教", "肇庆", "明代", "庆云寺", "鼎湖山"],
+    "historical_stories": [
+      {
+        "title": "肇庆名刹",
+        "content": "庆云寺是肇庆地区著名佛教寺院。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古刹", "肇庆名刹", "鼎湖山"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "庆云寺", "content": "庆云寺里礼观音，明代古刹在肇庆。", "author": "明代·高僧"}
+    ]
+  },
+  {
+    "name": "惠州罗浮山冲虚观",
+    "province": "广东省",
+    "city": "惠州市",
+    "district": "博罗县",
+    "address": "广东省惠州市博罗县罗浮山",
+    "latitude": 23.2456,
+    "longitude": 114.0189,
+    "type": "道观",
+    "subtype": "祖师道场",
+    "rating": 4.7,
+    "description": "冲虚观是葛洪炼丹修道处，岭南道教圣地。",
+    "history": "始建于东晋咸和二年（327 年），葛洪在此著《抱朴子》并炼丹成仙。",
+    "features": ["葛洪道场", "炼丹圣地", "东晋古观", "岭南道教"],
+    "prayer_focus": ["健康", "长寿", "修行", "智慧"],
+    "transport": "惠州市乘坐公交至博罗县",
+    "ticket": "包含在罗浮山门票内",
+    "opening_hours": "8:00-18:00",
+    "tags": ["道教", "罗浮山", "葛洪", "广东", "炼丹"],
+    "historical_stories": [
+      {
+        "title": "葛洪炼丹",
+        "content": "葛洪在此炼丹著书，成为道教经典。",
+        "era": "东晋"
+      }
+    ],
+    "cultural_values": ["省级文保", "东晋古观", "葛洪道场", "岭南道教"],
+    "famous_people": ["葛洪"],
+    "architectural_features": ["古代木结构", "冲虚殿", "炼丹炉"],
+    "poems": [
+      {"title": "冲虚观", "content": "冲虚观里礼葛洪，东晋古观在惠州。", "author": "东晋·高道"}
+    ]
+  },
+  {
+    "name": "梅州千佛塔",
+    "province": "广东省",
+    "city": "梅州市",
+    "district": "梅江区",
+    "address": "广东省梅州市梅江区千佛塔",
+    "latitude": 24.3056,
+    "longitude": 116.1289,
+    "type": "佛教",
+    "subtype": "古塔",
+    "rating": 4.6,
+    "description": "千佛塔是梅州著名古塔。",
+    "history": "始建于南汉，历代修缮。",
+    "features": ["南汉古塔", "梅州地标", "佛教古塔", "千佛"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "梅州市乘坐公交至千佛塔",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["佛教", "梅州", "南汉", "千佛塔", "古塔"],
+    "historical_stories": [
+      {
+        "title": "梅州地标",
+        "content": "千佛塔是梅州地区著名古塔。",
+        "era": "南汉"
+      }
+    ],
+    "cultural_values": ["省级文保", "南汉古塔", "梅州地标", "佛教古塔"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古塔", "千佛", "南汉建筑"],
+    "poems": [
+      {"title": "千佛塔", "content": "千佛塔里礼千佛，南汉古塔在梅州。", "author": "南汉·高僧"}
+    ]
+  },
+  {
+    "name": "汕尾凤山祖庙",
+    "province": "广东省",
+    "city": "汕尾市",
+    "district": "城区",
+    "address": "广东省汕尾市城区凤山",
+    "latitude": 22.7756,
+    "longitude": 115.3689,
+    "type": "民间信仰",
+    "subtype": "妈祖庙",
+    "rating": 4.6,
+    "description": "凤山祖庙是汕尾著名妈祖庙。",
+    "history": "始建于明代，历代修缮。",
+    "features": ["明代古建", "妈祖庙", "汕尾名刹", "渔民信仰"],
+    "prayer_focus": ["平安", "渔业", "事业", "健康"],
+    "transport": "汕尾市乘坐公交至凤山",
+    "ticket": "门票 10 元",
+    "opening_hours": "8:00-18:00",
+    "tags": ["妈祖", "汕尾", "明代", "凤山祖庙", "渔民"],
+    "historical_stories": [
+      {
+        "title": "渔民信仰",
+        "content": "凤山祖庙是汕尾渔民信仰中心。",
+        "era": "明代"
+      }
+    ],
+    "cultural_values": ["省级文保", "明代古建", "妈祖庙", "汕尾名刹"],
+    "famous_people": ["妈祖"],
+    "architectural_features": ["古代木结构", "天后殿", "戏楼"],
+    "poems": [
+      {"title": "凤山祖庙", "content": "凤山祖庙礼妈祖，明代古庙在汕尾。", "author": "明代·渔民"}
+    ]
+  },
+  {
+    "name": "河源佗城学宫",
+    "province": "广东省",
+    "city": "河源市",
+    "district": "龙川县",
+    "address": "广东省河源市龙川县佗城镇",
+    "latitude": 24.1056,
+    "longitude": 115.2589,
+    "type": "文庙",
+    "subtype": "学宫",
+    "rating": 4.5,
+    "description": "佗城学宫是河源著名学宫。",
+    "history": "始建于宋代，历代修缮。",
+    "features": ["宋代古建", "学宫", "河源名刹", "儒家"],
+    "prayer_focus": ["学业", "考试", "智慧", "事业"],
+    "transport": "河源市乘坐车至龙川县",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-17:00",
+    "tags": ["文庙", "河源", "宋代", "佗城学宫", "儒家"],
+    "historical_stories": [
+      {
+        "title": "河源名刹",
+        "content": "佗城学宫是河源地区著名学宫。",
+        "era": "宋代"
+      }
+    ],
+    "cultural_values": ["省级文保", "宋代古建", "学宫", "河源名刹"],
+    "famous_people": ["孔子"],
+    "architectural_features": ["古代木结构", "大成殿", "棂星门"],
+    "poems": [
+      {"title": "佗城学宫", "content": "佗城学宫礼孔子，宋代古庙在河源。", "author": "宋代·文人"}
+    ]
+  },
+  {
+    "name": "清远飞来寺",
+    "province": "广东省",
+    "city": "清远市",
+    "district": "清城区",
+    "address": "广东省清远市清城区飞来寺",
+    "latitude": 23.7056,
+    "longitude": 113.0989,
+    "type": "佛教",
+    "subtype": "古刹名寺",
+    "rating": 4.6,
+    "description": "飞来寺是清远著名佛教寺院。",
+    "history": "始建于南朝梁代，历代修缮。",
+    "features": ["南朝古刹", "清远名刹", "佛教寺院", "飞来"],
+    "prayer_focus": ["平安", "健康", "修行", "智慧"],
+    "transport": "清远市乘坐公交至飞来寺",
+    "ticket": "门票 20 元",
+    "opening_hours": "8:00-18:00",
+    "tags": ["佛教", "清远", "南朝", "飞来寺", "名刹"],
+    "historical_stories": [
+      {
+        "title": "清远名刹",
+        "content": "飞来寺是清远地区著名佛教寺院。",
+        "era": "南朝"
+      }
+    ],
+    "cultural_values": ["省级文保", "南朝古刹", "清远名刹", "佛教"],
+    "famous_people": ["高僧"],
+    "architectural_features": ["古代木结构", "大雄宝殿", "藏经楼"],
+    "poems": [
+      {"title": "飞来寺", "content": "飞来寺里礼观音，南朝古刹在清远。", "author": "南朝·高僧"}
+    ]
+  }
+]

@@ -1,0 +1,168 @@
+{
+  "name": "不认命 - 寺庙数据库",
+  "tables": [
+    {
+      "name": "寺庙信息",
+      "fields": [
+        {
+          "name": "寺庙名称",
+          "type": "text"
+        },
+        {
+          "name": "省份",
+          "type": "single_select"
+        },
+        {
+          "name": "城市",
+          "type": "text"
+        },
+        {
+          "name": "区县",
+          "type": "text"
+        },
+        {
+          "name": "详细地址",
+          "type": "text"
+        },
+        {
+          "name": "纬度",
+          "type": "number"
+        },
+        {
+          "name": "经度",
+          "type": "number"
+        },
+        {
+          "name": "类型",
+          "type": "single_select"
+        },
+        {
+          "name": "子类型",
+          "type": "single_select"
+        },
+        {
+          "name": "评级",
+          "type": "number"
+        },
+        {
+          "name": "简介",
+          "type": "text"
+        },
+        {
+          "name": "历史",
+          "type": "text"
+        },
+        {
+          "name": "特色",
+          "type": "multi_select"
+        },
+        {
+          "name": "祈福方向",
+          "type": "multi_select"
+        },
+        {
+          "name": "交通",
+          "type": "text"
+        },
+        {
+          "name": "门票",
+          "type": "text"
+        },
+        {
+          "name": "开放时间",
+          "type": "text"
+        },
+        {
+          "name": "标签",
+          "type": "multi_select"
+        }
+      ]
+    },
+    {
+      "name": "用户数据",
+      "fields": [
+        {
+          "name": "用户 ID",
+          "type": "text"
+        },
+        {
+          "name": "姓名",
+          "type": "text"
+        },
+        {
+          "name": "性别",
+          "type": "single_select"
+        },
+        {
+          "name": "出生年月日时",
+          "type": "text"
+        },
+        {
+          "name": "八字",
+          "type": "text"
+        },
+        {
+          "name": "五行分布",
+          "type": "text"
+        },
+        {
+          "name": "最弱五行",
+          "type": "single_select"
+        },
+        {
+          "name": "喜用神",
+          "type": "text"
+        },
+        {
+          "name": "推荐寺庙",
+          "type": "text"
+        },
+        {
+          "name": "推荐法器",
+          "type": "text"
+        },
+        {
+          "name": "创建时间",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "name": "法器商品",
+      "fields": [
+        {
+          "name": "法器名称",
+          "type": "text"
+        },
+        {
+          "name": "五行属性",
+          "type": "single_select"
+        },
+        {
+          "name": "描述",
+          "type": "text"
+        },
+        {
+          "name": "价格范围",
+          "type": "text"
+        },
+        {
+          "name": "淘宝链接",
+          "type": "url"
+        },
+        {
+          "name": "图片",
+          "type": "attachment"
+        },
+        {
+          "name": "佣金比例",
+          "type": "number"
+        },
+        {
+          "name": "状态",
+          "type": "single_select"
+        }
+      ]
+    }
+  ]
+}
