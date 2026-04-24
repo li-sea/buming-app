@@ -17,9 +17,9 @@ from bazi_lunar import BaziCalculator
 bazi_calc = BaziCalculator()
 
 app = FastAPI(
-    title="不认命 App API",
-    description="寺庙匹配与法器推荐系统 - 测试版",
-    version="0.1.0"
+    title="不认命 - 传统文化学习工具",
+    description="八字知识与寺庙文化介绍 - 测试版",
+    version="1.0.0"
 )
 
 # 允许 CORS
@@ -185,10 +185,12 @@ def match_temples(bazi_result: Dict, prayer_focus: Optional[str] = None, locatio
     for score, temple in scored_temples[:limit]:
         temple_copy = temple.copy()
         temple_copy["match_score"] = score
-        temple_copy["match_reason"] = f"五行{weakest_wuxing}需要补，"
+        temple_copy["match_reason"] = f"传统五行文化中，{weakest_wuxing}代表"
+        reason_map = {"木": "生长与发展", "火": "热情与活力", "土": "稳定与包容", "金": "坚定与清晰", "水": "智慧与流动"}
+        temple_copy["match_reason"] += reason_map.get(weakest_wuxing, "")
         if prayer_focus:
-            temple_copy["match_reason"] += f"适合{prayer_focus}祈福，"
-        temple_copy["match_reason"] += f"评级{temple.get('rating', 0)}⭐"
+            temple_copy["match_reason"] += f"，与{prayer_focus}主题相关"
+        temple_copy["match_reason"] += f"，文化评级{temple.get('rating', 0)}⭐"
         result.append(temple_copy)
     
     return result
@@ -201,32 +203,32 @@ def recommend_faqi(bazi_result: Dict, temples: List[Dict]) -> List[Dict[str, str
     wuxing = bazi_result["五行"]["分布"]
     weakest_wuxing = bazi_result["五行"]["最弱"]
     
-    # 五行对应的法器
+    # 五行对应的传统文化元素（仅供文化参考）
     wuxing_faqi = {
         "木": [
-            {"name": "绿幽灵水晶", "description": "增强木属性，助事业财运", "price_range": "100-500 元"},
-            {"name": "翡翠手镯", "description": "木属性宝石，保平安健康", "price_range": "500-5000 元"},
-            {"name": "木质佛珠", "description": "檀香木或沉香木，助修行", "price_range": "200-2000 元"}
+            {"name": "绿幽灵水晶", "description": "传统文化中，木象征生长与发展", "cultural_meaning": "木元素代表生机与活力"},
+            {"name": "翡翠", "description": "传统文化中的珍贵玉石", "cultural_meaning": "玉在中华文化中象征品德"},
+            {"name": "木质饰品", "description": "天然木材，传统文化中用于装饰", "cultural_meaning": "木制品体现自然之美"}
         ],
         "火": [
-            {"name": "红玛瑙", "description": "增强火属性，助事业活力", "price_range": "100-800 元"},
-            {"name": "石榴石", "description": "火属性宝石，增强生命力", "price_range": "200-1000 元"},
-            {"name": "红色手绳", "description": "辟邪保平安", "price_range": "50-200 元"}
+            {"name": "红玛瑙", "description": "传统文化中的红色宝石", "cultural_meaning": "红色在中国文化中象征喜庆"},
+            {"name": "石榴石", "description": "传统饰品材料", "cultural_meaning": "石榴多籽，象征多子多福"},
+            {"name": "红色饰品", "description": "传统文化中红色代表吉祥", "cultural_meaning": "红色辟邪是民间传统观念"}
         ],
         "土": [
-            {"name": "黄水晶", "description": "增强土属性，助财运", "price_range": "100-600 元"},
-            {"name": "玉石貔貅", "description": "土属性，招财辟邪", "price_range": "300-3000 元"},
-            {"name": "陶瓷摆件", "description": "土属性，镇宅保平安", "price_range": "100-1000 元"}
+            {"name": "黄水晶", "description": "传统文化中的黄色宝石", "cultural_meaning": "黄色在传统文化中象征尊贵"},
+            {"name": "玉石", "description": "中华文化核心元素之一", "cultural_meaning": "君子比德于玉"},
+            {"name": "陶瓷", "description": "中国传统工艺代表", "cultural_meaning": "陶瓷是中华文化的重要载体"}
         ],
         "金": [
-            {"name": "白水晶", "description": "增强金属性，助事业清晰", "price_range": "100-500 元"},
-            {"name": "银饰", "description": "金属性，辟邪保平安", "price_range": "200-2000 元"},
-            {"name": "金属风铃", "description": "金属性，化煞招财", "price_range": "100-500 元"}
+            {"name": "白水晶", "description": "传统文化中的透明宝石", "cultural_meaning": "水晶在文化中象征纯洁"},
+            {"name": "银饰", "description": "传统饰品材料", "cultural_meaning": "银在民间传统中有特殊地位"},
+            {"name": "金属饰品", "description": "传统工艺制品", "cultural_meaning": "金属工艺体现传统技艺"}
         ],
         "水": [
-            {"name": "黑曜石", "description": "增强水属性，辟邪化煞", "price_range": "100-600 元"},
-            {"name": "海蓝宝", "description": "水属性宝石，助沟通智慧", "price_range": "300-2000 元"},
-            {"name": "水晶球", "description": "水属性，增强直觉", "price_range": "200-1000 元"}
+            {"name": "黑曜石", "description": "传统文化中的黑色宝石", "cultural_meaning": "黑色在五行中代表水"},
+            {"name": "海蓝宝", "description": "蓝色宝石，传统文化中少见", "cultural_meaning": "蓝色象征智慧与深邃"},
+            {"name": "水晶", "description": "传统文化中的珍贵材料", "cultural_meaning": "水晶在文化中象征清澈透明"}
         ]
     }
     
@@ -237,10 +239,11 @@ def recommend_faqi(bazi_result: Dict, temples: List[Dict]) -> List[Dict[str, str
 @app.get("/")
 async def root():
     return {
-        "message": "不认命 App API - 测试版",
-        "version": "0.1.0",
+        "message": "不认命 - 传统文化学习工具",
+        "version": "1.0.0",
         "temples_loaded": len(TEMPLES),
-        "docs": "/docs"
+        "docs": "/docs",
+        "disclaimer": "本 API 仅供传统文化学习与研究使用"
     }
 
 @app.get("/api/temples")
