@@ -112,12 +112,54 @@ def get_wuxing(bazi_result: Dict) -> Dict[str, int]:
     # 兼容旧版
     return {"木": 0, "火": 0, "土": 0, "金": 0, "水": 0}
 
-# 寺庙匹配算法
-def match_temples(bazi_result: Dict, prayer_focus: Optional[str] = None, location: Optional[str] = None, limit: int = 5) -> List[Dict]:
+# 寺庙分类标记
+def categorize_temple(temple: Dict) -> str:
     """
-    寺庙匹配算法
-    根据八字、祈福方向、地理位置推荐寺庙
+    根据寺庙特征分类：famous(知名), local(地方/民间), folk(民间传说)
     """
+    name = temple.get("name", "")
+    features = temple.get("features", [])
+    tags = temple.get("tags", [])
+    rating = temple.get("rating", 0)
+    
+    # 知名寺庙判断：世界遗产、国家重点、历史名寺
+    famous_keywords = ["世界遗产", "全国重点", "国家重点", "四大", "第一名刹", "祖庭", "皇家"]
+    for kw in famous_keywords:
+        if any(kw in str(f) for f in features) or any(kw in str(t) for t in tags):
+            return "famous"
+    
+    # 5 星评级且评分人数多的也算知名
+    if rating >= 5:
+        return "famous"
+    
+    # 民间信仰、地方神庙算民间传说类
+    folk_keywords = ["民间", "地方", "传说", "故事", "灵验", "本地"]
+    for kw in folk_keywords:
+        if any(kw in str(f) for f in features) or any(kw in str(t) for t in tags):
+            return "folk"
+    
+    # 其他算地方寺庙
+    return "local"
+
+# 寺庙匹配算法（多样化版本）
+def match_temples(bazi_result: Dict, prayer_focus: Optional[str] = None, location: Optional[str] = None, limit: int = 5, seed: Optional[int] = None) -> List[Dict]:
+    """
+    寺庙匹配算法 - 多样化版本
+    根据八字、祈福方向、地理位置推荐寺庙，确保结果多样性
+    
+    策略：
+    - 知名寺庙：0-2 座（随机）
+    - 地方寺庙：2-3 座（优先本地）
+    - 民间传说：1-2 座（有故事的）
+    """
+    import random as rand
+    
+    # 设置随机种子（根据用户八字生成，保证同一用户结果稳定但不同用户不同）
+    if seed is None:
+        bazi_str = bazi_result.get("八字", {}).get("完整", "")
+        seed = hash(bazi_str) % 10000
+    rand.seed(seed)
+    
     wuxing = bazi_result["五行"]["分布"]
     weakest_wuxing = bazi_result["五行"]["最弱"]
     
@@ -141,15 +183,17 @@ def match_temples(bazi_result: Dict, prayer_focus: Optional[str] = None, locatio
         "修行": ["佛教", "道教"]
     }
     
-    # 筛选寺庙
-    scored_temples = []
+    # 分类收集寺庙
+    famous_temples = []
+    local_temples = []
+    folk_temples = []
+    
     for temple in TEMPLES:
         score = 0
-        
-        # 类型匹配
         temple_type = temple.get("type", "")
         temple_subtype = temple.get("subtype", "")
         
+        # 类型匹配
         preferred_types = wuxing_temple_types.get(weakest_wuxing, [])
         if temple_type in preferred_types or temple_subtype in preferred_types:
             score += 20
@@ -160,79 +204,238 @@ def match_temples(bazi_result: Dict, prayer_focus: Optional[str] = None, locatio
             if temple_type in preferred_for_prayer or temple_subtype in preferred_for_prayer:
                 score += 30
         
-        # 地理位置匹配
+        # 地理位置匹配（地方寺庙优先本地）
         if location:
             temple_province = temple.get("province", "")
             temple_city = temple.get("city", "")
             if location in temple_province or location in temple_city:
                 score += 40
         
-        # 评级加分
-        rating = temple.get("rating", 0)
-        score += rating * 10
-        
-        # 5 星寺庙额外加分
-        if rating == 5:
-            score += 20
-        
-        scored_temples.append((score, temple))
-    
-    # 按分数排序
-    scored_temples.sort(key=lambda x: x[0], reverse=True)
-    
-    # 返回前 N 个
-    result = []
-    for score, temple in scored_temples[:limit]:
         temple_copy = temple.copy()
         temple_copy["match_score"] = score
-        temple_copy["match_reason"] = f"传统五行文化中，{weakest_wuxing}代表"
-        reason_map = {"木": "生长与发展", "火": "热情与活力", "土": "稳定与包容", "金": "坚定与清晰", "水": "智慧与流动"}
-        temple_copy["match_reason"] += reason_map.get(weakest_wuxing, "")
-        if prayer_focus:
-            temple_copy["match_reason"] += f"，与{prayer_focus}主题相关"
-        temple_copy["match_reason"] += f"，文化评级{temple.get('rating', 0)}⭐"
-        result.append(temple_copy)
+        
+        # 分类
+        category = categorize_temple(temple)
+        if category == "famous":
+            famous_temples.append(temple_copy)
+        elif category == "folk":
+            folk_temples.append(temple_copy)
+        else:
+            local_temples.append(temple_copy)
     
-    return result
+    # 按分数排序
+    famous_temples.sort(key=lambda x: x["match_score"], reverse=True)
+    local_temples.sort(key=lambda x: x["match_score"], reverse=True)
+    folk_temples.sort(key=lambda x: x["match_score"], reverse=True)
+    
+    # 多样化选择策略
+    result = []
+    
+    # 1. 知名寺庙：0-2 座（随机选）
+    famous_count = rand.randint(0, 2) if len(famous_temples) > 0 else 0
+    if famous_count > 0 and len(famous_temples) > 0:
+        # 前 5 名中随机选
+        top_famous = famous_temples[:min(5, len(famous_temples))]
+        selected = rand.sample(top_famous, min(famous_count, len(top_famous)))
+        result.extend(selected)
+    
+    # 2. 地方寺庙：2-3 座（优先本地）
+    local_count = limit - len(result) - rand.randint(0, 1)  # 剩余名额
+    if local_count > 0 and len(local_temples) > 0:
+        # 有本地优先本地，没有就随机
+        if location:
+            local_matched = [t for t in local_temples if location in t.get("province", "") or location in t.get("city", "")]
+            if len(local_matched) > 0:
+                result.extend(local_matched[:local_count])
+        
+        # 补齐名额
+        remaining = local_count - (len(result) - len([t for t in result if categorize_temple(t) == "local"]))
+        if remaining > 0:
+            # 随机选一些非本地的
+            other_locals = [t for t in local_temples if t not in result]
+            rand.shuffle(other_locals)
+            result.extend(other_locals[:remaining])
+    
+    # 3. 民间传说：1-2 座（有故事的）
+    if len(result) < limit and len(folk_temples) > 0:
+        folk_count = min(2, limit - len(result))
+        # 有历史故事的优先
+        folk_with_stories = [t for t in folk_temples if t.get("historical_stories") or t.get("description")]
+        if len(folk_with_stories) > 0:
+            rand.shuffle(folk_with_stories)
+            result.extend(folk_with_stories[:folk_count])
+        else:
+            rand.shuffle(folk_temples)
+            result.extend(folk_temples[:folk_count])
+    
+    # 如果还不够，用任意寺庙补齐
+    if len(result) < limit:
+        remaining_temples = [t for t in TEMPLES if t not in result]
+        rand.shuffle(remaining_temples)
+        result.extend(remaining_temples[:limit - len(result)])
+    
+    # 添加匹配原因
+    reason_map = {"木": "生长与发展", "火": "热情与活力", "土": "稳定与包容", "金": "坚定与清晰", "水": "智慧与流动"}
+    for temple in result:
+        temple["match_reason"] = f"传统五行文化中，{weakest_wuxing}代表{reason_map.get(weakest_wuxing, '')}"
+        if prayer_focus:
+            temple["match_reason"] += f"，与{prayer_focus}主题相关"
+        temple["match_reason"] += f"，文化评级{temple.get('rating', 0)}⭐"
+        
+        # 添加寺庙类型标签
+        category = categorize_temple(temple)
+        if category == "famous":
+            temple["temple_category"] = "知名古刹"
+        elif category == "folk":
+            temple["temple_category"] = "民间传说"
+        else:
+            temple["temple_category"] = "地方寺庙"
+    
+    return result[:limit]
 
-# 法器推荐算法
+# 法器推荐算法（佩戴建议版）
 def recommend_faqi(bazi_result: Dict, temples: List[Dict]) -> List[Dict[str, str]]:
     """
-    根据八字和推荐寺庙推荐法器
+    根据八字推荐佩戴物品，包含佩戴方式和部位
     """
     wuxing = bazi_result["五行"]["分布"]
     weakest_wuxing = bazi_result["五行"]["最弱"]
     
-    # 五行对应的传统文化元素（仅供文化参考）
+    # 五行对应的佩戴建议
     wuxing_faqi = {
         "木": [
-            {"name": "绿幽灵水晶", "description": "传统文化中，木象征生长与发展", "cultural_meaning": "木元素代表生机与活力"},
-            {"name": "翡翠", "description": "传统文化中的珍贵玉石", "cultural_meaning": "玉在中华文化中象征品德"},
-            {"name": "木质饰品", "description": "天然木材，传统文化中用于装饰", "cultural_meaning": "木制品体现自然之美"}
+            {
+                "name": "绿幽灵水晶",
+                "description": "对应木元素，象征生机与活力",
+                "wear_method": "佩戴",
+                "wear_position": "左手腕或颈部",
+                "wear_detail": "建议佩戴在左手，靠近心脏位置，有助于吸收正能量",
+                "reason": "你的五行中木较弱，绿幽灵水晶对应木元素，传统认为有助于补充木的能量"
+            },
+            {
+                "name": "翡翠饰品",
+                "description": "传统玉石，对应木元素",
+                "wear_method": "佩戴",
+                "wear_position": "左手或胸前",
+                "wear_detail": "可做成手镯佩戴左手，或做成吊坠挂在胸前",
+                "reason": "翡翠在传统文化中象征品德，木元素代表生长，有助于事业发展"
+            },
+            {
+                "name": "木质佛珠",
+                "description": "天然木材制成，对应木元素",
+                "wear_method": "佩戴/手持",
+                "wear_position": "手腕或手中",
+                "wear_detail": "可戴在手腕上，也可在冥想时手持念诵",
+                "reason": "木质材料直接对应木元素，传统认为有助于平静心境"
+            }
         ],
         "火": [
-            {"name": "红玛瑙", "description": "传统文化中的红色宝石", "cultural_meaning": "红色在中国文化中象征喜庆"},
-            {"name": "石榴石", "description": "传统饰品材料", "cultural_meaning": "石榴多籽，象征多子多福"},
-            {"name": "红色饰品", "description": "传统文化中红色代表吉祥", "cultural_meaning": "红色辟邪是民间传统观念"}
+            {
+                "name": "红玛瑙",
+                "description": "红色宝石，对应火元素",
+                "wear_method": "佩戴",
+                "wear_position": "左手腕或右手腕",
+                "wear_detail": "建议佩戴在左手，红色有助于提升活力和热情",
+                "reason": "你的五行中火较弱，红玛瑙对应火元素，传统认为有助于增强行动力"
+            },
+            {
+                "name": "石榴石",
+                "description": "红色系宝石，对应火元素",
+                "wear_method": "佩戴",
+                "wear_position": "左手腕",
+                "wear_detail": "做成手链佩戴左手，有助于促进血液循环",
+                "reason": "石榴石在传统文化中象征活力，火元素代表热情，有助于提升精神状态"
+            },
+            {
+                "name": "红色中国结",
+                "description": "传统吉祥物，对应火元素",
+                "wear_method": "悬挂",
+                "wear_position": "家门口或车内",
+                "wear_detail": "悬挂在家门口、车内后视镜或办公桌旁",
+                "reason": "红色中国结是传统吉祥物，火元素象征喜庆，有助于带来好运"
+            }
         ],
         "土": [
-            {"name": "黄水晶", "description": "传统文化中的黄色宝石", "cultural_meaning": "黄色在传统文化中象征尊贵"},
-            {"name": "玉石", "description": "中华文化核心元素之一", "cultural_meaning": "君子比德于玉"},
-            {"name": "陶瓷", "description": "中国传统工艺代表", "cultural_meaning": "陶瓷是中华文化的重要载体"}
+            {
+                "name": "黄水晶",
+                "description": "黄色宝石，对应土元素",
+                "wear_method": "佩戴/摆放",
+                "wear_position": "右手腕或办公桌",
+                "wear_detail": "可佩戴在右手，或做成摆件放在办公桌/财位",
+                "reason": "你的五行中土较弱，黄水晶对应土元素，传统认为有助于稳定情绪和财运"
+            },
+            {
+                "name": "玉石饰品",
+                "description": "传统玉石，对应土元素",
+                "wear_method": "佩戴",
+                "wear_position": "左手腕或颈部",
+                "wear_detail": "玉镯戴左手，玉佩挂在胸前靠近心脏",
+                "reason": "玉石在中华文化中象征品德，土元素代表稳定，有助于身心平衡"
+            },
+            {
+                "name": "陶瓷摆件",
+                "description": "传统工艺品，对应土元素",
+                "wear_method": "摆放",
+                "wear_position": "家中西南方或办公位",
+                "wear_detail": "放在家中西南方位或办公桌上，有助于稳定气场",
+                "reason": "陶瓷由土烧制而成，直接对应土元素，传统认为有助于家庭和睦"
+            }
         ],
         "金": [
-            {"name": "白水晶", "description": "传统文化中的透明宝石", "cultural_meaning": "水晶在文化中象征纯洁"},
-            {"name": "银饰", "description": "传统饰品材料", "cultural_meaning": "银在民间传统中有特殊地位"},
-            {"name": "金属饰品", "description": "传统工艺制品", "cultural_meaning": "金属工艺体现传统技艺"}
+            {
+                "name": "白水晶",
+                "description": "透明宝石，对应金元素",
+                "wear_method": "佩戴/摆放",
+                "wear_position": "右手腕或办公桌",
+                "wear_detail": "可佩戴右手，或放在办公桌上有助于集中注意力",
+                "reason": "你的五行中金较弱，白水晶对应金元素，传统认为有助于清晰思维"
+            },
+            {
+                "name": "银饰",
+                "description": "银质饰品，对应金元素",
+                "wear_method": "佩戴",
+                "wear_position": "左手腕或颈部",
+                "wear_detail": "银手镯戴左手，银项链挂在颈部，有助于排毒",
+                "reason": "银在民间传统中有特殊地位，金元素代表坚定，有助于增强决断力"
+            },
+            {
+                "name": "金属风铃",
+                "description": "金属制品，对应金元素",
+                "wear_method": "悬挂",
+                "wear_position": "家门口或窗边",
+                "wear_detail": "悬挂在家门口或窗边，风吹过时有清脆声音",
+                "reason": "金属风铃对应金元素，传统认为有助于驱散负能量"
+            }
         ],
         "水": [
-            {"name": "黑曜石", "description": "传统文化中的黑色宝石", "cultural_meaning": "黑色在五行中代表水"},
-            {"name": "海蓝宝", "description": "蓝色宝石，传统文化中少见", "cultural_meaning": "蓝色象征智慧与深邃"},
-            {"name": "水晶", "description": "传统文化中的珍贵材料", "cultural_meaning": "水晶在文化中象征清澈透明"}
+            {
+                "name": "黑曜石",
+                "description": "黑色宝石，对应水元素",
+                "wear_method": "佩戴",
+                "wear_position": "左手腕",
+                "wear_detail": "建议佩戴左手，有助于排除负能量，增强直觉",
+                "reason": "你的五行中水较弱，黑曜石对应水元素，传统认为有助于增强智慧"
+            },
+            {
+                "name": "海蓝宝",
+                "description": "蓝色宝石，对应水元素",
+                "wear_method": "佩戴",
+                "wear_position": "颈部或左手",
+                "wear_detail": "做成吊坠挂在颈部，或手链戴左手，有助于沟通表达",
+                "reason": "海蓝宝象征智慧与深邃，水元素代表流动，有助于人际关系"
+            },
+            {
+                "name": "流水摆件",
+                "description": "水景装饰，对应水元素",
+                "wear_method": "摆放",
+                "wear_position": "家中北方或办公桌",
+                "wear_detail": "放在家中北方方位或办公桌上，水流方向朝向室内",
+                "reason": "流水摆件直接对应水元素，传统认为有助于财运和智慧"
+            }
         ]
     }
     
-    # 返回对应五行的法器
+    # 返回对应五行的佩戴建议
     return wuxing_faqi.get(weakest_wuxing, wuxing_faqi["土"])
 
 # API 路由
