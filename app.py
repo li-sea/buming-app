@@ -33,7 +33,7 @@ app.add_middleware(
 
 # 加载寺庙数据
 TEMPLES = []
-DATA_DIR = os.path.join(os.path.dirname(__file__), "../data")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 def load_temples():
     """加载所有寺庙数据"""
