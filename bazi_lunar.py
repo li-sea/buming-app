@@ -198,11 +198,12 @@ class BaziCalculator:
                 xi_shen = k
                 break
         
+        reason_map = {"木": "生长与发展", "火": "热情与活力", "土": "稳定与包容", "金": "坚定与清晰", "水": "智慧与流动"}
         return {
             "喜神": xi_shen or weakest,
             "用神": weakest,
             "忌神": strongest,
-            "说明": f"五行{weakest}较弱，需要补充；{strongest}过旺，需要克制"
+            "说明": f"传统五行理论中，{weakest}代表{reason_map.get(weakest, '')}；{strongest}较为旺盛"
         }
     
     def _calculate_ming_gua(self, year: int, gender: str) -> Dict[str, str]:

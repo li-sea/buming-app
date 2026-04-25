@@ -694,7 +694,7 @@
                             <div class="temple-info-item"><strong>地址:</strong> ${temple.address}</div>
                             <div class="temple-info-item"><strong>门票:</strong> ${temple.ticket || '免费'}</div>
                         </div>
-                        <div class="match-score">匹配度：${temple.match_score || 0}分</div>
+                        <div class="match-score">文化契合度：${temple.match_score || 0}分</div>
                         <div class="match-reason">${temple.match_reason || ''}</div>
                         ${temple.tags && temple.tags.length > 0 ? `
                             <div class="tags">
@@ -716,7 +716,7 @@
                     item.innerHTML = `
                         <h4>${faqi.name}</h4>
                         <div>${faqi.description}</div>
-                        <div style="margin-top: 5px; color: #666; font-size: 14px;">💰 ${faqi.price_range}</div>
+                        <div style="margin-top: 5px; color: #666; font-size: 14px;">📖 ${faqi.cultural_meaning || ''}</div>
                     `;
                     faqiList.appendChild(item);
                 });
