@@ -545,6 +545,83 @@ async def get_stats():
     
     return stats
 
+# ============ 祈福树 API ============
+from pray_tree import pray_tree_manager
+
+class CreateTreeRequest(BaseModel):
+    user_id: str
+    prayer_focus: str  # 事业/财运/姻缘/健康/平安/学业
+    wish: str
+    birth_date: Optional[str] = None  # 生日，用于星空图
+
+class LikeTreeRequest(BaseModel):
+    tree_id: str
+    liker_id: str
+
+@app.post("/api/pray-tree/create")
+async def create_pray_tree(request: CreateTreeRequest):
+    """种一棵祈福树"""
+    try:
+        tree = pray_tree_manager.create_tree(
+            user_id=request.user_id,
+            prayer_focus=request.prayer_focus,
+            wish=request.wish,
+            birth_date=request.birth_date
+        )
+        return {"status": "success", "tree": tree}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/pray-tree/like")
+async def like_pray_tree(request: LikeTreeRequest):
+    """给祈福树点赞"""
+    try:
+        tree = pray_tree_manager.like_tree(
+            tree_id=request.tree_id,
+            liker_id=request.liker_id
+        )
+        return {"status": "success", "tree": tree}
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.get("/api/pray-tree/hot")
+async def get_hot_trees(limit: int = 20):
+    """获取热门祈福树（点赞最多的）"""
+    trees = pray_tree_manager.get_hot_trees(limit)
+    return {"status": "success", "trees": trees}
+
+@app.get("/api/pray-tree/random")
+async def get_random_trees(limit: int = 20):
+    """获取随机祈福树（用于祈福广场）"""
+    trees = pray_tree_manager.get_random_trees(limit)
+    return {"status": "success", "trees": trees}
+
+@app.get("/api/pray-tree/user/{user_id}")
+async def get_user_trees(user_id: str):
+    """获取用户所有祈福树"""
+    trees = pray_tree_manager.get_user_trees(user_id)
+    return {"status": "success", "trees": trees}
+
+@app.get("/api/pray-tree/{tree_id}")
+async def get_pray_tree(tree_id: str):
+    """获取祈福树信息"""
+    try:
+        tree = pray_tree_manager.get_tree(tree_id)
+        return {"status": "success", "tree": tree}
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+@app.post("/api/pray-tree/{tree_id}/share")
+async def share_pray_tree(tree_id: str):
+    """分享祈福树"""
+    try:
+        share_info = pray_tree_manager.share_tree(tree_id)
+        return {"status": "success", "share": share_info}
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
