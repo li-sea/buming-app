@@ -9,9 +9,40 @@ from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
 import json
 import random
+import hashlib
+import time
 from datetime import datetime
 import os
 from bazi_lunar import BaziCalculator
+
+# ============ 结果确定性缓存 ============
+# 缓存结构: { input_hash: {"result": ..., "timestamp": ...} }
+_result_cache = {}
+# 缓存有效期：24 小时（秒），同一输入在有效期内返回相同结果
+CACHE_TTL = 24 * 60 * 60
+
+def _make_input_hash(year, month, day, hour, gender, prayer_focus, location):
+    """生成确定性输入哈希（替代 Python hash()，后者跨进程不一致）"""
+    key = f"{year}-{month}-{day}-{hour}-{gender}-{prayer_focus or ''}-{location or ''}"
+    return hashlib.sha256(key.encode('utf-8')).hexdigest()[:16]
+
+def _get_cached_result(input_hash):
+    """从缓存获取结果（如果未过期）"""
+    if input_hash in _result_cache:
+        entry = _result_cache[input_hash]
+        if time.time() - entry["timestamp"] < CACHE_TTL:
+            return entry["result"]
+        else:
+            del _result_cache[input_hash]
+    return None
+
+def _set_cached_result(input_hash, result):
+    """缓存结果"""
+    _result_cache[input_hash] = {"result": result, "timestamp": time.time()}
+
+def _deterministic_seed(input_hash: str) -> int:
+    """从哈希字符串生成确定性随机种子"""
+    return int(hashlib.sha256(input_hash.encode('utf-8')).hexdigest()[:8], 16) % 100000000
 
 # 初始化八字计算器
 bazi_calc = BaziCalculator()
@@ -30,6 +61,23 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# 静态文件服务（测试页面）
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+import glob
+
+WEB_TEST_DIR = os.path.join(os.path.dirname(__file__), "web_test")
+
+@app.get("/test")
+async def test_page():
+    """测试页面"""
+    return FileResponse(os.path.join(WEB_TEST_DIR, "index_new.html"))
+
+@app.get("/test/pray")
+async def pray_page():
+    """祈福树测试页面"""
+    return FileResponse(os.path.join(WEB_TEST_DIR, "pray_tree.html"))
 
 # 加载寺庙数据
 TEMPLES = []
@@ -154,10 +202,11 @@ def match_temples(bazi_result: Dict, prayer_focus: Optional[str] = None, locatio
     """
     import random as rand
     
-    # 设置随机种子（根据用户八字生成，保证同一用户结果稳定但不同用户不同）
+    # 设置确定性随机种子（根据用户八字生成，保证同一用户结果稳定但不同用户不同）
     if seed is None:
         bazi_str = bazi_result.get("八字", {}).get("完整", "")
-        seed = hash(bazi_str) % 10000
+        # 使用 SHA256 哈希替代 Python hash()，确保跨进程一致性
+        seed = _deterministic_seed(bazi_str)
     rand.seed(seed)
     
     wuxing = bazi_result["五行"]["分布"]
@@ -484,12 +533,22 @@ async def calculate_bazi_endpoint(year: int, month: int, day: int, hour: int, mi
 
 @app.post("/api/match")
 async def match_temples_endpoint(request: MatchRequest):
-    """寺庙匹配（专业版）"""
+    """寺庙匹配（专业版）- 支持结果确定性缓存"""
     # 计算八字
     year = request.year or 1990
     month = request.month or 1
     day = request.day or 1
     hour = request.hour or 12
+    
+    # 生成输入哈希，用于结果缓存
+    input_hash = _make_input_hash(year, month, day, hour, request.gender, request.prayer_focus, request.location)
+    
+    # 检查缓存（24 小时内相同输入返回相同结果）
+    cached = _get_cached_result(input_hash)
+    if cached is not None:
+        cached_copy = json.loads(json.dumps(cached))  # 深拷贝避免修改缓存
+        cached_copy["_cache"] = "hit"  # 标记命中缓存
+        return cached_copy
     
     bazi_result = calculate_bazi(year, month, day, hour, 0, request.gender)
     
@@ -504,7 +563,7 @@ async def match_temples_endpoint(request: MatchRequest):
     # 推荐法器
     faqi = recommend_faqi(bazi_result, temples)
     
-    return {
+    result = {
         "bazi": bazi_result["八字"],
         "wuxing": bazi_result["五行"]["分布"],
         "weakest": bazi_result["五行"]["最弱"],
@@ -512,8 +571,14 @@ async def match_temples_endpoint(request: MatchRequest):
         "minggua": bazi_result["命卦"],
         "temples": temples,
         "faqi": faqi,
-        "advice": bazi_result["建议"]
+        "advice": bazi_result["建议"],
+        "_cache": "miss"
     }
+    
+    # 缓存结果（24 小时内相同输入返回相同结果）
+    _set_cached_result(input_hash, result)
+    
+    return result
 
 @app.get("/api/stats")
 async def get_stats():
