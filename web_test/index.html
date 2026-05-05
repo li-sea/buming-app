@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>不认命 🔮 - 寺庙匹配系统</title>
+    <title>不认命 🔮 - 传统文化学习工具</title>
     <style>
         * {
             margin: 0;
@@ -427,9 +427,9 @@
     <div class="container">
         <div class="header">
             <h1>不认命 🔮</h1>
-            <p>寺庙匹配与法器推荐系统 - 专业版</p>
+            <p>传统文化学习工具 - 八字知识 · 寺庙文化 · 万年历</p>
             <div class="disclaimer">
-                ⚠️ 本系统仅供娱乐参考，结果请理性看待
+                ⚠️ 本应用为传统文化学习工具，所有内容仅供文化研究和娱乐参考。八字、五行等内容为中华传统文化的一部分，不代表科学结论。请理性看待，不应作为任何决策依据。
             </div>
         </div>
         
@@ -483,7 +483,7 @@
                     </div>
                 </div>
                 
-                <button type="submit" class="btn">🔮 开始匹配</button>
+                <button type="submit" class="btn">🔮 开始探索</button>
             </form>
         </div>
         
@@ -533,13 +533,13 @@
             
             <!-- 推荐寺庙 -->
             <div class="card">
-                <h2>🏯 推荐寺庙</h2>
+                <h2>🏯 推荐寺庙（文化参考）</h2>
                 <div id="templesList"></div>
             </div>
             
             <!-- 推荐法器 -->
             <div class="card">
-                <h2>📿 推荐法器</h2>
+                <h2>📿 传统文化元素参考</h2>
                 <div id="faqiList" class="faqi-list"></div>
             </div>
         </div>
@@ -568,13 +568,18 @@
         </div>
         
         <div class="footer">
-            <p>仅供娱乐参考 · 数据仅供参考</p>
+            <p>传统文化学习工具 · 仅供文化研究和娱乐参考</p>
             <p>Version 1.0.0 | Powered by lunar-python</p>
+            <p style="margin-top: 10px; font-size: 12px; opacity: 0.8;">
+                <a href="#" style="color: white; text-decoration: underline;">用户协议</a> · 
+                <a href="#" style="color: white; text-decoration: underline;">隐私政策</a> · 
+                <a href="#" style="color: white; text-decoration: underline;">免责声明</a>
+            </p>
         </div>
     </div>
     
     <script>
-        const API_BASE = window.location.origin;
+        const API_BASE = 'http://192.168.3.24:8001';
         
         // 加载统计信息
         async function loadStats() {
@@ -689,7 +694,7 @@
                             <div class="temple-info-item"><strong>地址:</strong> ${temple.address}</div>
                             <div class="temple-info-item"><strong>门票:</strong> ${temple.ticket || '免费'}</div>
                         </div>
-                        <div class="match-score">匹配度：${temple.match_score || 0}分</div>
+                        <div class="match-score">文化契合度：${temple.match_score || 0}分</div>
                         <div class="match-reason">${temple.match_reason || ''}</div>
                         ${temple.tags && temple.tags.length > 0 ? `
                             <div class="tags">
@@ -711,7 +716,7 @@
                     item.innerHTML = `
                         <h4>${faqi.name}</h4>
                         <div>${faqi.description}</div>
-                        <div style="margin-top: 5px; color: #666; font-size: 14px;">💰 ${faqi.price_range}</div>
+                        <div style="margin-top: 5px; color: #666; font-size: 14px;">📖 ${faqi.cultural_meaning || ''}</div>
                     `;
                     faqiList.appendChild(item);
                 });

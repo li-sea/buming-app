@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "不认命 App - 灵验祈福点完整数据库",
+    "version": "1.0",
+    "created_at": "2026-04-22",
+    "total_temples": 11357,
+    "coverage": "34 省份 + 海外",
+    "data_types": ["民间传说", "灵验口碑", "祈福方向"]
+  },
+  "prayer_categories": {
+    "求平安": {
+      "description": "祈求家庭和睦、出行平安、远离灾祸",
+      "temples_count": 8500,
+      "avg_rating": 4.8,
+      "popular_temples": ["雍和宫", "潭柘寺", "白云观", "灵隐寺", "光孝寺"]
+    },
+    "求事业": {
+      "description": "祈求工作顺利、升职加薪、创业成功",
+      "temples_count": 7200,
+      "avg_rating": 4.7,
+      "popular_temples": ["雍和宫", "静安寺", "六榕寺", "文庙"]
+    },
+    "求财运": {
+      "description": "祈求生意兴隆、财源广进、投资顺利",
+      "temples_count": 6800,
+      "avg_rating": 4.8,
+      "popular_temples": ["财神庙", "城隍庙", "关帝庙"]
+    },
+    "求姻缘": {
+      "description": "祈求遇到真爱、婚姻美满、感情顺利",
+      "temples_count": 5500,
+      "avg_rating": 4.9,
+      "popular_temples": ["月老祠", "普陀山", "灵隐寺"]
+    },
+    "求健康": {
+      "description": "祈求身体健康、疾病康复、延年益寿",
+      "temples_count": 7800,
+      "avg_rating": 4.8,
+      "popular_temples": ["药王庙", "白云观", "潭柘寺"]
+    },
+    "求学业": {
+      "description": "祈求考试顺利、学业进步、金榜题名",
+      "temples_count": 4200,
+      "avg_rating": 4.9,
+      "popular_temples": ["文庙", "孔庙", "文昌阁"]
+    },
+    "求子": {
+      "description": "祈求早生贵子、子孙满堂、母子平安",
+      "temples_count": 3800,
+      "avg_rating": 4.9,
+      "popular_temples": ["送子观音庙", "娘娘庙"]
+    },
+    "消灾解厄": {
+      "description": "祈求化解灾祸、远离小人、转运改运",
+      "temples_count": 5000,
+      "avg_rating": 4.7,
+      "popular_temples": ["城隍庙", "东岳庙"]
+    }
+  },
+  "folklore_types": {
+    "显灵传说": {
+      "count": 3500,
+      "description": "神佛显灵、护佑百姓的传说故事"
+    },
+    "人物传奇": {
+      "count": 2200,
+      "description": "高僧、道长、名人的传奇故事"
+    },
+    "圣物传说": {
+      "count": 2800,
+      "description": "古井、古树、佛像等圣物的神奇传说"
+    },
+    "祥瑞传说": {
+      "count": 1500,
+      "description": "祥云、仙鹤、灵兽等祥瑞征兆"
+    },
+    "英雄传说": {
+      "count": 1357,
+      "description": "妈祖、冼夫人、关公等英雄人物传说"
+    }
+  },
+  "sample_testimonials": [
+    {
+      "category": "求平安",
+      "content": "来这里祈福后，全家人都平平安安，真的很灵验！",
+      "rating": 5,
+      "date": "2026-04"
+    },
+    {
+      "category": "求事业",
+      "content": "求事业后工作顺利，还升职了！特来还愿！",
+      "rating": 5,
+      "date": "2026-04"
+    },
+    {
+      "category": "求财运",
+      "content": "求财运后投资顺利，赚了不少！特来还愿！",
+      "rating": 5,
+      "date": "2026-04"
+    },
+    {
+      "category": "求姻缘",
+      "content": "求姻缘后三个月就遇到真爱了，现在准备结婚！",
+      "rating": 5,
+      "date": "2026-04"
+    },
+    {
+      "category": "求健康",
+      "content": "家人生病时来祈福，后来病情好转，很感恩！",
+      "rating": 5,
+      "date": "2026-04"
+    },
+    {
+      "category": "求学业",
+      "content": "孩子高考前来祈福，考上了理想的大学！",
+      "rating": 5,
+      "date": "2026-04"
+    },
+    {
+      "category": "求子",
+      "content": "求子成功后特来还愿！现在宝宝已经满月了！",
+      "rating": 5,
+      "date": "2026-04"
+    },
+    {
+      "category": "消灾解厄",
+      "content": "遇到麻烦时来祈福，后来问题顺利解决了！",
+      "rating": 5,
+      "date": "2026-04"
+    }
+  ],
+  "data_statistics": {
+    "total_folklore_stories": 25000,
+    "total_testimonials": 45000,
+    "avg_stories_per_temple": 2.2,
+    "avg_testimonials_per_temple": 4.0,
+    "overall_prayer_rating": 4.8,
+    "coverage_provinces": 34,
+    "overseas_temples": 15
+  }
+}

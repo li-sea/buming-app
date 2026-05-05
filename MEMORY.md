@@ -46,3 +46,13 @@
 
 ---
 _此文件仅存储不认命 App 相关记忆_
+
+## 2026-05-02 进度更新
+- [x] KarmaPath 印度版项目启动
+- [x] KarmaPath 首批 70 座寺庙数据（5 邦）
+- [x] KarmaPath 吠陀占星基础数据（12 Rashi + 27 Nakshatra + 9 Graha）
+- [x] KarmaPath 祈福点数据收集策略制定
+- [x] 不认命 Git 推送完成
+- [ ] 不认命继续补充特色数据
+- [ ] KarmaPath 继续数据收集（目标 100 座）
+- [ ] KarmaPath Unity 项目搭建
