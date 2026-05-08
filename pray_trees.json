@@ -1,0 +1,22 @@
+{
+  "trees": {
+    "tree_1777278754_7490": {
+      "tree_id": "tree_1777278754_7490",
+      "user_id": "test_user",
+      "prayer_focus": "事业",
+      "wish": "事业顺利，升职加薪",
+      "birth_date": null,
+      "created_at": "2026-04-27T16:32:34.205158",
+      "level": 2,
+      "likes": 1,
+      "likers": [
+        "liker_1"
+      ],
+      "status": "growing",
+      "share_count": 0
+    }
+  },
+  "likes": {
+    "tree_1777278754_7490": []
+  }
+}
