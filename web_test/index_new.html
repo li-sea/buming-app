@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>不认命 🔮</title>
     <style>
         * {
@@ -844,9 +847,10 @@
         </div>
         
         <!-- 底部提示 -->
-        <div class="footer-note">
+        <div class="footer-note" id="footerNote">
             <strong>⚠️ 免责声明</strong><br>
             本应用为传统文化学习工具，所有内容仅供文化研究和娱乐参考，不应作为任何决策依据。
+        <div style="margin-top:12px;font-size:10px;color:#C7C7CC;">v20260509 · <span id="versionHash"></span></div>
         </div>
     </div>
     
@@ -880,6 +884,12 @@
     </div>
     
     <script>
+        // 版本标识（自动从文件名+时间生成）
+        const APP_VERSION = "2026-05-09-1155";
+        document.addEventListener("DOMContentLoaded", () => {
+            const vh = document.getElementById("versionHash");
+            if (vh) vh.textContent = APP_VERSION;
+        });
         const API_BASE = 'https://burenmng-data.onrender.com';
         
         // 初始化
