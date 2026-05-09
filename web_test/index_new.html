@@ -900,9 +900,24 @@
             initGenderToggle();
             initCalendarSwitch();
             checkFirstVisit();
+            initTermsAgreement();
             
             // 提交按钮
-            document.getElementById('submitBtn').addEventListener('click', handleSubmit);
+            const submitBtn = document.getElementById('submitBtn');
+            if (submitBtn) {
+                submitBtn.addEventListener('click', handleSubmit);
+            }
+            
+            // 刷新按钮
+            const refreshBtn = document.getElementById('refreshBtn');
+            if (refreshBtn) {
+                refreshBtn.addEventListener('click', () => {
+                    if (currentRequestData) {
+                        currentRequestData.seed = Math.floor(Math.random() * 10000);
+                        performMatch(currentRequestData);
+                    }
+                });
+            }
         });
         
         // 检查是否首次访问
@@ -913,15 +928,23 @@
             }
         }
         
-        // 同意协议
-        document.getElementById('agreeCheckbox').addEventListener('change', (e) => {
-            document.getElementById('agreeBtn').disabled = !e.target.checked;
-        });
-        
-        document.getElementById('agreeBtn').addEventListener('click', () => {
-            localStorage.setItem('termsAgreed', 'true');
-            document.getElementById('termsModal').classList.remove('show');
-        });
+        // 同意协议（移到 DOMContentLoaded 内执行）
+        function initTermsAgreement() {
+            const agreeCheckbox = document.getElementById('agreeCheckbox');
+            const agreeBtn = document.getElementById('agreeBtn');
+            const termsModal = document.getElementById('termsModal');
+            
+            if (agreeCheckbox && agreeBtn && termsModal) {
+                agreeCheckbox.addEventListener('change', (e) => {
+                    agreeBtn.disabled = !e.target.checked;
+                });
+                
+                agreeBtn.addEventListener('click', () => {
+                    localStorage.setItem('termsAgreed', 'true');
+                    termsModal.classList.remove('show');
+                });
+            }
+        }
         
         // 初始化日期选择器
         function initDatePicker() {
@@ -1123,15 +1146,6 @@
                 loading.classList.remove('show');
             }
         }
-        
-        // 刷新推荐
-        document.getElementById('refreshBtn').addEventListener('click', () => {
-            if (currentRequestData) {
-                // 添加随机种子，让结果不同
-                currentRequestData.seed = Math.floor(Math.random() * 10000);
-                performMatch(currentRequestData);
-            }
-        });
         
         // 显示结果
         function displayResult(data) {
