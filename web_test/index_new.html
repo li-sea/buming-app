@@ -772,6 +772,18 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- 生肖和星座自动显示 -->
+            <div style="display:flex;gap:12px;margin-top:12px;">
+                <div style="flex:1;background:#F2F2F7;border-radius:10px;padding:12px;text-align:center;">
+                    <div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;">生肖</div>
+                    <div id="zodiacDisplay" style="font-size:20px;font-weight:600;color:var(--primary);">-</div>
+                </div>
+                <div style="flex:1;background:#F2F2F7;border-radius:10px;padding:12px;text-align:center;">
+                    <div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;">星座</div>
+                    <div id="constellationDisplay" style="font-size:20px;font-weight:600;color:var(--primary);">-</div>
+                </div>
+            </div>
         </div>
         
         <!-- 祈福方向 -->
@@ -1032,6 +1044,49 @@
                 if (d === 1) option.selected = true;
                 daySelect.appendChild(option);
             }
+            daySelect.addEventListener('change', updateZodiacAndConstellation);
+            updateZodiacAndConstellation();
+        }
+        // 自动更新生肖和星座显示
+        function updateZodiacAndConstellation() {
+            const year = parseInt(document.getElementById('year').value);
+            const month = parseInt(document.getElementById('month').value);
+            const day = parseInt(document.getElementById('day').value);
+            
+            const zodiacs = ['鼠', '牛', '虎', '兔', '龙', '蛇', '马', '羊', '猴', '鸡', '狗', '猪'];
+            const zodiacEmojis = ['🐀', '🐂', '🐅', '🐇', '🐉', '🐍', '🐴', '🐑', '🐒', '🐓', '🐕', '🐖'];
+            const zodiacIndex = (year - 4) % 12;
+            const zodiac = zodiacs[zodiacIndex];
+            const zodiacEmoji = zodiacEmojis[zodiacIndex];
+            const zodiacDisplay = document.getElementById('zodiacDisplay');
+            if (zodiacDisplay) zodiacDisplay.textContent = zodiacEmoji + ' ' + zodiac;
+            
+            const constellationNames = [
+                { name: '摩羯座', startMonth: 12, startDay: 22, endMonth: 1, endDay: 19 },
+                { name: '水瓶座', startMonth: 1, startDay: 20, endMonth: 2, endDay: 18 },
+                { name: '双鱼座', startMonth: 2, startDay: 19, endMonth: 3, endDay: 20 },
+                { name: '白羊座', startMonth: 3, startDay: 21, endMonth: 4, endDay: 19 },
+                { name: '金牛座', startMonth: 4, startDay: 20, endMonth: 5, endDay: 20 },
+                { name: '双子座', startMonth: 5, startDay: 21, endMonth: 6, endDay: 20 },
+                { name: '巨蟹座', startMonth: 6, startDay: 21, endMonth: 7, endDay: 22 },
+                { name: '狮子座', startMonth: 7, startDay: 23, endMonth: 8, endDay: 22 },
+                { name: '处女座', startMonth: 8, startDay: 23, endMonth: 9, endDay: 22 },
+                { name: '天秤座', startMonth: 9, startDay: 23, endMonth: 10, endDay: 22 },
+                { name: '天蝎座', startMonth: 10, startDay: 23, endMonth: 11, endDay: 21 },
+                { name: '射手座', startMonth: 11, startDay: 22, endMonth: 12, endDay: 21 }
+            ];
+            
+            let constellation = '射手座';
+            for (let i = 0; i < constellationNames.length; i++) {
+                const c = constellationNames[i];
+                if ((month === c.startMonth && day >= c.startDay) || (month === c.endMonth && day <= c.endDay)) {
+                    constellation = c.name;
+                    break;
+                }
+            }
+            
+            const constellationDisplay = document.getElementById('constellationDisplay');
+            if (constellationDisplay) constellationDisplay.textContent = constellation;
         }
         
         // 初始化时辰选择器
