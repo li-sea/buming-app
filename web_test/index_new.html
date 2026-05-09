@@ -828,7 +828,8 @@
         
         <!-- 结果展示区域 -->
         <div class="result-section" id="resultSection">
-            <h2 class="result-title" style="margin-top: 32px;">📊 你的八字</h2>
+            <!-- 1. 命格结论分析 -->
+            <h2 class="result-title" style="margin-top: 32px;">🔮 你的命格</h2>
             
             <div class="card">
                 <div class="bazi-header" id="baziHeader"></div>
@@ -836,14 +837,38 @@
                 <div class="wuxing-grid" id="wuxingGrid"></div>
             </div>
             
-            <h2 class="result-title">🏯 推荐寺庙</h2>
+            <!-- 命格结论文字 -->
+            <div class="card" id="minggeConclusion" style="border-left: 4px solid var(--primary);">
+                <div style="font-size:15px;color:var(--text);line-height:1.8;" id="minggeText"></div>
+            </div>
+            
+            <!-- 2. 建议佩戴 -->
+            <h2 class="result-title">💎 建议佩戴</h2>
+            <div id="faqiList"></div>
+            
+            <!-- 3. 推荐祈福点 -->
+            <h2 class="result-title">🏯 推荐祈福点</h2>
             <div id="templesList"></div>
             <div style="text-align:center;margin:16px 0;">
                 <button class="submit-btn" id="refreshBtn" style="width:auto;padding:12px 32px;font-size:15px;background:var(--text-secondary);">换一批推荐</button>
             </div>
             
-            <h2 class="result-title">💎 建议佩戴</h2>
-            <div id="faqiList"></div>
+            <!-- 4. 祈福树 + 转发 -->
+            <h2 class="result-title">🌳 祈福树</h2>
+            <div class="card" id="prayerTreeCard">
+                <div id="prayerTreeContent" style="text-align:center;padding:20px;">
+                    <div style="font-size:64px;margin-bottom:12px;">🌳</div>
+                    <p style="font-size:14px;color:var(--text-secondary);margin-bottom:16px;">生成专属你的祈福树，分享给好友</p>
+                    <button class="submit-btn" id="generateTreeBtn" style="width:auto;padding:12px 32px;font-size:15px;">生成祈福树</button>
+                </div>
+                <div id="prayerTreeResult" style="display:none;text-align:center;padding:20px;">
+                    <canvas id="treeCanvas" width="400" height="600" style="max-width:100%;border-radius:12px;"></canvas>
+                    <div style="margin-top:16px;display:flex;gap:12px;justify-content:center;">
+                        <button class="submit-btn" id="shareTreeBtn" style="width:auto;padding:12px 24px;font-size:14px;background:var(--success);">📤 分享给好友</button>
+                        <button class="submit-btn" id="saveTreeBtn" style="width:auto;padding:12px 24px;font-size:14px;">💾 保存图片</button>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <!-- 底部提示 -->
@@ -1212,7 +1237,58 @@
                 }
             }
             
-            // 寺庙列表
+            // 命格结论（新增）
+            const minggeText = document.getElementById('minggeText');
+            if (minggeText) {
+                const wuxingDesc = {
+                    "木": "生长与发展，代表生命力和创造力",
+                    "火": "热情与活力，代表动力和行动力",
+                    "土": "稳定与包容，代表承载和包容",
+                    "金": "坚定与果断，代表决策和执行力",
+                    "水": "智慧与变通，代表思维和适应力"
+                };
+                const xiyong = data.xiyong || {};
+                const minggua = data.minggua || {};
+                let conclusion = `<strong>📌 命格分析：</strong><br>`;
+                conclusion += `你的八字五行中<strong>${data.weakest || '木'}</strong>较弱。${wuxingDesc[data.weakest] || ''}。<br><br>`;
+                if (xiyong.喜神) conclusion += `喜神为<strong>${xiyong.喜神}</strong>，`; 
+                if (xiyong.用神) conclusion += `用神为<strong>${xiyong.用神}</strong>，`;
+                if (xiyong.忌神) conclusion += `忌神为<strong>${xiyong.忌神}</strong>。<br><br>`;
+                if (minggua.卦) conclusion += `命卦为<strong>${minggua.卦}卦</strong>（${minggua.类型 || ''}），`; 
+                if (minggua.吉利方位) conclusion += `吉利方位：<strong>${minggua.吉利方位}</strong>。<br><br>`;
+                conclusion += `<span style="color:var(--text-secondary);font-size:13px;">💡 建议：通过佩戴对应五行属性的物件、前往契合的祈福点参拜，传统文化认为有助于补充能量、改善运势。</span>`;
+                minggeText.innerHTML = conclusion;
+            }
+            
+            // 2. 法器/佩戴建议列表（放在祈福点之前）
+            const faqiList = document.getElementById('faqiList');
+            if (data.faqi && data.faqi.length > 0) {
+                faqiList.innerHTML = '';
+                data.faqi.forEach((faqi, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'faqi-card';
+                    
+                    card.innerHTML = `
+                        <h4>${index + 1}. ${faqi.name}</h4>
+                        <div>
+                            <span class="wear-tag">${faqi.wear_method || '佩戴'}</span>
+                            <span class="wear-position">📍 ${faqi.wear_position || '随身'}</span>
+                        </div>
+                        <div class="description">${faqi.description || ''}</div>
+                        <div class="reason">
+                            💡 <strong>为什么推荐：</strong><br>
+                            ${faqi.reason || '传统五行文化认为这有助于补充你的能量'}
+                        </div>
+                        <div class="wear-detail">
+                            📖 <strong>佩戴/摆放方式：</strong><br>
+                            ${faqi.wear_detail || '建议随身佩戴或放在身边'}
+                        </div>
+                    `;
+                    faqiList.appendChild(card);
+                });
+            }
+            
+            // 3. 寺庙列表（放在佩戴建议之后）
             const templesList = document.getElementById('templesList');
             const categoryIcons = {
                 "知名古刹": "🏛️",
@@ -1250,7 +1326,6 @@
                                 📜 ${temple.historical_stories[0].title || '历史传说'}
                             </div>
                         ` : ''}
-                        <div class="match-badge" style="margin-top:10px;">文化契合度：${temple.match_score || 0}分</div>
                         <div class="expand-btn" onclick="this.nextElementSibling.classList.toggle('show')">💡 为什么推荐这里</div>
                         <div class="expand-content">
                             <strong>推荐理由：</strong><br>
@@ -1265,35 +1340,134 @@
                 });
             }
             
-            // 法器/佩戴建议列表
-            const faqiList = document.getElementById('faqiList');
-            if (data.faqi && data.faqi.length > 0) {
-                faqiList.innerHTML = '';
-                data.faqi.forEach((faqi, index) => {
-                    const card = document.createElement('div');
-                    card.className = 'faqi-card';
-                    
-                    card.innerHTML = `
-                        <h4>${index + 1}. ${faqi.name}</h4>
-                        <div>
-                            <span class="wear-tag">${faqi.wear_method || '佩戴'}</span>
-                            <span class="wear-position">📍 ${faqi.wear_position || '随身'}</span>
-                        </div>
-                        <div class="description">${faqi.description || ''}</div>
-                        <div class="reason">
-                            💡 <strong>为什么推荐：</strong><br>
-                            ${faqi.reason || '传统五行文化认为这有助于补充你的能量'}
-                        </div>
-                        <div class="wear-detail">
-                            📖 <strong>佩戴/摆放方式：</strong><br>
-                            ${faqi.wear_detail || '建议随身佩戴或放在身边'}
-                        </div>
-                    `;
-                    faqiList.appendChild(card);
-                });
-            }
+            // 4. 祈福树功能初始化
+            initPrayerTree(data);
             
             resultSection.classList.add('show');
+        }
+        
+        // 祈福树相关
+        let currentBaziData = null;
+        
+        function initPrayerTree(data) {
+            currentBaziData = data;
+            const genBtn = document.getElementById('generateTreeBtn');
+            if (genBtn) {
+                genBtn.onclick = () => generatePrayerTree(data);
+            }
+        }
+        
+        function generatePrayerTree(data) {
+            const content = document.getElementById('prayerTreeContent');
+            const result = document.getElementById('prayerTreeResult');
+            const canvas = document.getElementById('treeCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // 隐藏按钮区，显示画布
+            content.style.display = 'none';
+            result.style.display = 'block';
+            
+            // 绘制祈福树
+            ctx.fillStyle = '#1a1a2e';
+            ctx.fillRect(0, 0, 400, 600);
+            
+            // 树干
+            ctx.fillStyle = '#8B4513';
+            ctx.fillRect(180, 300, 40, 200);
+            
+            // 树冠（多层圆形）
+            const colors = ['#2d5a27', '#3a7a33', '#4a9a43', '#5aaa53'];
+            const positions = [
+                {x: 200, y: 200, r: 120},
+                {x: 150, y: 250, r: 80},
+                {x: 250, y: 250, r: 80},
+                {x: 200, y: 150, r: 70}
+            ];
+            positions.forEach((pos, i) => {
+                ctx.beginPath();
+                ctx.arc(pos.x, pos.y, pos.r, 0, Math.PI * 2);
+                ctx.fillStyle = colors[i % colors.length];
+                ctx.fill();
+            });
+            
+            // 标题
+            ctx.fillStyle = '#FFD700';
+            ctx.font = 'bold 24px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('🌳 祈福树 🌳', 200, 60);
+            
+            // 八字信息
+            if (data.bazi && data.bazi.八字) {
+                ctx.fillStyle = '#FFFFFF';
+                ctx.font = '14px sans-serif';
+                const bazi = data.bazi.八字;
+                ctx.fillText(`八字：${bazi.年柱} ${bazi.月柱} ${bazi.日柱} ${bazi.时柱}`, 200, 420);
+            }
+            
+            // 五行
+            if (data.wuxing) {
+                ctx.fillStyle = '#AAAAAA';
+                ctx.font = '12px sans-serif';
+                const wuxingStr = Object.entries(data.wuxing).map(([k, v]) => `${k}:${v}`).join(' ');
+                ctx.fillText(`五行：${wuxingStr}`, 200, 445);
+            }
+            
+            // 祈福方向
+            const prayerFocus = document.querySelector('.prayer-btn.active');
+            if (prayerFocus) {
+                ctx.fillStyle = '#FFD700';
+                ctx.font = '16px sans-serif';
+                ctx.fillText(`祈福：${prayerFocus.dataset.value || '平安'}`, 200, 480);
+            }
+            
+            // 底部
+            ctx.fillStyle = '#888888';
+            ctx.font = '11px sans-serif';
+            ctx.fillText('不认命 · 传统文化学习工具', 200, 570);
+            ctx.fillText('结果仅供文化研究和娱乐参考', 200, 590);
+            
+            // 绑定分享和保存按钮
+            document.getElementById('shareTreeBtn').onclick = () => shareTree(canvas);
+            document.getElementById('saveTreeBtn').onclick = () => saveTree(canvas);
+        }
+        
+        async function shareTree(canvas) {
+            try {
+                canvas.toBlob(async (blob) => {
+                    if (navigator.share && navigator.canShare && blob) {
+                        const file = new File([blob], '祈福树.png', { type: 'image/png' });
+                        await navigator.share({
+                            title: '不认命 · 祈福树',
+                            text: '这是我的专属祈福树，来测测你的吧！',
+                            files: [file]
+                        });
+                    } else {
+                        // 降级方案：复制链接
+                        const url = canvas.toDataURL();
+                        // 尝试复制
+                        const tempInput = document.createElement('input');
+                        tempInput.value = '打开不认命 App，生成你的专属祈福树！';
+                        document.body.appendChild(tempInput);
+                        tempInput.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(tempInput);
+                        alert('图片已生成，请长按图片保存后分享给好友！');
+                    }
+                }, 'image/png');
+            } catch (err) {
+                alert('分享功能暂不可用，请长按图片保存后手动分享');
+            }
+        }
+        
+        function saveTree(canvas) {
+            try {
+                const link = document.createElement('a');
+                link.download = `祈福树_${Date.now()}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            } catch (err) {
+                alert('长按图片可保存到相册');
+            }
         }
     </script>
 </body>
